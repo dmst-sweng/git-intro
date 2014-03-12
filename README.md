@@ -3,5 +3,5 @@ it-intro
 ========
 
 An introduction to Git's collaboration style.
-I like dogs!!!!!!!!!!!
+I like dogs
 Yay!
