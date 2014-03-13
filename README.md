@@ -3,4 +3,4 @@ git-intro
 
 An introduction to Git's collaboration style.
 
-Yay!
+Yay! This is a Readme text!!!
