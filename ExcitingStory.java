@@ -1,7 +1,7 @@
 import java.util.Scanner;
 /**
  * A class to print a story that will be developed collaboratively.
- * Extend this class by adding your literary input near the end of
+ * Extend test this class by adding your literary input near the end of
  * the main method.  For more marks, you can extend the
  * <a href="#sentence">sentence</a> method.
  */
