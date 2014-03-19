@@ -1,3 +1,4 @@
+import java.util.Scanner;
 /**
  * A class to print a story that will be developed collaboratively.
  * Extend this class by adding your literary input near the end of
@@ -20,9 +21,32 @@ public class ExcitingStory {
         System.out.println(s);
     }
 
+    static String answer(String mood) {
+
+	if (mood.equals("-a")) {
+		sentence("Our proposal is to take a day-off and relax, everything is ok!!!");
+	} else if (mood.equals("-b")) {
+		sentence("Good for you, cause weather forecast shows that tonight we'll have an equal experience :) .");
+	} else {
+		sentence( "You can choice -a or -b, nothing else. Please retry.") 
+	}
+	
+	return("Thank you for your help");
+	
+	}
+
     public static void main(String[] args) {
 
-		sentence("It was a dark and stormy night.");
-	}
+	String newLine = System.getProperty("line.separator");
+	sentence("It was a dark and stormy night.");
+	sentence("How was your stormy night?" + newLine + "If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b");
+
+	Scanner scanner = new Scanner(System.in);
+	String m = scanner.nextLine();
+
+	answer(m);
+
+
+    }
 
 }
