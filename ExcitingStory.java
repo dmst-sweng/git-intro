@@ -27,12 +27,16 @@ public class ExcitingStory {
 		sentence("Our proposal is to take a day-off and relax, everything is ok!!!");
 	} else if (mood.equals("-b")) {
 		sentence("Good for you, cause weather forecast shows that tonight we'll have an equal experience :) .");
-	} else {
-		sentence( "You can choice -a or -b, nothing else. Please retry.") 
 	}
-	
+	else if(mood.equals("-d")){sentence("The wolf is faster you die");}
+	else if(mood.equals("-f")){sentence("The wolf is stronger you die");}
+	else if(mood.equals("-g")){sentence("Your mum comes out of the woods kicks the wolf and saves you!! You lucky scum.  ");}
+	else {
+		sentence( "You can chose -a or -b or -d or -f or -g, nothing else. Please retry.");
+	}
+
 	return("Thank you for your help");
-	
+
 	}
 
     public static void main(String[] args) {
@@ -45,7 +49,9 @@ public class ExcitingStory {
 	String m = scanner.nextLine();
 
 	answer(m);
-
+sentence("Suddenly a wolf comes out of the wood" + newLine + "How do you react??" + newLine + "-d.Run"+ newLine +"-f.Fight"+ newLine +"-g.Call your mum(mummas little boy) ");
+String wolf = scanner.nextLine();
+answer(wolf);
 
     }
 
