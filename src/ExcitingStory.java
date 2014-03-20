@@ -96,7 +96,7 @@ public class ExcitingStory {
 		
 		else if(answer.equals("-g")) {
 			sentence("Your mum comes out of the woods kicks the wolf and saves you!! You lucky scum.");
-			sentence("But, although you survived, a big brown bear is approaching on your way home!");
+			sentence("But, although you survived, a big brown bear is approaching you on your way home!You have to do something!");
 		}
 		
 		else {
