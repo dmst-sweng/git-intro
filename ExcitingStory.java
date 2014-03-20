@@ -28,7 +28,11 @@ public class ExcitingStory {
 	} else if (mood.equals("-b")) {
 		sentence("Good for you, cause weather forecast shows that tonight we'll have an equal experience :) .");
 	}
-	else if(mood.equals("-d")){sentence("The wolf is faster you die");}
+	else if(mood.equals("-d")){
+		                       String mergeContinuationOfStory="The wolf is faster you die";
+		                       mergeContinuationOfStory+="\n You wake up and realise it was just a dream ,within a dream ,within a dream...\n so you decide to call DiCaprio to figure out what's going on.";
+		                       sentence(mergeContinuationOfStory);
+	                           }
 	else if(mood.equals("-f")){sentence("The wolf is stronger you die");}
 	else if(mood.equals("-g")){sentence("Your mum comes out of the woods kicks the wolf and saves you!! You lucky scum.  ");}
 	else {
@@ -47,8 +51,8 @@ public class ExcitingStory {
 
 	Scanner scanner = new Scanner(System.in);
 	String m = scanner.nextLine();
-
 	answer(m);
+
 sentence("Suddenly a wolf comes out of the wood" + newLine + "How do you react??" + newLine + "-d.Run"+ newLine +"-f.Fight"+ newLine +"-g.Call your mum(mummas little boy) ");
 String wolf = scanner.nextLine();
 answer(wolf);
