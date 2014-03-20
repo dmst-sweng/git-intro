@@ -56,7 +56,8 @@ public class ExcitingStory {
 sentence("Suddenly a wolf comes out of the wood" + newLine + "How do you react??" + newLine + "-d.Run"+ newLine +"-f.Fight"+ newLine +"-g.Call your mum(mummas little boy) ");
 String wolf = scanner.nextLine();
 answer(wolf);
-
+if (wolf.equals("-g"))
+	sentence("But, although you survived, a big brown bear is approaching on your way home!");
     }
 
 }
