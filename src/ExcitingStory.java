@@ -103,9 +103,47 @@ public class ExcitingStory {
 		else if(answer.equals("-g")) {
 			sentence("Your mum comes out of the woods kicks the wolf and saves you!! You lucky scum.");
 			sentence("But, although you survived, a big brown bear is approaching you on your way home!You have to do something!");
+			sentence("What are your options? "+newLine2+ "-k.Give the bear some honey " +newLine2+ "-l.Call Mum, again!!" );
+			
+			Scanner scanner = new Scanner(System.in);
+			String bear = scanner.nextLine();
+			
+			while (!(bear.equals("-k") || bear.equals("-l") )) {
+			
+			    sentence("You can only type -k or -l "+newLine2+ "Please Try Again");
+		        bear=scanner.nextLine();
+			}
+			
+			reactionToBearAppearance(bear);
+			
 		}
 
 
+	}
+	
+	/**
+	*	This function is used to inform the reader about the outcome of his choice to the bear appearance.
+	*
+	*	@param answer The answer of the reader.
+	*/
+	public static void reactionToBearAppearance(String answer) {
+	
+		String newLine = System.getProperty("line.separator");
+		
+		if(answer.equals("-k")) {
+	
+			String continuationOfStory="The bear seems to like the honey. This could be a good moment to try running away slowly... ";
+		    sentence(continuationOfStory);
+		}
+		else if (answer.equals("-l")) {
+		
+			String continuationOfStory="It's mum's Tee time. You are on your own!! ";
+		    sentence(continuationOfStory);
+		
+		}
+	
+	
+	
 	}
 
     public static void main(String[] args) {
