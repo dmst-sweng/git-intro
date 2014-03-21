@@ -42,12 +42,43 @@ public class ExcitingStory {
 	 * Function that is used to create a happy story.
 	 */
 	static void tellHappyStory(String newLine) {
+		Scanner input = new Scanner(System.in);
+		String answer;
+		
 		sentence("Our proposal is to take a day-off and relax, everything is ok!!!");
 		sentence("It doesn't matter if there is a storm outside , you can still sit next to the fireplace and enjoy your hot chocolate.");
+		sentence("Suddenly you hear the door bell. Who can it be outside in such a stormy night?");
+		sentence("What do you do?" + newLine + "-o.\tYou are curious and you open the door" + newLine + "-i.\tIgnore the bell. Relax and enjoy your chocolate.");
+		
+		answer = input.nextLine();
+		
+		while(! ( answer.equals("-o") || answer.equals("-i") ) ) {
+			sentence("Wrong choice. Your choices are -o or -i. Please try again." + newLine);
+			sentence("What do you do?" + newLine + "-o.\tYou are curious and you open the door" + newLine + "-i.\tIgnore the bell. Relax and enjoy your chocolate.");
+		}
+		
+		reactionToDoorBell(answer , newLine);
 	}
 
 	/**
-	 * Function that is used to create a Adventure story.
+	 * This function is used to inform the reader about the outcome of his reaction to the door bell.
+	 *
+	 * @param answer The reader's answer.
+	 * @param newLine The line separator String.
+	 */
+	static void reactionToDoorBell(String answer , String newLine) {
+		
+		if(answer.equals("-o")) {
+			sentence("It's a courier." + newLine + "-Congratulations Sir , you have just won 5.000.000$ in the lottery" + newLine + "You can just not believe your luck and you faint...");
+		}
+		
+		else if(answer.equals("-i")) {
+			sentence("Great choice! It was your annoying neighboor. He would probably wanted some sugar... for the 25th time this week.");
+		}
+	}
+
+	/**
+	 * Function that is used to create an Adventure story.
 	 */
 	static void tellAdventureStory(String newLine) {
 		sentence("Suddenly a wolf comes out of the wood" + newLine + "How do you react??" + newLine + "-d.Run"+ newLine +"-f.Fight"+ newLine +"-g.Call your mum(mummas little boy) ");
@@ -57,7 +88,8 @@ public class ExcitingStory {
 		 while (!(wolf.equals("-d") || wolf.equals("-f") || wolf.equals("-g")) ) {
 			    sentence("You can only Type -d or -f or -g"+newLine+ "Please Try Again");
 		          wolf=scanner.nextLine();
- }
+		 }
+		 
 		reactionToWolfAppearance(wolf);
 	}
 
@@ -114,18 +146,15 @@ public class ExcitingStory {
 		        bear=scanner.nextLine();
 			}
 			
-			reactionToBearAppearance(bear);
-			
+			reactionToBearAppearance(bear);	
 		}
-
-
 	}
 	
-	/**
-	*	This function is used to inform the reader about the outcome of his choice to the bear appearance.
-	*
-	*	@param answer The answer of the reader.
-	*/
+   /**
+	 *	This function is used to inform the reader about the outcome of his choice to the bear appearance.
+	 *
+	 *	@param answer The answer of the reader.
+	 */
 	public static void reactionToBearAppearance(String answer) {
 	
 		String newLine = System.getProperty("line.separator");
@@ -141,9 +170,6 @@ public class ExcitingStory {
 		    sentence(continuationOfStory);
 		
 		}
-	
-	
-	
 	}
 
     public static void main(String[] args) {
@@ -153,11 +179,11 @@ public class ExcitingStory {
 		sentence("It was a dark and stormy night.");
 		sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c"+ newLine + "If you want science fiction, choose -d");
 
-/* Initial choice of the reader among Happy, Horryfying and Adventure Story */
+/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
 String m=scanner.nextLine();
 
-/* A loop which force the user to insert the correct character (-a or -b or -c) */
+/* A loop which force the user to insert the correct character (-a or -b or -c or -d) */
  while (!(m.equals("-a") || m.equals("-b") || m.equals("-c")|| m.equals("-d")) ) {
 	    sentence("You can only Type -a or -b or -c or -d"+newLine+ "Please Try Again");
           m=scanner.nextLine();
