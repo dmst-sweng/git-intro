@@ -21,7 +21,15 @@ public class ExcitingStory {
     static void sentence(String s) {
 		System.out.println(s);
     }
-
+    
+	/**
+	 * Function that is used to create a science fiction story.
+	 */
+    static void tellScienceFictionStory(String newLine) {
+		sentence("And suddenly, a biiiiiig light appears in the sky.");
+		sentence("Throught this light, two very big eyes were seeing everything!");
+		sentence("They were come closer and closer and then...Oh my god...I'm in the universe!");
+	}
 
 	/**
 	 * Function that is used to create a horryfying story.
@@ -92,11 +100,6 @@ public class ExcitingStory {
 					}
 			    }
 
-
-
-
-
-
 		else if(answer.equals("-g")) {
 			sentence("Your mum comes out of the woods kicks the wolf and saves you!! You lucky scum.");
 			sentence("But, although you survived, a big brown bear is approaching you on your way home!You have to do something!");
@@ -110,29 +113,29 @@ public class ExcitingStory {
 		String newLine = System.getProperty("line.separator");
 		Scanner scanner = new Scanner(System.in);
 		sentence("It was a dark and stormy night.");
-		sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c");
+		sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c"+ newLine + "If you want science fiction, choose -d");
 
 /* Initial choice of the reader among Happy, Horryfying and Adventure Story */
 
 String m=scanner.nextLine();
 
 /* A loop which force the user to insert the correct character (-a or -b or -c) */
- while (!(m.equals("-a") || m.equals("-b") || m.equals("-c")) ) {
-	    sentence("You can only Type -a or -b or -c"+newLine+ "Please Try Again");
+ while (!(m.equals("-a") || m.equals("-b") || m.equals("-c")|| m.equals("-d")) ) {
+	    sentence("You can only Type -a or -b or -c or -d"+newLine+ "Please Try Again");
           m=scanner.nextLine();
  }
 
 		if (m.equals("-a")) {
-			      tellHorrifyingStory(newLine);
-
-				}
-
-				else if (m.equals("-b")) {
-					tellHappyStory(newLine);
-				}
-
-				else if (m.equals("-c")) {
-					tellAdventureStory(newLine);
+			tellHorrifyingStory(newLine);
+		}
+		else if (m.equals("-b")) {
+			tellHappyStory(newLine);
+		}
+		else if (m.equals("-c")) {
+			tellAdventureStory(newLine);
+		}
+		else if (m.equals("-d")) {
+			tellScienceFictionStory(newLine);
 		}
     }
 
