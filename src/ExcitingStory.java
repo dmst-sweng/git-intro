@@ -81,7 +81,7 @@ public class ExcitingStory {
 	 * Function that is used to create an Adventure story.
 	 */
 	static void tellAdventureStory(String newLine) {
-		sentence("Suddenly a wolf comes out of the wood" + newLine + "How do you react??" + newLine + "-d.Run"+ newLine +"-f.Fight"+ newLine +"-g.Call your mum(mummas little boy) ");
+		sentence("Suddenly a wolf comes out of the wood" + newLine + "How do you react??" + newLine + "-d.\tRun"+ newLine +"-f.\tFight"+ newLine +"-g.\tCall your mum(mummas little boy) ");
 
 		Scanner scanner = new Scanner(System.in);
 		String wolf = scanner.nextLine();
@@ -135,7 +135,7 @@ public class ExcitingStory {
 		else if(answer.equals("-g")) {
 			sentence("Your mum comes out of the woods kicks the wolf and saves you!! You lucky scum.");
 			sentence("But, although you survived, a big brown bear is approaching you on your way home!You have to do something!");
-			sentence("What are your options? "+newLine2+ "-k.Give the bear some honey " +newLine2+ "-l.Call Mum, again!!" );
+			sentence("What are your options? "+newLine2+ "-k.\tGive the bear some honey " +newLine2+ "-l.\tCall Mum, again!!" );
 			
 			Scanner scanner = new Scanner(System.in);
 			String bear = scanner.nextLine();
