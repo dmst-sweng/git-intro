@@ -21,7 +21,7 @@ public class ExcitingStory {
     static void sentence(String s) {
 		System.out.println(s);
     }
-    
+
 	/**
 	 * Function that is used to create a science fiction story.
 	 */
@@ -30,6 +30,21 @@ public class ExcitingStory {
 		sentence("Throught this light, two very big eyes were seeing everything!");
 		sentence("They were come closer and closer and then...Oh my god...I'm in the universe!");
 	}
+
+	/**
+		 * Function that is used to create a real story.
+		 */
+	    static void telldifferentStory(String newLine) {
+			sentence("the rain fell in torrents ,except at occasional intervals,");
+			sentence("when it was checked by a violent gust of wind which ");
+			sentence("swept up the streets (for it is in London that our scene lies),");
+			sentence("rattling along the housetops,");
+			sentence("and fiercely agitating the scanty flame of the lamps ");
+			sentence("that struggled against the darkness...\n");
+			sentence("And of course... You are in front of your firplace,");
+		    sentence("safe and sound reading this book again! \n'Paul Clifford'");
+		}
+
 
 	/**
 	 * Function that is used to create a horryfying story.
@@ -44,19 +59,19 @@ public class ExcitingStory {
 	static void tellHappyStory(String newLine) {
 		Scanner input = new Scanner(System.in);
 		String answer;
-		
+
 		sentence("Our proposal is to take a day-off and relax, everything is ok!!!");
 		sentence("It doesn't matter if there is a storm outside , you can still sit next to the fireplace and enjoy your hot chocolate.");
 		sentence("Suddenly you hear the door bell. Who can it be outside in such a stormy night?");
 		sentence("What do you do?" + newLine + "-o.\tYou are curious and you open the door" + newLine + "-i.\tIgnore the bell. Relax and enjoy your chocolate.");
-		
+
 		answer = input.nextLine();
-		
+
 		while(! ( answer.equals("-o") || answer.equals("-i") ) ) {
 			sentence("Wrong choice. Your choices are -o or -i. Please try again." + newLine);
 			sentence("What do you do?" + newLine + "-o.\tYou are curious and you open the door" + newLine + "-i.\tIgnore the bell. Relax and enjoy your chocolate.");
 		}
-		
+
 		reactionToDoorBell(answer , newLine);
 	}
 
@@ -67,11 +82,11 @@ public class ExcitingStory {
 	 * @param newLine The line separator String.
 	 */
 	static void reactionToDoorBell(String answer , String newLine) {
-		
+
 		if(answer.equals("-o")) {
 			sentence("It's a courier." + newLine + "-Congratulations Sir , you have just won 5.000.000$ in the lottery" + newLine + "You can just not believe your luck and you faint...");
 		}
-		
+
 		else if(answer.equals("-i")) {
 			sentence("Great choice! It was your annoying neighboor. He would probably wanted some sugar... for the 25th time this week.");
 		}
@@ -89,7 +104,7 @@ public class ExcitingStory {
 			    sentence("You can only Type -d or -f or -g"+newLine+ "Please Try Again");
 		          wolf=scanner.nextLine();
 		 }
-		 
+
 		reactionToWolfAppearance(wolf);
 	}
 
@@ -136,39 +151,39 @@ public class ExcitingStory {
 			sentence("Your mum comes out of the woods kicks the wolf and saves you!! You lucky scum.");
 			sentence("But, although you survived, a big brown bear is approaching you on your way home!You have to do something!");
 			sentence("What are your options? "+newLine2+ "-k.\tGive the bear some honey " +newLine2+ "-l.\tCall Mum, again!!" );
-			
+
 			Scanner scanner = new Scanner(System.in);
 			String bear = scanner.nextLine();
-			
+
 			while (!(bear.equals("-k") || bear.equals("-l") )) {
-			
+
 			    sentence("You can only type -k or -l "+newLine2+ "Please Try Again");
 		        bear=scanner.nextLine();
 			}
-			
-			reactionToBearAppearance(bear);	
+
+			reactionToBearAppearance(bear);
 		}
 	}
-	
+
    /**
 	 *	This function is used to inform the reader about the outcome of his choice to the bear appearance.
 	 *
 	 *	@param answer The answer of the reader.
 	 */
 	public static void reactionToBearAppearance(String answer) {
-	
+
 		String newLine = System.getProperty("line.separator");
-		
+
 		if(answer.equals("-k")) {
-	
+
 			String continuationOfStory="The bear seems to like the honey. This could be a good moment to try running away slowly... ";
 		    sentence(continuationOfStory);
 		}
 		else if (answer.equals("-l")) {
-		
+
 			String continuationOfStory="It's mum's Tee time. You are on your own!! ";
 		    sentence(continuationOfStory);
-		
+
 		}
 	}
 
@@ -177,14 +192,14 @@ public class ExcitingStory {
 		String newLine = System.getProperty("line.separator");
 		Scanner scanner = new Scanner(System.in);
 		sentence("It was a dark and stormy night.");
-		sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c"+ newLine + "If you want science fiction, choose -d");
+		sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c"+ newLine + "If you want science fiction, choose -d"+ "If you want adventure, choose -c"+ newLine + "If you want a different story, choose -e");
 
 /* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
 String m=scanner.nextLine();
 
 /* A loop which force the user to insert the correct character (-a or -b or -c or -d) */
- while (!(m.equals("-a") || m.equals("-b") || m.equals("-c")|| m.equals("-d")) ) {
+ while (!(m.equals("-a") || m.equals("-b") || m.equals("-c")|| m.equals("-d")|| m.equals("-e")) ) {
 	    sentence("You can only Type -a or -b or -c or -d"+newLine+ "Please Try Again");
           m=scanner.nextLine();
  }
@@ -200,6 +215,9 @@ String m=scanner.nextLine();
 		}
 		else if (m.equals("-d")) {
 			tellScienceFictionStory(newLine);
+		}
+		else if (m.equals("-e")) {
+					telldifferentStory(newLine);
 		}
     }
 
