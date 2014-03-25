@@ -179,17 +179,17 @@ public class ExcitingStory {
                 sentence("i am home with blackout. darkness is everywhere. ");
         	sentence("Suddenly, i noticed a light from the apartment across the street.");
 		sentence("for no reason i started watching this window and something make me feel alone and unprotected.");
-										        	sentence("a man appeared behind this window. he was watching the storm. he make me feel scared. it was like he was looking into my eyes. but it is not possibly. he cannot see me. i am in the darkness.");
-												sentence("but i can see his look... ");
-												sentence("he is talking to someone, who i cannot see.");
-												sentence("now he has a spiteful laugh...");
-												sentence("a woman appears behind him and makes him a hug.");
-																					        sentence("she is beautiful. she has long red hair.");
-																						sentence("he turns  and put his hands around her neck.");
-																						sentence("he strangles her.");
-																						sentence("she is screaming but nothing sounds.");
-																						sentence("she falls at the floor. she is dead.");
-																						sentence("he turns to look at the window and he is happy...");
+	       	sentence("a man appeared behind this window. he was watching the storm. he make me feel scared. it was like he was looking into my eyes. but it is not possibly. he cannot see me. i am in the darkness.");
+		sentence("but i can see his look... ");
+		sentence("he is talking to someone, who i cannot see.");
+		sentence("now he has a spiteful laugh...");
+		sentence("a woman appears behind him and makes him a hug.");
+	        sentence("she is beautiful. she has long red hair.");
+	        sentence("he turns  and put his hands around her neck.");
+	        sentence("he strangles her.");
+		sentence("she is screaming but nothing sounds.");
+		sentence("she falls at the floor. she is dead.");
+		sentence("he turns to look at the window and he is happy...");
 
         }
 
