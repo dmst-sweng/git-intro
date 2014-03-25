@@ -175,7 +175,7 @@ public class ExcitingStory {
 		String newLine = System.getProperty("line.separator");
 		Scanner scanner = new Scanner(System.in);
 		sentence("It was a dark and stormy night.");
-		sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c"+ newLine + "If you want science fiction, choose -d"+ "If you want adventure, choose -c"+ newLine + "If you want a different story, choose -e");
+		sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e");
 
 		/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
@@ -183,7 +183,7 @@ public class ExcitingStory {
 
 		/* A loop which force the user to insert the correct character (-a or -b or -c or -d) */
 		while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e")) ) {
-			sentence("You can only Type -a or -b or -c or -d" +newLine+ "Please Try Again");
+			sentence("You can only Type -a or -b or -c or -d or -e" +newLine+ "Please Try Again");
 			m = scanner.nextLine();
 	 	}
 
