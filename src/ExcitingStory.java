@@ -54,6 +54,9 @@ public class ExcitingStory {
 
 	/**
 	 * Function that is used to create a happy story.
+	 *
+	 * @param newLine The line separator String.
+	 *
 	 */
 	static void tellHappyStory(String newLine) {
 		Scanner input = new Scanner(System.in);
@@ -79,7 +82,7 @@ public class ExcitingStory {
 	 *
 	 * @param answer The reader's answer.
 	 * @param newLine The line separator String.
- 
+
 	 */
 	static void reactionToDoorBell(String answer , String newLine) {
 
@@ -91,6 +94,9 @@ public class ExcitingStory {
 
 	/**
 	 * Function that is used to create an Adventure story.
+	 *
+	 * @param newLine The line separator String.
+     *
 	 */
 	static void tellAdventureStory(String newLine) {
 		sentence("Suddenly a wolf comes out of the wood" + newLine + "How do you react??" + newLine + "-d.\tRun"+ newLine +"-f.\tFight"+ newLine +"-g.\tCall your mum(mummas little boy) ");
@@ -173,6 +179,9 @@ public class ExcitingStory {
 
         /**
 	 * Function that is used to create a scary story.
+	 *
+	 * @param newLine The line separator String.
+	 *
  	 */
         public static void tellScaryStory(String newLine) {
 
@@ -211,8 +220,8 @@ public class ExcitingStory {
 			m = scanner.nextLine();
 
                 }
-										
 
+	  /* A statement that shows to the user the story depending the choice he made */
 		if (m.equals("-a"))
 			tellHorrifyingStory(newLine);
 		else if (m.equals("-b"))
