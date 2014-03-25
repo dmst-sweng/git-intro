@@ -79,6 +79,7 @@ public class ExcitingStory {
 	 *
 	 * @param answer The reader's answer.
 	 * @param newLine The line separator String.
+ 
 	 */
 	static void reactionToDoorBell(String answer , String newLine) {
 
@@ -170,22 +171,47 @@ public class ExcitingStory {
 		}
 	}
 
+        /**
+	 * Function that is used to create a scary story.
+ 	 */
+        public static void tellScaryStory(String newLine) {
+
+                sentence("i am home with blackout. darkness is everywhere. ");
+        	sentence("Suddenly, i noticed a light from the apartment across the street.");
+		sentence("for no reason i started watching this window and something make me feel alone and unprotected.");
+										        	sentence("a man appeared behind this window. he was watching the storm. he make me feel scared. it was like he was looking into my eyes. but it is not possibly. he cannot see me. i am in the darkness.");
+												sentence("but i can see his look... ");
+												sentence("he is talking to someone, who i cannot see.");
+												sentence("now he has a spiteful laugh...");
+												sentence("a woman appears behind him and makes him a hug.");
+																					        sentence("she is beautiful. she has long red hair.");
+																						sentence("he turns  and put his hands around her neck.");
+																						sentence("he strangles her.");
+																						sentence("she is screaming but nothing sounds.");
+																						sentence("she falls at the floor. she is dead.");
+																						sentence("he turns to look at the window and he is happy...");
+
+        }
+
     public static void main(String[] args) {
 
 		String newLine = System.getProperty("line.separator");
 		Scanner scanner = new Scanner(System.in);
 		sentence("It was a dark and stormy night.");
-		sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e");
+                sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f");
+
 
 		/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
 		String m=scanner.nextLine();
 
 		/* A loop which force the user to insert the correct character (-a or -b or -c or -d) */
-		while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e")) ) {
-			sentence("You can only Type -a or -b or -c or -d or -e" +newLine+ "Please Try Again");
+		while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")) ) {
+	        	sentence("You can only Type -a or -b or -c or -d or -e or -f" +newLine+ "Please Try Again");
 			m = scanner.nextLine();
-	 	}
+
+                }
+										
 
 		if (m.equals("-a"))
 			tellHorrifyingStory(newLine);
@@ -196,6 +222,8 @@ public class ExcitingStory {
 		else if (m.equals("-d"))
 			tellScienceFictionStory(newLine);
 		else if (m.equals("-e"))
-			telldifferentStory(newLine);
+		        telldifferentStory(newLine);
+		else if (m.equals("-f"))
+			tellScaryStory(newLine);
 	}
 }
