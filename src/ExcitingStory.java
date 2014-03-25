@@ -59,20 +59,25 @@ public class ExcitingStory {
 	 *
 	 */
 	static void tellHappyStory(String newLine) {
-		Scanner input = new Scanner(System.in);
-		String answer;
 
 		sentence("Our proposal is to take a day-off and relax, everything is ok!!!");
-		sentence("It doesn't matter if there is a storm outside , you can still sit next to the fireplace and enjoy your hot chocolate.");
+	    sentence("It doesn't matter if there is a storm outside , you can still sit next to the fireplace and enjoy your hot chocolate.");
 		sentence("Suddenly you hear the door bell. Who can it be outside in such a stormy night?");
 		sentence("What do you do?" + newLine + "-o.\tYou are curious and you open the door" + newLine + "-i.\tIgnore the bell. Relax and enjoy your chocolate.");
 
-		answer = input.nextLine();
 
-		while (! ( answer.equals("-o") || answer.equals("-i") ) ) {
-			sentence("Wrong choice. Your choices are -o or -i. Please try again." + newLine);
-			sentence("What do you do?" + newLine + "-o.\tYou are curious and you open the door" + newLine + "-i.\tIgnore the bell. Relax and enjoy your chocolate.");
+
+		Scanner input = new Scanner(System.in);
+		String answer = input.nextLine();
+
+
+        while (!(answer.equals("-o") || answer.equals("-i")))  {
+			sentence("You can only Type -o or -i "+newLine+ "Please Try Again");
+			answer = input.nextLine();
 		}
+
+
+
 
 		reactionToDoorBell(answer , newLine);
 	}
@@ -122,13 +127,13 @@ public class ExcitingStory {
     	String newLine2 = System.getProperty("line.separator");
 
 		if (answer.equals("-d")) {
-			String mergeContinuationOfStory="The wolf is faster you die";
-		    mergeContinuationOfStory+="\n You wake up and realise it was just a dream ,within a dream ,within a dream...\n so you decide to call DiCaprio to figure out what's going on.";
-		    sentence(mergeContinuationOfStory);
-		    sentence("  You call DiCaprio but he is on vacation.. So you go hunting ");
+			 sentence("The wolf is faster you die");
+		     sentence("You wake up and realise it was just a dream ,within a dream ,within a dream...");
+		     sentence("so you decide to call DiCaprio to figure out what's going on.");
+		     sentence("You call DiCaprio but he is on vacation.. So you go hunting ");
 	    } else if (answer.equals("-f")) {
 		  	Scanner scan = new Scanner(System.in);
-			sentence("Choose a weapon from your Bag:"+ newLine2 + "For AK47, choose -h" + newLine2 + "For beretta 92fs, choose -i" + newLine2 + "For Magnum 357, choose -j");
+			sentence("Choose a weapon from your Bag:"+ newLine2 + "-h.\tFor AK47, choose " + newLine2 + "-i.\tFor beretta 92fs, choose " + newLine2 + "-j.\tFor Magnum 357, choose -j");
 
 			String weapon = scan.nextLine();
 
@@ -185,20 +190,22 @@ public class ExcitingStory {
  	 */
         public static void tellScaryStory(String newLine) {
 
-                sentence("i am home with blackout. darkness is everywhere. ");
-        	sentence("Suddenly, i noticed a light from the apartment across the street.");
-		sentence("for no reason i started watching this window and something make me feel alone and unprotected.");
-	       	sentence("a man appeared behind this window. he was watching the storm. he make me feel scared. it was like he was looking into my eyes. but it is not possibly. he cannot see me. i am in the darkness.");
-		sentence("but i can see his look... ");
-		sentence("he is talking to someone, who i cannot see.");
-		sentence("now he has a spiteful laugh...");
-		sentence("a woman appears behind him and makes him a hug.");
-	        sentence("she is beautiful. she has long red hair.");
-	        sentence("he turns  and put his hands around her neck.");
-	        sentence("he strangles her.");
-		sentence("she is screaming but nothing sounds.");
-		sentence("she falls at the floor. she is dead.");
-		sentence("he turns to look at the window and he is happy...");
+                sentence("I am home with blackout. darkness is everywhere. ");
+        	    sentence("Suddenly, i noticed a light from the apartment across the street.");
+		        sentence("For no reason i started watching this window and something make me feel alone and unprotected.");
+	         	sentence("A man appeared behind this window.");
+	       	    sentence("he was watching the storm. he make me feel scared. it was like he was looking into my eyes.");
+	       	    sentence("But it is not possibly. He cannot see me. I am in the darkness.");
+		        sentence("But i can see his look... ");
+		        sentence("he is talking to someone, who i cannot see.");
+		        sentence("Now he has a spiteful laugh...");
+		        sentence("A woman appears behind him and makes him a hug.");
+	            sentence("She is beautiful. she has long red hair.");
+	            sentence("He turns  and put his hands around her neck.");
+	            sentence("He strangles her.");
+		        sentence("She is screaming but nothing sounds.");
+		        sentence("She falls at the floor. she is dead.");
+		        sentence("He turns to look at the window and he is happy...");
 
         }
 
@@ -207,7 +214,7 @@ public class ExcitingStory {
 		String newLine = System.getProperty("line.separator");
 		Scanner scanner = new Scanner(System.in);
 		sentence("It was a dark and stormy night.");
-                sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f");
+        sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f");
 
 
 		/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
