@@ -169,64 +169,21 @@ public class ExcitingStory {
 		    sentence(continuationOfStory);
 		}
 	}
-   /**
-	 *	This function is used to ask the user about his or her reaction after a mysterious event .
-	 */
-    public static void tellScaryNignt() {
-
-		Scanner scanner = new Scanner(System.in);
-
-		sentence("While you were bicycling suddenly you met an alone, exhausted, \nlittle girl in the middle of the road.");
-		sentence("So would you stop to help her?");
-		sentence("-If you would, press Y");
-		sentence("-If you would not, press N");
-
-		String m = scanner.nextLine();
-		while ( !(m.equals("Y") || m.equals("N")) ){
-			sentence("You can only type Y or N \n Please Try Again");
-			m = scanner.nextLine();
-		}
-		if (m.equals("Y")) {
-			sentence("You are such a kind person!");
-			sentence("So you decide to offer her help and put up her to your home for the rest of the");
-			sentence("night. You arrive at home and you offer her a warm blanket and a glass of milk.");
-			sentence("She looks so cute and gentle. After a moment you try to ask her what did");
-			sentence("happen and where was her family! But girl's expression suddenly changed ");
-			sentence("and bursted into tears without telling a world. Concurrently a strong thunder");
-			sentence("bursts and the light goes off! After few seconds the light goes on but the girl");
-			sentence("disappeared!!");
-			sentence("How would you explain this?");
-			sentence("1.Did you search into the rooms?");
-			sentence("2.Did you pass out? ");
-			sentence("Please select 1 or 2.");
-
-		    m = scanner.nextLine();
-			while (!(m.equals("1") || m.equals("2")) ) {
-				sentence("You can only type 1 or 2 \n Please Try Again");
-			    m = scanner.nextLine();
-			}
-        	if (m.equals("1"))
-        		sentence("It's so point less! You just been hunted by an evil ghost! \nxa xa xa xa xa xa xa xa!!");
-        	else
-        		sentence("Lucky for you it was just a dream!");
-        } else
-        	sentence("Bad for you because this girl was the ghost of a witch and she cursed you!");
-	}
 
     public static void main(String[] args) {
 
 		String newLine = System.getProperty("line.separator");
 		Scanner scanner = new Scanner(System.in);
 		sentence("It was a dark and stormy night.");
-		sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c"+ newLine +"If you want science fiction, choose -d"+ "If you want adventure, choose -c"+ newLine + "If you want a different story, choose -e"+ newLine +"If you decided to go for a commonly walk by your bike, choose -w");
+		sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c"+ newLine + "If you want science fiction, choose -d"+ "If you want adventure, choose -c"+ newLine + "If you want a different story, choose -e");
 
 		/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
-		String m = scanner.nextLine();
+		String m=scanner.nextLine();
 
 		/* A loop which force the user to insert the correct character (-a or -b or -c or -d) */
-		while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") ||  m.equals("-w")) ) {
-			sentence("You can only Type -a or -b or -c or -d or -w" +newLine+ "Please Try Again");
+		while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e")) ) {
+			sentence("You can only Type -a or -b or -c or -d" +newLine+ "Please Try Again");
 			m = scanner.nextLine();
 	 	}
 
@@ -240,8 +197,5 @@ public class ExcitingStory {
 			tellScienceFictionStory(newLine);
 		else if (m.equals("-e"))
 			telldifferentStory(newLine);
-		else if (m.equals("-w"))
-			tellScaryNignt();
-
 	}
 }
