@@ -28,7 +28,8 @@ public class ExcitingStory {
     static void tellScienceFictionStory(String newLine) {
 		sentence("And suddenly, a biiiiiig light appears in the sky.");
 		sentence("Throught this light, two very big eyes were seeing everything!");
-		sentence("They were come closer and closer and then...Oh my god...I'm in the universe!");
+		sentence("They were coming closer and closer and then...Oh my god...I'm in the universe!");
+		sentence("The sounds of creation, were bashing my ears, while an unrecognisable species, started talking to me!");
 	}
 
 	/**
@@ -43,6 +44,7 @@ public class ExcitingStory {
 		sentence("that struggled against the darkness...\n");
 		sentence("And of course... You are in front of your firplace,");
 		sentence("safe and sound reading this book again! \n'Paul Clifford'");
+		sentence("Yet, you feel it is time, you should close your book and start playing some Minecraft.");
 	}
 
 	/**
@@ -50,6 +52,7 @@ public class ExcitingStory {
 	 */
 	static void tellHorrifyingStory(String newLine) {
 		sentence("Good for you, cause weather forecast shows that tonight we'll have an equal experience :) .");
+		sentence("Where zombies and vampires collaborate to cease lifeforms that bllom in daylight.");
 	}
 
 	/**
@@ -313,6 +316,7 @@ public class ExcitingStory {
 		     sentence("You wake up and realise it was just a dream ,within a dream ,within a dream...");
 		     sentence("so you decide to call DiCaprio to figure out what's going on.");
 		     sentence("You call DiCaprio but he is on vacation.. So you go hunting ");
+		     sentence("But while you are haunting, THE EXACT same wolf attacks you, and chops your FREAKING EAR OFF! ");
 	    } else if (answer.equals("-f")) {
 		  	Scanner scan = new Scanner(System.in);
 			sentence("Choose a weapon from your Bag:"+ newLine2 + "-h.\tFor AK47, choose " + newLine2 + "-i.\tFor beretta 92fs, choose " + newLine2 + "-j.\tFor Magnum 357, choose -j");
@@ -388,6 +392,7 @@ public class ExcitingStory {
 		        sentence("She is screaming but nothing sounds.");
 		        sentence("She falls at the floor. she is dead.");
 		        sentence("He turns to look at the window and he is happy...");
+		        sentence("He suddnely starts laughing hysterically, and looks at you again!");
 
         }
 
