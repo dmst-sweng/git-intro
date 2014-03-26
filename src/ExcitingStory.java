@@ -114,7 +114,10 @@ static void eyesWideShut(String newLine) {
 		sentence("And then it hit me! It litterarly hit me. A car went through my bedroom window and hit me.");
 		sentence("My girlfriend was sitting right beside me screaming and crying. I never oppened my eyes again, I died with a smile on my lips");
 	}
+static void shortStory(String newLine) {
+		sentence("and that was pretty much it.");
 
+	}
 
 	/**
 	 * This function is used to inform the reader about the outcome of his reaction to the door bell.
@@ -537,15 +540,15 @@ static void eyesWideShut(String newLine) {
 		while(b.equals("-yes")){
 
 			sentence("It was a dark and stormy night.");
-        	sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g"+ newLine + "If you want to know what I think about this night, choose -h" + newLine + "If you don't care that is a dark night and just want to read the worthTellingStory, choose -i" + newLine +  "if you are bored to read a story, choose -m"+ newLine +  "if you want to read a breathtaking story, choose -n" + newLine + "If you decided to go for a commonly walk by your bike, choose -w");
+        	sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g"+ newLine + "If you want to know what I think about this night, choose -h" + newLine + "If you don't care that is a dark night and just want to read the worthTellingStory, choose -i" + newLine +  "if you are bored to read a story, choose -m"+ newLine +  "if you want to read a breathtaking story, choose -n" + newLine +"if you want to read a short story, choose - o" + newLine + "If you decided to go for a commonly walk by your bike, choose -w");
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
 			String m=scanner.nextLine();
 
 			/* A loop which force the user to insert the correct character (-a or -b or -c or -d) */
-			while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")|| m.equals("-g")|| m.equals("-h") || m.equals("-i") || m.equals("-m") || m.equals("-n") ||  m.equals("-w")) ) {
-	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -n" +newLine+ "Please Try Again");
+			while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")|| m.equals("-g")|| m.equals("-h") || m.equals("-i") || m.equals("-m") || m.equals("-n") ||  m.equals("-w") || m.equals("-o")) ) {
+	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -n or -o" +newLine+ "Please Try Again");
 
 				m = scanner.nextLine();
 
@@ -576,7 +579,8 @@ static void eyesWideShut(String newLine) {
 				tellScaryNignt();
 			else if (m.equals("-n"))
 			    eyesWideShut(newLine) ;
-
+			else if (m.equals("-o"))
+			    shortStory(newLine) ;
 			sentence(newLine + "Would you like to read another story?Answer -yes or -no");
 			b = scanner.nextLine();
 
