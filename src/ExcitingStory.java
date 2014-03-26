@@ -28,7 +28,8 @@ public class ExcitingStory {
     static void tellScienceFictionStory(String newLine) {
 		sentence("And suddenly, a biiiiiig light appears in the sky.");
 		sentence("Throught this light, two very big eyes were seeing everything!");
-		sentence("They were come closer and closer and then...Oh my god...I'm in the universe!");
+		sentence("They were coming closer and closer and then...Oh my god...I'm in the universe!");
+		sentence("Giant Wyrms were raiding a vilage on a nearby planet so i decided to go and help them.");
 	}
 
 	/**
@@ -103,12 +104,34 @@ static void lostInThoughts(String newLine) {
 	 */
 	static void reactionToDoorBell(String answer , String newLine) {
 
-		if (answer.equals("-o"))
+		if (answer.equals("-o")) {
 			sentence("It's a courier." + newLine + "-Congratulations Sir , you have just won 5.000.000$ in the lottery" + newLine + "You can just not believe your luck and you faint...");
+			sentence("You wake up, on the couch, covered with a blanket. The courier sits in a chair next to the fire. What are you going to do?" + newLine + "-y.\t Become friends." + newLine + "-z.\t Say thanks and send him away.");
+
+			Scanner input_x = new Scanner(System.in);
+			String your_answer = input_x.nextLine();
+
+			while (!(answer.equals("-y") || answer.equals("-z")))  {
+				sentence("You can only Type -y or -z "+newLine+ "Please Try Again");
+				your_answer = input_x.nextLine();
+			}
+			reactionToCourier(answer , newLine);
+		}
 		else if (answer.equals("-i"))
 			sentence("Great choice! It was your annoying neighboor. He would probably wanted some sugar... for the 25th time this week.");
 	}
 
+	/**
+	  * Funktion that is used to print the outcome of the reaction to the courier
+	  */
+
+	static void reactionToCourier(String answer , String newLine) {
+		if (answer.equals("-y"))
+			sentence("You become best friend and travel to Vegas and get married");
+
+		else if (answer.equals("-z"))
+			sentence("He is a little disaponted but leaves without causing any problem.");
+		}
            /**
 		   	 * Function that is used to create a Creepy story.
 		   	 */
