@@ -218,23 +218,23 @@ public class ExcitingStory {
 		   		 String newLineD = System.getProperty("line.separator");
 
 		   		 if (answer.equals("-a")){
-		   		 				sentence("As you walk towards the mirror,you notice something very strange."
-		   						+newLineD+"Your reflection on the cracked mirror won't mimic your movement.\nActually it won't move at all!"
-		   						+newLineD+"It's just standing there...looking at a spot right over your left shoulder..."
-		   						+newLineD+"You slowly turn your head when you feel a cold hand grasping your neck."
-		   						+newLineD+"How do you react?"
-		   						+newLineD+"-a I run as fast as i can and  try to get out."
-		   						+newLineD+"-b I close my eyes and try to convince myself that everything is in my head"
-		   							);
-		   							Scanner scan1 = new Scanner(System.in);
-		   									String Reaction3 = scan1.nextLine();
+		   		 	sentence("As you walk towards the mirror,you notice something very strange."
+		   			+newLineD+"Your reflection on the cracked mirror won't mimic your movement.\nActually it won't move at all!"
+		   			+newLineD+"It's just standing there...looking at a spot right over your left shoulder..."
+		   			+newLineD+"You slowly turn your head when you feel a cold hand grasping your neck."
+		   			+newLineD+"How do you react?"
+		   			+newLineD+"-a I run as fast as i can and  try to get out."
+		   			+newLineD+"-b I close my eyes and try to convince myself that everything is in my head"
+		   				);
+		   				Scanner scan1 = new Scanner(System.in);
+		   				String Reaction3 = scan1.nextLine();
 
-		   							while (!(Reaction3.equals("-a") || Reaction3.equals("-b")) ) {
-		   										sentence("You can only Type -a or -b"+newLineD+ "Please Try Again");
-		   											Reaction3 = scan1.nextLine();
-		   					                   }
-		                                reactionToUnsettlingEvent(Reaction3,newLineD);
-		   							}
+		   					while (!(Reaction3.equals("-a") || Reaction3.equals("-b")) ) {
+		   						sentence("You can only Type -a or -b"+newLineD+ "Please Try Again");
+		   						Reaction3 = scan1.nextLine();
+		   					         }
+		                    reactionToUnsettlingEvent(Reaction3,newLineD);
+		   				    }
 		   		 			else{
 		   				     happyEnd(newLineD);
 		   				    }
