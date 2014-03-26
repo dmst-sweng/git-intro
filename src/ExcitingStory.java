@@ -29,6 +29,7 @@ public class ExcitingStory {
 		sentence("And suddenly, a biiiiiig light appears in the sky.");
 		sentence("Throught this light, two very big eyes were seeing everything!");
 		sentence("They were come closer and closer and then...Oh my god...I'm in the universe!");
+		sentence ("I can see lots of stars and i am a little overwelmed.");
 	}
 
 	/**
@@ -50,6 +51,7 @@ public class ExcitingStory {
 	 */
 	static void tellHorrifyingStory(String newLine) {
 		sentence("Good for you, cause weather forecast shows that tonight we'll have an equal experience :) .");
+		sentence ("So the horrifing adventure begins. You walk down an isle and you see blood running off the walls.");
 	}
 
 	/**
