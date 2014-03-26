@@ -440,6 +440,8 @@ public class ExcitingStory {
 		   sentence("The end. ");
 	   }
 
+       /**      main method*/
+
     public static void main(String[] args) {
 
 		String newLine = System.getProperty("line.separator");
