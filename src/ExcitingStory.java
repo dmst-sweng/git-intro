@@ -82,6 +82,18 @@ public class ExcitingStory {
 		reactionToDoorBell(answer , newLine);
 	}
 
+
+static void lostInThoughts(String newLine) {
+		sentence("and you could only hear the rain and the wind.");
+		sentence("I couldn't stop thinking about what had just happened. Jolene will probably never speak to me again.");
+		sentence("Of course I deserve it. Yes, yes I certainly deserve it. I ruined everything.");
+		sentence("And then, all these rhinoceros around me. Maybe they were happier than me, after all they were just animals.");
+		sentence("Maybe I should become a rhinoceros too. Of course then, I would lose Jolene forever. Oh God, I don't know what to do.");
+		sentence("I will go home and think about it. Anyway, now I don't have much left to keep me happy as a human. Yes definately as a rhinoceros I would be happier.");
+	}
+
+
+
 	/**
 	 * This function is used to inform the reader about the outcome of his reaction to the door bell.
 	 *
@@ -384,7 +396,7 @@ public class ExcitingStory {
 		String newLine = System.getProperty("line.separator");
 		Scanner scanner = new Scanner(System.in);
 		sentence("It was a dark and stormy night.");
-        sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g");
+        sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g"+ newLine + "If you want to know what Ithink about this night, choose -h");
 
 
 		/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
@@ -392,8 +404,8 @@ public class ExcitingStory {
 		String m=scanner.nextLine();
 
 		/* A loop which force the user to insert the correct character (-a or -b or -c or -d) */
-		while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")|| m.equals("-g")) ) {
-	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g" +newLine+ "Please Try Again");
+		while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")|| m.equals("-g")|| m.equals("-h") ) ) {
+	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h" +newLine+ "Please Try Again");
 			m = scanner.nextLine();
 
                 }
@@ -413,5 +425,7 @@ public class ExcitingStory {
 			tellScaryStory(newLine);
 		else if (m.equals("-g"))
 			tellCreepyStory(newLine);
+		else if (m.equals("-h"))
+			lostInThoughts(newLine);
 	}
 }
