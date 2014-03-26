@@ -83,7 +83,7 @@ public class ExcitingStory {
 	}
 
 
-static void lostInThoughts(String newLine) {
+	static void lostInThoughts(String newLine) {
 		sentence("and you could only hear the rain and the wind.");
 		sentence("I couldn't stop thinking about what had just happened. Jolene will probably never speak to me again.");
 		sentence("Of course I deserve it. Yes, yes I certainly deserve it. I ruined everything.");
@@ -391,41 +391,55 @@ static void lostInThoughts(String newLine) {
 
         }
 
+
     public static void main(String[] args) {
 
 		String newLine = System.getProperty("line.separator");
 		Scanner scanner = new Scanner(System.in);
-		sentence("It was a dark and stormy night.");
-        sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g"+ newLine + "If you want to know what Ithink about this night, choose -h");
+		String b = "yes";
+		while(b.equals("yes")){
+
+			sentence("It was a dark and stormy night.");
+        	sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g"+ newLine + "If you want to know what I think about this night, choose -h");
 
 
-		/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
+			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
-		String m=scanner.nextLine();
+			String m=scanner.nextLine();
 
-		/* A loop which force the user to insert the correct character (-a or -b or -c or -d) */
-		while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")|| m.equals("-g")|| m.equals("-h") ) ) {
+			/* A loop which force the user to insert the correct character (-a or -b or -c or -d) */
+			while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")|| m.equals("-g")|| m.equals("-h") ) ) {
 	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h" +newLine+ "Please Try Again");
-			m = scanner.nextLine();
+				m = scanner.nextLine();
 
                 }
 
-	  /* A statement that shows to the user the story depending the choice he made */
-		if (m.equals("-a"))
-			tellHorrifyingStory(newLine);
-		else if (m.equals("-b"))
-			tellHappyStory(newLine);
-		else if (m.equals("-c"))
-			tellAdventureStory(newLine);
-		else if (m.equals("-d"))
-			tellScienceFictionStory(newLine);
-		else if (m.equals("-e"))
+	 	 /* A statement that shows to the user the story depending the choice he made */
+			if (m.equals("-a"))
+				tellHorrifyingStory(newLine);
+			else if (m.equals("-b"))
+				tellHappyStory(newLine);
+			else if (m.equals("-c"))
+				tellAdventureStory(newLine);
+			else if (m.equals("-d"))
+				tellScienceFictionStory(newLine);
+			else if (m.equals("-e"))
 		        telldifferentStory(newLine);
-		else if (m.equals("-f"))
-			tellScaryStory(newLine);
-		else if (m.equals("-g"))
-			tellCreepyStory(newLine);
-		else if (m.equals("-h"))
-			lostInThoughts(newLine);
+			else if (m.equals("-f"))
+				tellScaryStory(newLine);
+			else if (m.equals("-g"))
+				tellCreepyStory(newLine);
+			else if (m.equals("-h"))
+				lostInThoughts(newLine);
+			}
+
+		sentence("Would you like to read another story?Answer yes or no");
+		b = scanner.nextLine();
+
+		while(!(b.equals("yes")) || (b.equals("no"))){
+			sentence("You can only type yes or no" + newLine + "Please Try Again");
+			b=scanner.nextLine();
+		}
 	}
 }
+
