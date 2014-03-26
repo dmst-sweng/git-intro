@@ -29,6 +29,7 @@ public class ExcitingStory {
 		sentence("And suddenly, a biiiiiig light appears in the sky.");
 		sentence("Throught this light, two very big eyes were seeing everything!");
 		sentence("They were come closer and closer and then...Oh my god...I'm in the universe!");
+		sentence ("I can see lots of stars and i am a little overwelmed.");
 	}
 
 	/**
@@ -50,6 +51,7 @@ public class ExcitingStory {
 	 */
 	static void tellHorrifyingStory(String newLine) {
 		sentence("Good for you, cause weather forecast shows that tonight we'll have an equal experience :) .");
+		sentence ("So the horrifing adventure begins. You walk down an isle and you see blood running off the walls.");
 	}
 
 	/**
@@ -404,8 +406,8 @@ public class ExcitingStory {
 
 		String newLine = System.getProperty("line.separator");
 		Scanner scanner = new Scanner(System.in);
-		String b = "yes";
-		while(b.equals("yes")){
+		String b = "-yes";
+		while(b.equals("-yes")){
 
 			sentence("It was a dark and stormy night.");
         	sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g"+ newLine + "If you want to know what I think about this night, choose -h" + newLine + "if you are bored to read a story, choose -m");
@@ -422,7 +424,7 @@ public class ExcitingStory {
 
                 }
 
-	 	 /* A statement that shows to the user the story depending the choice he made */
+	 		 /* A statement that shows to the user the story depending the choice he made */
 			if (m.equals("-a"))
 				tellHorrifyingStory(newLine);
 			else if (m.equals("-b"))
@@ -439,17 +441,23 @@ public class ExcitingStory {
 				tellCreepyStory(newLine);
 			else if (m.equals("-h"))
 				lostInThoughts(newLine);
+<<<<<<< HEAD
 			else if (m.equals("-m"))
 			    bored(newLine);
 			}
+=======
+>>>>>>> 4169103170a64c6c5fb7538b952fd219a93f2f92
 
-		sentence("Would you like to read another story?Answer yes or no");
-		b = scanner.nextLine();
 
-		while(!(b.equals("yes")) || (b.equals("no"))){
-			sentence("You can only type yes or no" + newLine + "Please Try Again");
-			b=scanner.nextLine();
-		}
+			sentence(newLine + "Would you like to read another story?Answer -yes or -no");
+			b = scanner.nextLine();
+
+			while(!((b.equals("-yes"))||(b.equals("-no")))){
+				sentence("You can only type -yes or -no" + newLine + "Please Try Again");
+				b=scanner.nextLine();
+			}
+
 	}
+}
 }
 
