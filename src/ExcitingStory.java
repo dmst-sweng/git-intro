@@ -364,7 +364,7 @@ public class ExcitingStory {
 		} else if ( answer.equals("-g")) {
 			sentence("Your mum comes out of the woods kicks the wolf and saves you!! You lucky scum.");
 			sentence("But, although you survived, a big brown bear is approaching you on your way home!You have to do something!");
-			sentence("What are your options? "+newLine2+ "-k.\tGive the bear some honey " +newLine2+ "-l.\tCall Mum, again!!" );
+			sentence("What are your options? "+newLine2+ "-k.\tGive the bear some honey  (M≈À… ¡‘‘… «”)" +newLine2+ "-l.\tCall Mum, again!!" );
 
 			Scanner scanner = new Scanner(System.in);
 			String bear = scanner.nextLine();
