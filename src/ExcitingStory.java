@@ -99,6 +99,7 @@ public class ExcitingStory {
 		sentence("And then, all these rhinoceros around me. Maybe they were happier than me, after all they were just animals.");
 		sentence("Maybe I should become a rhinoceros too. Of course then, I would lose Jolene forever. Oh God, I don't know what to do.");
 		sentence("I will go home and think about it. Anyway, now I don't have much left to keep me happy as a human. Yes definately as a rhinoceros I would be happier.");
+		sentence("Who cares about rhinos???");
 	}
 
 
