@@ -150,14 +150,14 @@ public class ExcitingStory {
 				sentence("You can't shoot the wolf due to a gun engagement.......");
 		} else if ( answer.equals("-g")) {
 			sentence("Your mum comes out of the woods kicks the wolf and saves you!! You lucky scum.");
-			sentence("But, although you survived, a big brown bear is approaching you on your way home!You have to do something!");
-			sentence("What are your options? "+newLine2+ "-k.\tGive the bear some honey " +newLine2+ "-l.\tCall Mum, again!!" );
+			sentence("But, even though you survived, a big brown bear is approaching you on your way home!You have to do something!");
+			sentence("What are your options? "+newLine2+ "-k.\tGive the bear some honey " + newLine2 + "-d.\tPlay dead " + newLine2 + "-l.\tCall Mum, again!!" );
 
 			Scanner scanner = new Scanner(System.in);
 			String bear = scanner.nextLine();
 
-			while (!(bear.equals("-k") || bear.equals("-l") )) {
-				sentence("You can only type -k or -l "+newLine2+ "Please Try Again");
+			while (!(bear.equals("-k") || bear.equals("-l") || bear.equals("-d") )) {
+				sentence("You can only type -k or -d or -l "+newLine2+ "Please Try Again");
 				bear = scanner.nextLine();
 			}
 			reactionToBearAppearance(bear);
@@ -179,7 +179,12 @@ public class ExcitingStory {
 		} else if (answer.equals("-l")) {
 		  	String continuationOfStory = "It's mum's Tee time. You are on your own!! ";
 		    sentence(continuationOfStory);
+		} else if (answer.equals("-d")) {
+			String continuationOfStory = "The bear comes near you and smells you. You don't move at all...the bear is stupid and leaves. You survive lucky smartass...";
+		sentence(continuationOfStory);
 		}
+
+
 	}
 
         /**
