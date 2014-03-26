@@ -27,9 +27,11 @@ public class ExcitingStory {
 	 */
     static void tellScienceFictionStory(String newLine) {
 		sentence("And suddenly, a biiiiiig light appears in the sky.");
+		sentence("It was very bright");
 		sentence("Throught this light, two very big eyes were seeing everything!");
 		sentence("They were coming closer and closer and then...Oh my god...I'm in the universe!");
 		sentence ("I can see lots of stars and i am a little overwelmed.");
+		sentence("I was shocked, in fact");
 		sentence("The sounds of creation, were bashing my ears, while an unrecognisable species, started talking to me!");
 	}
 
