@@ -103,6 +103,18 @@ public class ExcitingStory {
 	}
 
 
+static void eyesWideShut(String newLine) {
+		sentence("I was alone in my bedroom and I closed my eyes. Just for an instance..");
+		sentence("Suddenly my bedroom disappeared and I was now standing in the middle of a dance hall");
+		sentence("Daft Punk was playing in the background and two dozens of people were dancing.");
+		sentence("It wasn't a normal dance, it was more like a ritual. Everyone was loosing his self to dance, but only I was about to get lucky.");
+		sentence("Masked men and women all dressed in black exchanged glances.");
+		sentence("No one paid attention to me, it was like I wasn't there, when out of the blue a woman's voice echoes in my mind.");
+		sentence("George! The voice screemed again and again.");
+		sentence("And then it hit me! It litterarly hit me. A car went through my bedroom window and hit me.");
+		sentence("My girlfriend was sitting right beside me screaming and crying. I never oppened my eyes again, I died with a smile on my lips");
+	}
+
 
 	/**
 	 * This function is used to inform the reader about the outcome of his reaction to the door bell.
@@ -451,14 +463,14 @@ public class ExcitingStory {
                 sentence("Soon the hat began to fill up. A lot more people were giving money to the blind boy.");
                 sentence("That afternoon the man who had changed the sign came to see how things were.");
                 sentence("The boy recognized his footsteps and asked, 'Were u the one who changed my sign this morning? What did u write?'");
-                sentence("The man said, 'I only wrote the truth. I said what u said but in a different way'."); 
+                sentence("The man said, 'I only wrote the truth. I said what u said but in a different way'.");
                 sentence("What he had written was: 'Today is a beautiful day & I cannot see it.' ");
 
                 sentence("Moral of the Story: ");
                 sentence("Be thankful for what you have.");
                 sentence("Be creative. Be innovative. Think differently and positively.");
-        	    
-			
+
+
         }
 
 
@@ -482,7 +494,7 @@ public class ExcitingStory {
 		while(b.equals("-yes")){
 
 			sentence("It was a dark and stormy night.");
-        	sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g"+ newLine + "If you want to know what I think about this night, choose -h" + newLine + "If you don't care that is a dark night and just want to read the worthTellingStory, choose -i" + newLine +  "if you are bored to read a story, choose -m");
+        	sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g"+ newLine + "If you want to know what I think about this night, choose -h" + newLine + "If you don't care that is a dark night and just want to read the worthTellingStory, choose -i" + newLine +  "if you are bored to read a story, choose -m"+ newLine +  "if you want to read a breathtaking story, choose -n");
 
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
@@ -490,8 +502,8 @@ public class ExcitingStory {
 			String m=scanner.nextLine();
 
 			/* A loop which force the user to insert the correct character (-a or -b or -c or -d) */
-			while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")|| m.equals("-g")|| m.equals("-h") || m.equals("-i") || m.equals("-m")) ) {
-	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i" +newLine+ "Please Try Again");
+			while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")|| m.equals("-g")|| m.equals("-h") || m.equals("-i") || m.equals("-m") || m.equals("-n")) ) {
+	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -n" +newLine+ "Please Try Again");
 				m = scanner.nextLine();
 
                 }
@@ -517,8 +529,10 @@ public class ExcitingStory {
 				worthTellingStory(newLine);
 			else if (m.equals("-m"))
 			    bored(newLine);
+			else if (m.equals("-n"))
+			    eyesWideShut(newLine) ;
 
-			
+
 
 
 
