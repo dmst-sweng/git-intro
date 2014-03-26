@@ -483,6 +483,8 @@ public class ExcitingStory {
         	sentence("Bad for you because this girl was the ghost of a witch and she cursed you!");
 	}
 
+       /**      main method*/
+
     public static void main(String[] args) {
 
 		String newLine = System.getProperty("line.separator");
