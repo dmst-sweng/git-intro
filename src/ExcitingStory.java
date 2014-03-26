@@ -427,8 +427,11 @@ public class ExcitingStory {
 		        sentence("She falls at the floor. she is dead.");
 		        sentence("He turns to look at the window and he is happy...");
 		        sentence("He is happy and high listening to the legend Bob Marley");
-		        sentence("He suddnely starts laughing hysterically, and looks at you again!");
-
+		        sentence("He suddnely starts laughing hysterically, and looks at me again!");
+                        sentence("I feel more scared now and I run to the phone to call the police!");
+			sentence("The phone doesn't work...");
+			sentence("Suddenly I heard a voice behind me.");
+			sentence("The man was at my back with a bloody knife...");
         }
 
         /**
