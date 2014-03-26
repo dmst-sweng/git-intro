@@ -391,6 +391,14 @@ public class ExcitingStory {
 
         }
 
+        /**
+			 *	This function is used for readers who get bored easily.
+			 *
+			 *	@param answer The answer of the reader.
+	   */
+	   public static void bored(String newLine) {
+		   sentence("The end. ");
+	   }
 
     public static void main(String[] args) {
 
@@ -400,7 +408,7 @@ public class ExcitingStory {
 		while(b.equals("yes")){
 
 			sentence("It was a dark and stormy night.");
-        	sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g"+ newLine + "If you want to know what I think about this night, choose -h");
+        	sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g"+ newLine + "If you want to know what I think about this night, choose -h" + newLine + "if you are bored to read a story, choose -m");
 
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
@@ -408,7 +416,7 @@ public class ExcitingStory {
 			String m=scanner.nextLine();
 
 			/* A loop which force the user to insert the correct character (-a or -b or -c or -d) */
-			while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")|| m.equals("-g")|| m.equals("-h") ) ) {
+			while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")|| m.equals("-g")|| m.equals("-h") || m.equals("-m")) ) {
 	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h" +newLine+ "Please Try Again");
 				m = scanner.nextLine();
 
@@ -431,6 +439,8 @@ public class ExcitingStory {
 				tellCreepyStory(newLine);
 			else if (m.equals("-h"))
 				lostInThoughts(newLine);
+			else if (m.equals("-m"))
+			    bored(newLine);
 			}
 
 		sentence("Would you like to read another story?Answer yes or no");
