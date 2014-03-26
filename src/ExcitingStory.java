@@ -434,6 +434,35 @@ public class ExcitingStory {
 			sentence("The man was at my back with a bloody knife...");
         }
 
+
+  /**
+	 * This function is used to inform the reader about a worthtelling story
+	 *
+	 * @param newLine The line separator String.
+	 *
+ 	 */
+        public static void worthTellingStory(String newLine10) {
+
+                sentence("A blind boy sat on the steps of a building with a hat by his feet.");
+                sentence("He held up a sign which said: 'I am blind, please help'. There were only a few coins in the hat.");
+                sentence("A man was walking by. He took a few coins from his pocket and dropped them into the hat. He then took the sign,");
+                sentence("turned it around, and wrote some words.");
+                sentence("He put the sign back so that everyone who walked by would see the new words.");
+                sentence("Soon the hat began to fill up. A lot more people were giving money to the blind boy.");
+                sentence("That afternoon the man who had changed the sign came to see how things were.");
+                sentence("The boy recognized his footsteps and asked, 'Were u the one who changed my sign this morning? What did u write?'");
+                sentence("The man said, 'I only wrote the truth. I said what u said but in a different way'."); 
+                sentence("What he had written was: 'Today is a beautiful day & I cannot see it.' ");
+
+                sentence("Moral of the Story: ");
+                sentence("Be thankful for what you have.");
+                sentence("Be creative. Be innovative. Think differently and positively.");
+        	    
+			
+        }
+
+
+
         /**
 			 *	This function is used for readers who get bored easily.
 			 *
@@ -453,7 +482,7 @@ public class ExcitingStory {
 		while(b.equals("-yes")){
 
 			sentence("It was a dark and stormy night.");
-        	sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g"+ newLine + "If you want to know what I think about this night, choose -h" + newLine + "if you are bored to read a story, choose -m");
+        	sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g"+ newLine + "If you want to know what I think about this night, choose -h" + newLine + "If you don't care that is a dark night and just want to read the worthTellingStory, choose -i" + newLine +  "if you are bored to read a story, choose -m");
 
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
@@ -461,8 +490,8 @@ public class ExcitingStory {
 			String m=scanner.nextLine();
 
 			/* A loop which force the user to insert the correct character (-a or -b or -c or -d) */
-			while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")|| m.equals("-g")|| m.equals("-h") || m.equals("-m")) ) {
-	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h" +newLine+ "Please Try Again");
+			while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")|| m.equals("-g")|| m.equals("-h") || m.equals("-i") || m.equals("-m")) ) {
+	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i" +newLine+ "Please Try Again");
 				m = scanner.nextLine();
 
                 }
@@ -484,8 +513,12 @@ public class ExcitingStory {
 				tellCreepyStory(newLine);
 			else if (m.equals("-h"))
 				lostInThoughts(newLine);
+			else if (m.equals("-i"))
+				worthTellingStory(newLine);
 			else if (m.equals("-m"))
 			    bored(newLine);
+
+			
 
 
 
