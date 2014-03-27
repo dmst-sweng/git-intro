@@ -102,6 +102,19 @@ public class ExcitingStory {
 		sentence("Who cares about rhinos???");
 	}
 
+static void tellthelotterystory(String newLine) {
+		sentence("Eric was alone at his home, watching tv.");
+		sentence("He was very nervous because in less than five minutes the results of lottery will be announced.");
+		sentence("Finally the first number was announced. Eric looks at his ticket.");
+		sentence("3! The first number was the same!");
+		sentence("Suddenly the power went off...");
+		sentence("Not now!!!!, Eric screamed. Which are the next numbers?");
+		sentence("As Eric started to believe that the power will go off all night, the tv opened and he saw all the numbers.");
+           sentence("He looked at his ticket and then...I WIN!!! I WIN!!!");
+
+	}
+
+
 
 static void eyesWideShut(String newLine) {
 		sentence("I was alone in my bedroom and I closed my eyes. Just for an instance..");
@@ -540,14 +553,14 @@ static void shortStory(String newLine) {
 		while(b.equals("-yes")){
 
 			sentence("It was a dark and stormy night.");
-        	sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g"+ newLine + "If you want to know what I think about this night, choose -h" + newLine + "If you don't care that is a dark night and just want to read the worthTellingStory, choose -i" + newLine +  "if you are bored to read a story, choose -m"+ newLine +  "if you want to read a breathtaking story, choose -n" + newLine +"if you want to read a short story, choose - o" + newLine + "If you decided to go for a commonly walk by your bike, choose -w");
+        	sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g"+ newLine + "If you want to know what I think about this night, choose -h" + newLine + "If you don't care that is a dark night and just want to read the worthTellingStory, choose -i" + newLine +  "if you are bored to read a story, choose -m"+ newLine +  "if you want to read a breathtaking story, choose -n" + newLine +"if you want to read a short story, choose - o" + newLine + "If you decided to go for a commonly walk by your bike, choose -w" + newLine + "If you want a lottery story, choose -k");
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
 			String m=scanner.nextLine();
 
 			/* A loop which force the user to insert the correct character (-a or -b or -c or -d) */
-			while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")|| m.equals("-g")|| m.equals("-h") || m.equals("-i") || m.equals("-m") || m.equals("-n") ||  m.equals("-w") || m.equals("-o")) ) {
+			while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")|| m.equals("-g")|| m.equals("-h") || m.equals("-i") || m.equals("-m") || m.equals("-n") ||  m.equals("-w") || m.equals("-o") || m.equals("-k")) ) {
 	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -n or -o" +newLine+ "Please Try Again");
 
 				m = scanner.nextLine();
@@ -581,6 +594,8 @@ static void shortStory(String newLine) {
 			    eyesWideShut(newLine) ;
 			else if (m.equals("-o"))
 			    shortStory(newLine) ;
+                else if (m.equals("-k"))
+			    tellthelotterystory(newLine) ;
 			sentence(newLine + "Would you like to read another story?Answer -yes or -no");
 			b = scanner.nextLine();
 
