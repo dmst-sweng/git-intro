@@ -137,7 +137,7 @@ static void shortStory(String newLine) {
 	 *
 	 * @param answer The reader's answer.
 	 * @param newLine The line separator String.
-
+	 *
 	 */
 	static void reactionToDoorBell(String answer , String newLine) {
 
@@ -159,9 +159,8 @@ static void shortStory(String newLine) {
 	}
 
 	/**
-	  * Funktion that is used to print the outcome of the reaction to the courier
+	  * A function that is used to print the outcome of the reaction to the courier
 	  */
-
 	static void reactionToCourier(String answer , String newLine) {
 		if (answer.equals("-y"))
 			sentence("You become best friend and travel to Vegas and get married");
