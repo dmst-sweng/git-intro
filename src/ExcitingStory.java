@@ -468,7 +468,7 @@ static void shortStory(String newLine) {
 	 * @param newLine The line separator String.
 	 *
  	 */
-        public static void worthTellingStory(String newLine10) {
+        public static void worthTellingStory(String newLine) {
 
                 sentence("A blind boy sat on the steps of a building with a hat by his feet.");
                 sentence("He held up a sign which said: 'I am blind, please help'. There were only a few coins in the hat.");
@@ -541,6 +541,15 @@ static void shortStory(String newLine) {
         } else
         	sentence("Bad for you because this girl was the ghost of a witch and she cursed you!");
 	}
+	
+	/**
+	 * Function that is used to tell a western story.
+	 *
+	 * @param newLine The line separator String.
+	 */
+	 public static void tellWesternStory(String newLine) {
+		sentence("\"Ahgonagedoo, oosdiggingsuine!!!\" screamed Jake Calhoun;" + newLine + "but Doc Holliday, the legendary gunfighter/dentist, replied simply," + newLine + "\"Smile when you say that, pardner, then swirl and spit out.\"");
+	 }
 
        /**      main method*/
 
@@ -552,15 +561,23 @@ static void shortStory(String newLine) {
 		while(b.equals("-yes")){
 
 			sentence("It was a dark and stormy night.");
-        	sentence( newLine +"If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"+ newLine + "If you want a creepy story, choose -g"+ newLine + "If you want to know what I think about this night, choose -h" + newLine + "If you don't care that is a dark night and just want to read the worthTellingStory, choose -i" + newLine +  "if you are bored to read a story, choose -m"+ newLine +  "if you want to read a breathtaking story, choose -n" + newLine +"if you want to read a short story, choose - o" + newLine + "If you decided to go for a commonly walk by your bike, choose -w" + newLine + "If you want a lottery story, choose -k");
+        	sentence( newLine + "If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c" 
+			        + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f" 
+					+ newLine + "If you want a creepy story, choose -g" + newLine + "If you want to know what I think about this night, choose -h" 
+					+ newLine + "If you don't care that is a dark night and just want to read the worthTellingStory, choose -i" + newLine +  "if you are bored to read a story, choose -j" 
+					+ newLine +  "if you want to read a breathtaking story, choose -k" + newLine +"if you want to read a short story, choose -l" 
+					+ newLine + "If you decided to go for a commonly walk by your bike, choose -m" + newLine + "If you want a lottery story, choose -n"
+					+ newLine + "If you want to read a western story , choose -o");
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
 			String m=scanner.nextLine();
 
 			/* A loop which force the user to insert the correct character (-a or -b or -c or -d) */
-			while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") || m.equals("-f")|| m.equals("-g")|| m.equals("-h") || m.equals("-i") || m.equals("-m") || m.equals("-n") ||  m.equals("-w") || m.equals("-o") || m.equals("-k")) ) {
-	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -n or -o" +newLine+ "Please Try Again");
+			while (! ( m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") 
+			        || m.equals("-f")|| m.equals("-g")|| m.equals("-h") || m.equals("-i") || m.equals("-j") 
+					|| m.equals("-k") ||  m.equals("-l") || m.equals("-m") || m.equals("-n") || m.equals("-o") ) ) {
+	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o" +newLine+ "Please Try Again");
 
 				m = scanner.nextLine();
 
@@ -585,16 +602,19 @@ static void shortStory(String newLine) {
 				lostInThoughts(newLine);
 			else if (m.equals("-i"))
 				worthTellingStory(newLine);
-			else if (m.equals("-m"))
+			else if (m.equals("-j"))
 			    bored(newLine);
-			else if (m.equals("-w"))
-				tellScaryNignt();
-			else if (m.equals("-n"))
-			    eyesWideShut(newLine) ;
-			else if (m.equals("-o"))
+			else if (m.equals("-k"))
+				eyesWideShut(newLine) ;
+			else if (m.equals("-l"))
 			    shortStory(newLine) ;
-                else if (m.equals("-k"))
+			else if (m.equals("-m"))
+			    tellScaryNignt();
+            else if (m.equals("-n"))
 			    tellthelotterystory(newLine) ;
+			 else if (m.equals("-o"))
+			    tellWesternStory(newLine) ;
+				
 			sentence(newLine + "Would you like to read another story?Answer -yes or -no");
 			b = scanner.nextLine();
 
