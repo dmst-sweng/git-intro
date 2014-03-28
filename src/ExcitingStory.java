@@ -550,6 +550,17 @@ static void shortStory(String newLine) {
 	 public static void tellWesternStory(String newLine) {
 		sentence("\"Ahgonagedoo, oosdiggingsuine!!!\" screamed Jake Calhoun;" + newLine + "but Doc Holliday, the legendary gunfighter/dentist, replied simply," + newLine + "\"Smile when you say that, pardner, then swirl and spit out.\"");
 	 }
+	 
+    /**
+	 * Function that is used to tell a twisted story.
+	 *
+	 * @param newLine The line separator String.
+	 */
+	 public static void tellTwistedStory(String newLine) {
+		sentence("Betty had eyes that said come here, lips that said kiss me, arms and torso that said hold me all night" 
+		        + newLine + "long, but the rest of her body said, \"Fillet me, cover me in cornmeal, and fry me in peanut oil\""
+				+ newLine + "romance wasn't easy for a mermaid.");
+	 }
 
        /**      main method*/
 
@@ -567,7 +578,7 @@ static void shortStory(String newLine) {
 					+ newLine + "If you don't care that is a dark night and just want to read the worthTellingStory, choose -i" + newLine +  "if you are bored to read a story, choose -j" 
 					+ newLine +  "if you want to read a breathtaking story, choose -k" + newLine +"if you want to read a short story, choose -l" 
 					+ newLine + "If you decided to go for a commonly walk by your bike, choose -m" + newLine + "If you want a lottery story, choose -n"
-					+ newLine + "If you want to read a western story , choose -o");
+					+ newLine + "If you want to read a western story , choose -o" + newLine + "If you want to read a twisted story , choose -p");
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
@@ -576,8 +587,9 @@ static void shortStory(String newLine) {
 			/* A loop which force the user to insert the correct character (-a or -b or -c or -d) */
 			while (! ( m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e") 
 			        || m.equals("-f")|| m.equals("-g")|| m.equals("-h") || m.equals("-i") || m.equals("-j") 
-					|| m.equals("-k") ||  m.equals("-l") || m.equals("-m") || m.equals("-n") || m.equals("-o") ) ) {
-	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o" +newLine+ "Please Try Again");
+					|| m.equals("-k") ||  m.equals("-l") || m.equals("-m") || m.equals("-n") || m.equals("-o")
+                    || m.equals("-p")) ) {
+	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p" +newLine+ "Please Try Again");
 
 				m = scanner.nextLine();
 
@@ -612,8 +624,10 @@ static void shortStory(String newLine) {
 			    tellScaryNignt();
             else if (m.equals("-n"))
 			    tellthelotterystory(newLine) ;
-			 else if (m.equals("-o"))
+			else if (m.equals("-o"))
 			    tellWesternStory(newLine) ;
+			else if (m.equals("-p"))
+			    tellTwistedStory(newLine) ;
 				
 			sentence(newLine + "Would you like to read another story?Answer -yes or -no");
 			b = scanner.nextLine();
