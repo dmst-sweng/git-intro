@@ -550,13 +550,6 @@ static void shortStory(String newLine) {
 	 public static void tellWesternStory(String newLine) {
 		sentence("\"Ahgonagedoo, oosdiggingsuine!!!\" screamed Jake Calhoun;" + newLine + "but Doc Holliday, the legendary gunfighter/dentist, replied simply," + newLine + "\"Smile when you say that, pardner, then swirl and spit out.\"");
 	 }
-	 
-	 /**
-	  * Dummy function , used in order to test the Revert command later.
-	  */
-	  public static void dummy() {
-		//do nothing.
-	  }
 
        /**      main method*/
 
