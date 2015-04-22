@@ -587,7 +587,7 @@ static void shortStory(String newLine) {
 		while(b.equals("-yes")){
 
 			sentence("It was a dark and stormy night.");
-        	sentence( newLine + "If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c"
+        	sentence("How was your stormy night?" + newLine + "If you were terrified choose -a" + newLine + "If you enjoyed it, choose -b" + newLine + "If you want adventure, choose -c"
 			        + newLine + "If you want science fiction, choose -d" + newLine + "If you want a different story, choose -e" + newLine + "If you want a scary story, choose -f"
 					+ newLine + "If you want a creepy story, choose -g" + newLine + "If you want to know what I think about this night, choose -h"
 					+ newLine + "If you don't care that is a dark night and just want to read the worthTellingStory, choose -i" + newLine +  "if you are bored to read a story, choose -j"
@@ -612,9 +612,9 @@ static void shortStory(String newLine) {
 
 	 		 /* A statement that shows to the user the story depending the choice he made */
 			if (m.equals("-a"))
-				tellHorrifyingStory(newLine);
-			else if (m.equals("-b"))
 				tellHappyStory(newLine);
+			else if (m.equals("-b"))
+				tellHorrifyingStory(newLine);
 			else if (m.equals("-c"))
 				tellAdventureStory(newLine);
 			else if (m.equals("-d"))
