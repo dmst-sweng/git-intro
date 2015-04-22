@@ -47,7 +47,7 @@ you undertook (see below).
  * Generated files (e.g. .class files) should not be under version
    control; remove them.
 * Place the story in folder test_branch with the rest of the stories
-   and remove folder test_branch
+   and remove folder test_branch -> p3110145
 * Refactor code -> theosotr
  * Fix code alignment
  * Class names should follow unanimous style (e.g. AdventureStory, ScaryStory)
