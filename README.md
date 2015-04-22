@@ -54,7 +54,7 @@ you undertook (see below).
  * If they have (or should/could have) common characteristics create a superclass
    (e.g. Story) and have the existing ones inherit from that
  * Enhance code readability (e.g use the sentence() method everywhere)
-* Document code
+* Document code->cheeseplate
  * Place comments on top of methods
  * Place comments inline to the code if/when needed (use sparingly).
 * Fix code errors -> kostastsili94
