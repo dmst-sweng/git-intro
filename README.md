@@ -38,7 +38,7 @@ user name (for me it would be Changelog_mfragkoulis).
 Place the Changelog file under version control.
 
 Don't forget to put your GitHub user name next to the task
-you undertook in this file.
+you undertook (see below).
 
 ### Tasks to do:
 
