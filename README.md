@@ -57,6 +57,6 @@ you undertook (see below).
 * Document code
  * Place comments on top of methods
  * Place comments inline to the code if/when needed (use sparingly).
-* Fix code errors
+* Fix code errors -> kostastsili94
  * Option -y does not work properly
  * Option -z does not work properly
