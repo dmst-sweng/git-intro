@@ -13,3 +13,13 @@ git commit -m "Placing test_branch story along with the rest"
 
 Προώθηση του κλάδου στο αποθετήριο
 git push -u origin p3110145
+
+Διαγραφή φακέλου test_branch
+git rm -r test_branch/
+
+Καταχώρηση στιγμιοτύπου:
+git commit -a -m "Removing test_branch folder"
+
+Προώθηση του κλάδου στο αποθετήριο
+git push -u origin p3110145
+
