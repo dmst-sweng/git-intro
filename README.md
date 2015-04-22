@@ -43,7 +43,7 @@ you undertook (see below).
 ### Tasks to do:
 
 * Set up task list -> mfragkoulis
-* Cleanup repository
+* Cleanup repository -> k-karakatsanis
  * Generated files (e.g. .class files) should not be under version
    control; remove them.
 * Place the story in folder test_branch with the rest of the stories
