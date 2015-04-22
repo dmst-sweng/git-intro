@@ -33,7 +33,8 @@ a task is successfully completed.
 Don't delete your branch afterwards.
 
 In your branch, explain briefly the Git commands you used to complete the task
-in a new file named Changelog followed by an underscore followed by your GitHub user name.
+in a new file named Changelog followed by an underscore followed by your GitHub
+user name (for me it would be Changelog_mfragkoulis).
 Place the Changelog file under version control.
 
 Don't forget to put your GitHub user name next to the task
