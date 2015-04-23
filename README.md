@@ -43,20 +43,20 @@ you undertook (see below).
 ### Tasks to do:
 
 * Set up task list -> mfragkoulis
-* Cleanup repository
+* Cleanup repository -> k-karakatsanis
  * Generated files (e.g. .class files) should not be under version
    control; remove them.
 * Place the story in folder test_branch with the rest of the stories
-   and remove folder test_branch
-* Refactor code
+   and remove folder test_branch -> p3110145
+* Refactor code -> theosotr
  * Fix code alignment
- * Class names should follow unanimous style (e.g. AdventureStory, ScaryStory)
+ * Class names should follow unanimous style (e.g. AdventureStory, ScaryStory)->KonPap18
  * If they have (or should/could have) common characteristics create a superclass
    (e.g. Story) and have the existing ones inherit from that
  * Enhance code readability (e.g use the sentence() method everywhere)
-* Document code
+* Document code->cheeseplate
  * Place comments on top of methods
  * Place comments inline to the code if/when needed (use sparingly).
 * Fix code errors
- * Option -y does not work properly
- * Option -z does not work properly
+ * Option -y does not work properly -> kostastsili94
+ * Option -z does not work properly->ppeponis
