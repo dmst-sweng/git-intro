@@ -57,6 +57,6 @@ you undertook (see below).
 * Document code->cheeseplate
  * Place comments on top of methods
  * Place comments inline to the code if/when needed (use sparingly).
-* Fix code errors -> kostastsili94
- * Option -y does not work properly
+* Fix code errors
+ * Option -y does not work properly -> kostastsili94
  * Option -z does not work properly->ppeponis
