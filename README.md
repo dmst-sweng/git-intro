@@ -48,8 +48,8 @@ you undertook (see below).
    control; remove them.
 * Place the story in folder test_branch with the rest of the stories
    and remove folder test_branch -> p3110145
-* Refactor code -> theosotr
- * Fix code alignment
+* Refactor code
+ * Fix code alignment -> theosotr
  * Class names should follow unanimous style (e.g. AdventureStory, ScaryStory)->KonPap18
  * If they have (or should/could have) common characteristics create a superclass
    (e.g. Story) and have the existing ones inherit from that
