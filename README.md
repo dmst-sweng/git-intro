@@ -53,7 +53,7 @@ you undertook (see below).
  * Class names should follow unanimous style (e.g. AdventureStory, ScaryStory)->KonPap18
  * If they have (or should/could have) common characteristics create a superclass
    (e.g. Story) and have the existing ones inherit from that
- * Enhance code readability (e.g use the sentence() method everywhere)
+ * Enhance code readability (e.g use the sentence() method everywhere)-> KaterinaADAM
 * Document code->cheeseplate
  * Place comments on top of methods
  * Place comments inline to the code if/when needed (use sparingly).
