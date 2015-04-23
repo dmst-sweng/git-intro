@@ -50,7 +50,7 @@ you undertook (see below).
    and remove folder test_branch -> p3110145
 * Refactor code -> theosotr
  * Fix code alignment
- * Class names should follow unanimous style (e.g. AdventureStory, ScaryStory)
+ * Class names should follow unanimous style (e.g. AdventureStory, ScaryStory)->KonPap18
  * If they have (or should/could have) common characteristics create a superclass
    (e.g. Story) and have the existing ones inherit from that
  * Enhance code readability (e.g use the sentence() method everywhere)
