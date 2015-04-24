@@ -60,3 +60,6 @@ you undertook (see below).
 * Fix code errors
  * Option -y does not work properly -> kostastsili94
  * Option -z does not work properly->ppeponis
+* Project setup
+ * Build project with Maven -> htsili
+ * Integrate project with Travis-ci.
