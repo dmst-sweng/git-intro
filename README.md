@@ -52,7 +52,7 @@ you undertook (see below).
  * Fix code alignment -> theosotr
  * Class names should follow unanimous style (e.g. AdventureStory, ScaryStory)->KonPap18
  * If they have (or should/could have) common characteristics create a superclass
-   (e.g. Story) and have the existing ones inherit from that
+   (e.g. Story) and have the existing ones inherit from that -> eletap
  * Enhance code readability (e.g use the sentence() method everywhere)-> KaterinaADAM
 * Document code->cheeseplate
  * Place comments on top of methods -> konpapa
