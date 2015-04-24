@@ -55,7 +55,7 @@ you undertook (see below).
    (e.g. Story) and have the existing ones inherit from that
  * Enhance code readability (e.g use the sentence() method everywhere)-> KaterinaADAM
 * Document code->cheeseplate
- * Place comments on top of methods
+ * Place comments on top of methods -> konpapa
  * Place comments inline to the code if/when needed (use sparingly).
 * Fix code errors
  * Option -y does not work properly -> kostastsili94
