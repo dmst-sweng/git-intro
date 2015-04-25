@@ -148,7 +148,7 @@ static void shortStory(String newLine) {
 			Scanner input_x = new Scanner(System.in);
 			String your_answer = input_x.nextLine();
 
-			while (!(answer.equals("-y") || answer.equals("-z")))  {
+			while (!(answer.equals("-y") || your_answer.equals("-z")))  {
 				sentence("You can only Type -y or -z "+newLine+ "Please Try Again");
 				your_answer = input_x.nextLine();
 			}
