@@ -54,6 +54,7 @@ you undertook (see below).
  * If they have (or should/could have) common characteristics create a superclass
    (e.g. Story) and have the existing ones inherit from that -> eletap
  * Enhance code readability (e.g use the sentence() method everywhere)-> KaterinaADAM
+ * Format the printers so that the story is printed out in a tidier way->lakitas(inserted the task)
 * Document code
  * Place comments on top of methods -> konpapa
  * Place comments inline to the code if/when needed (use sparingly).->cheeseplate
