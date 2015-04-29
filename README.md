@@ -58,6 +58,7 @@ you undertook (see below).
 * Document code
  * Place comments on top of methods -> konpapa
  * Place comments inline to the code if/when needed (use sparingly).->cheeseplate
+* Generate javadoc for ExcitingStory.java and place it in a docs folder -> dimana 
 * Fix code errors
  * Option -y does not work properly -> kostastsili94
  * Option -z does not work properly->ppeponis
