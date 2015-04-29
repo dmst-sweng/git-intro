@@ -7,5 +7,24 @@ git pull
 In order to create a new branch and switch to it I used the command :
 git checkout -b [branch_name]
 
-in order add changes I used:
+In order to see the branches:
+git branch
+
+In order to see which had changes i used:
+git status
+
+In order add changes I used:
 git add [name_of_file_to_add]
+
+In order to commit my changes:
+git commit -m ['commit_mesage']
+
+In order to go back to master:
+git checkout master
+
+In order to merge my branch with the local repository:
+git merge [branchname]
+
+In order to push changes to remote repository:
+git push 
+
