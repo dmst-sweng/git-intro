@@ -76,11 +76,11 @@ public class ExcitingStory {
 
 
 
-		Scanner input = new Scanner(System.in);
-		String answer = input.nextLine();
+		Scanner input = new Scanner(System.in); //initializing the scanner class
+		String answer = input.nextLine(); //taking input from the keyboard and puttimg it in the variable answer
 
-
-        while (!(answer.equals("-o") || answer.equals("-i")))  {
+          /*allowing the user to put as input only '-o' or '-i'*/
+        while (!(answer.equals("-o") || answer.equals("-i")))  { 
 			sentence("You can only Type -o or -i "+newLine+ "Please Try Again");
 			answer = input.nextLine();
 		}
@@ -145,9 +145,9 @@ static void shortStory(String newLine) {
 			sentence("It's a courier." + newLine + "-Congratulations Sir , you have just won 5.000.000$ in the lottery" + newLine + "You can just not believe your luck and you faint...");
 			sentence("You wake up, on the couch, covered with a blanket. The courier sits in a chair next to the fire. What are you going to do?" + newLine + "-y.\t Become friends." + newLine + "-z.\t Say thanks and send him away.");
 
-			Scanner input_x = new Scanner(System.in);
-			String your_answer = input_x.nextLine();
-
+			Scanner input_x = new Scanner(System.in);//initializing the scanner class
+			String your_answer = input_x.nextLine();//taking input from the keyboard and puttimg it in the variable your_answer
+                        /*allowing the user to put as input only '-y' or '-z'*/
 			while (!(answer.equals("-y") || your_answer.equals("-z")))  {
 				sentence("You can only Type -y or -z "+newLine+ "Please Try Again");
 				your_answer = input_x.nextLine();
@@ -181,10 +181,10 @@ static void shortStory(String newLine) {
 		           + newLine +"-b \tYou can't just ignore everything,\nyou try to open the door so you can investigate further."
 		           + newLine +"-c \tYou stay still,frozen with fear hoping that it was nothing.");
 
-		           Scanner scanner = new Scanner(System.in);
-		   		String Reaction1 = scanner.nextLine();
-
-		   		while (!(Reaction1.equals("-a") || Reaction1.equals("-b") || Reaction1.equals("-c")) ) {
+		           Scanner scanner = new Scanner(System.in);//initializing the scanner class
+		   		String Reaction1 = scanner.nextLine();//taking input from the keyboard and puttimg it in the variable Reaction1
+                                      /*allowing the user to put as input only '-a' or '-b' or '-c' */
+		   		while (!(Reaction1.equals("-a") || Reaction1.equals("-b") || Reaction1.equals("-c")) ) { 
 		   					sentence("You can only Type -a or -b or -c"+newLine+ "Please Try Again");
 		   			Reaction1 = scanner.nextLine();
 		   	           }
@@ -198,9 +198,9 @@ static void shortStory(String newLine) {
 		   		 	 *	@param answer The answer of the reader.
 		   	         */
 		            static void reactionToDoorClosing(String answer){
-		   			 String newLineC = System.getProperty("line.separator");
+		   			 String newLineC = System.getProperty("line.separator");//initializing a variable that can be used to get to a new line
 
-		                   if (answer.equals("-a")){
+		                   if (answer.equals("-a")){//checking which answer the user has typed and promting the proper message
 		   				sentence("You close your eyes and open them again after a second.'What's happening?...'"
 		   				+newLineC+"but before you manage to complete your thoughts you see her.\nAn old woman in a black dress is standing right in front of you!"
 		   				+newLineC+"when you focus you can see her bloody deformed face\njust a breath away from yours and her pale white eyes staring into yours!"
@@ -209,7 +209,7 @@ static void shortStory(String newLine) {
 		   				+newLineC+"After a couple of days a relative visited your house\nbut he didn't find you there."
 		   				+newLineC+"No one ever found out what happened to that young,kind person\nliving in the house on the cliff..."
 		   				);}
-		   			else if (answer.equals("-b")){
+		   			else if (answer.equals("-b")){//checking which answer the user has typed and promting the proper message
 		   				 sentence("The door opens after a little push.You light a candle and you head downstairs."
 		   				 +newLineC+"You walk down the stairs and into the living room.\nAs you approach the kitchen you notice a movement on your right!"
 		   				 +newLineC+"You turn quickly and your heart loses a beat only to realise you are looking at your mirror."
@@ -220,9 +220,9 @@ static void shortStory(String newLine) {
 		                 +newLineC+"-b \tOk thats it,you are getting out of this place!"
 		   				 );
 
-		   				  Scanner scan = new Scanner(System.in);
-		   				 		String Reaction2 = scan.nextLine();
-
+		   				  Scanner scan = new Scanner(System.in);//initializing the scanner class
+		   				 		String Reaction2 = scan.nextLine();//taking input from the keyboard and puttimg it in the variable Reaction2
+                                                                 /*allowing the user to put as input only '-a' or '-b' */
 		   				 		while (!(Reaction2.equals("-a") || Reaction2.equals("-b")) ) {
 		   				 			sentence("You can only Type -a or -b"+newLineC+ "Please Try Again");
 		   				 			Reaction2 = scan.nextLine();
@@ -236,9 +236,9 @@ static void shortStory(String newLine) {
 		   				+newLineC+"-a \tScared like hell you jump out of the window."
 		                +newLineC+"-b \tYou remain still,you close your eyes and think 'It's not real...its not real...'"
 		   				);
-		   				             Scanner scan = new Scanner(System.in);
-		   							  String Reaction2 = scan.nextLine();
-
+		   				             Scanner scan = new Scanner(System.in);//initializing the scanner class
+		   							  String Reaction2 = scan.nextLine();//taking input from the keyboard and puttimg it in the variable Reaction2
+                                                                                                 /*allowing the user to put as input only '-a' or '-b' */
 		   								 		while (!(Reaction2.equals("-a") || Reaction2.equals("-b")) ) {
 		   								 			sentence("You can only Type -a or -b"+newLineC+ "Please Try Again");
 		   								 			Reaction2 = scan.nextLine();
@@ -286,7 +286,7 @@ static void shortStory(String newLine) {
 		   		 		 	 *	@param answer The answer of the reader.
 		   	                 */
 		   		 static void ReactionToCrackedMirror(String answer){
-		   		 String newLineD = System.getProperty("line.separator");
+		   		 String newLineD = System.getProperty("line.separator");//initializing a variable that can be used to get to a new line
 
 		   		 if (answer.equals("-a")){
 		   		 	sentence("As you walk towards the mirror,you notice something very strange."
@@ -297,9 +297,10 @@ static void shortStory(String newLine) {
 		   			+newLineD+"-a I run as fast as i can and  try to get out."
 		   			+newLineD+"-b I close my eyes and try to convince myself that everything is in my head"
 		   				);
-		   				Scanner scan1 = new Scanner(System.in);
-		   				String Reaction3 = scan1.nextLine();
+		   				Scanner scan1 = new Scanner(System.in);//initializing the scanner class
+		   				String Reaction3 = scan1.nextLine();//taking input from the keyboard and puttimg it in the variable Reaction3
 
+                                                             /*allowing the user to put as input only '-a' or '-b' */
 		   					while (!(Reaction3.equals("-a") || Reaction3.equals("-b")) ) {
 		   						sentence("You can only Type -a or -b"+newLineD+ "Please Try Again");
 		   						Reaction3 = scan1.nextLine();
@@ -349,8 +350,9 @@ static void shortStory(String newLine) {
 
 		Scanner scanner = new Scanner(System.in);
 		String wolf = scanner.nextLine();
-
+                /*allowing the user to put as input only '-d' or '-f' or '-g'*/
 		while (!(wolf.equals("-d") || wolf.equals("-f") || wolf.equals("-g")) ) {
+
 			sentence("You can only Type -d or -f or -g"+newLine+ "Please Try Again");
 			wolf = scanner.nextLine();
 		}
@@ -365,7 +367,7 @@ static void shortStory(String newLine) {
 	 */
 	static void reactionToWolfAppearance(String answer) {
 
-    	String newLine2 = System.getProperty("line.separator");
+    	String newLine2 = System.getProperty("line.separator");//initializing a variable that can be used to get to a new line
 
 		if (answer.equals("-d")) {
 			 sentence("The wolf is faster you die");
@@ -503,14 +505,15 @@ static void shortStory(String newLine) {
 	 */
     public static void tellScaryNignt() {
 
-		Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);//iniiallizing scanner class
 
 		sentence("While you were bicycling suddenly you met an alone, exhausted, \nlittle girl in the middle of the road.");
 		sentence("So would you stop to help her?");
 		sentence("-If you would, press Y");
 		sentence("-If you would not, press N");
 
-		String m = scanner.nextLine();
+		String m = scanner.nextLine();//taking input from the keyboard
+                  /*allowing the user to put as input only 'Y' or 'N'*/
 		while ( !(m.equals("Y") || m.equals("N")) ){
 			sentence("You can only type Y or N \n Please Try Again");
 			m = scanner.nextLine();
@@ -529,7 +532,7 @@ static void shortStory(String newLine) {
 			sentence("2.Did you pass out? ");
 			sentence("Please select 1 or 2.");
 
-		    m = scanner.nextLine();
+		    m = scanner.nextLine();//taking input from the keyboard
 			while (!(m.equals("1") || m.equals("2")) ) {
 				sentence("You can only type 1 or 2 \n Please Try Again");
 			    m = scanner.nextLine();
@@ -648,7 +651,7 @@ static void shortStory(String newLine) {
 
 			sentence(newLine + "Would you like to read another story? Answer -yes or -no");
 			b = scanner.nextLine();
-
+                        /* a loop that takes as input from the user only '-yes' or '-no'*/
 			while(!((b.equals("-yes"))||(b.equals("-no")))){
 				sentence("You can only type -yes or -no" + newLine + "Please Try Again");
 				b = scanner.nextLine();
