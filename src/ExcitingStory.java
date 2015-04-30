@@ -19,7 +19,16 @@ public class ExcitingStory {
      * @param s		the sentence to print
      */
     static void sentence(String s) {
-		System.out.println(s);
+		char[] chars = s.toCharArray();
+		for ( int i = 0; i < chars.length; i++ ) {
+			System.out.print( chars[i] );
+			try {
+				Thread.currentThread().sleep(65);
+			} catch ( InterruptedException e ) {
+				//Do nothing.
+			}
+		}
+		System.out.print( System.getProperty("line.separator") );
     }
 
 	/**
@@ -80,7 +89,7 @@ public class ExcitingStory {
 		String answer = input.nextLine(); //taking input from the keyboard and puttimg it in the variable answer
 
           /*allowing the user to put as input only '-o' or '-i'*/
-        while (!(answer.equals("-o") || answer.equals("-i")))  { 
+        while (!(answer.equals("-o") || answer.equals("-i")))  {
 			sentence("You can only Type -o or -i "+newLine+ "Please Try Again");
 			answer = input.nextLine();
 		}
@@ -184,7 +193,7 @@ static void shortStory(String newLine) {
 		           Scanner scanner = new Scanner(System.in);//initializing the scanner class
 		   		String Reaction1 = scanner.nextLine();//taking input from the keyboard and puttimg it in the variable Reaction1
                                       /*allowing the user to put as input only '-a' or '-b' or '-c' */
-		   		while (!(Reaction1.equals("-a") || Reaction1.equals("-b") || Reaction1.equals("-c")) ) { 
+		   		while (!(Reaction1.equals("-a") || Reaction1.equals("-b") || Reaction1.equals("-c")) ) {
 		   					sentence("You can only Type -a or -b or -c"+newLine+ "Please Try Again");
 		   			Reaction1 = scanner.nextLine();
 		   	           }
