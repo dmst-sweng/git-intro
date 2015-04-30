@@ -51,3 +51,39 @@ git commit -m <msg>
 
 Push changes to a new branch on the remote repository:
 git push -u origin htsili
+
+Change to master branch:
+git checkout master
+
+Pull the latest changes from the remote repository:
+git pull origin master
+
+Merge htsili branch with the master branch:
+git merge htsili
+
+Push changes to remote repository:
+git push origin master
+
+Change to htsili branch:
+git checkout htsili
+
+Add modified Changelog_htsili to local repository (htsili):
+git add Changelog_htsili
+
+Commit changes:
+git commit -m <msg>
+
+Push changes to remote repository:
+git push origin htsili
+
+Change to htsili branch:
+git checkout master
+
+Pull the latest changes from the remote repository:
+git pull origin master
+
+Merge htsili branch with the master branch:
+git merge htsili
+
+Push changes to remote repository:
+git push origin master
