@@ -1,0 +1,43 @@
+Δημιουργία νέου κλάδου:
+git checkout -b p3110145
+
+Επεξεργασία του src/ExcitingStory.java
+ώστε να περιλαμβάνει την ιστορία
+του test_branch/ExcitingStory.java
+
+Προσθήκη του αρχείου Changelog:
+git add Changelog_p3110145
+
+Καταχώρηση στιγμιοτύπου:
+git commit -m "Placing test_branch story along with the rest"
+
+Προώθηση του κλάδου στο αποθετήριο
+git push -u origin p3110145
+
+Διαγραφή φακέλου test_branch
+git rm -r test_branch/
+
+Καταχώρηση στιγμιοτύπου:
+git commit -a -m "Removing test_branch folder"
+
+Προώθηση του κλάδου στο αποθετήριο
+git push -u origin p3110145
+
+	.
+	.
+	.
+
+Συγχώνευση κλάδου p3110145
+git pull
+git checkout master
+git merge p3110145
+
+Επίλυση συγκρούσεων
+rm -r test
+git add test/java/ExcitingStoryTest.java
+
+Ολοκλήρωση συγχώνευσης
+git commit
+
+Προώθηση των αλλαγών
+git push
