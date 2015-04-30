@@ -30,3 +30,12 @@ git commit -m "Added changelog"
 
 Push changes to efstrian branch on remote:
 git push origin efstrian
+
+Switch to master
+git checkout master
+
+Merge branch to master
+git merge efstrian
+
+Push to master branch of origin
+git push
