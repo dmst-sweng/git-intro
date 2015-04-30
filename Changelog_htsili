@@ -1,0 +1,53 @@
+Clone the repository:
+git clone git@github.com:dmst-sweng/git-intro.git
+
+Add modified README.md to local repository (master):
+git add README.md
+
+Commit changes:
+git commit -m <msg>
+
+Push changes to remote repository:
+git push origin master
+
+Create and change to a new branch:
+git checkout -b htsili
+
+Move ExcitingStory.java to a different folder:
+git mv <source> src/main/java/
+
+Move and rename ExcitingStory.java (test file) to a different folder:
+git mv <source> src/test/java/ExcitingStoryTest.java
+
+Delete test_branch folder:
+git rm -r test_branch
+
+Commit changes to local repository:
+git commit -m <msg>
+
+Place .gitingnore under version control:
+git add .gitingnore
+
+Commit changes to local repository:
+git commit -m <msg>
+
+Place maven config under version control:
+git add pom.xml
+
+Commit changes to local repository:
+git commit -m <msg>
+
+Add modified ExcitingStory.java to local repository:
+git add ExcitingStory.java
+
+Commit changes to local repository:
+git commit -m <msg>
+
+Place changelog under version control:
+git add Changelog_htsili
+
+Commit changes again:
+git commit -m <msg>
+
+Push changes to a new branch on the remote repository:
+git push -u origin htsili

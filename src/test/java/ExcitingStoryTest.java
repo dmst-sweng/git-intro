@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ExcitingStory {
+public class ExcitingStoryTest {
 
     /**
      * Prints a sentence on the program's standard output.
