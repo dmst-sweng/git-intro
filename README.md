@@ -48,6 +48,8 @@ you undertook (see below).
    control; remove them. -> k-karakatsanis
 * Place the story in folder test_branch with the rest of the stories
    and remove folder test_branch -> p3110145
+* Upgrade sentence() method
+ * Print chars one by one. -> efstrian
 * Refactor code
  * Fix code alignment -> theosotr
  * Class names should follow unanimous style (e.g. AdventureStory, ScaryStory)->KonPap18
