@@ -1,6 +1,9 @@
 git-intro
 =========
 
+# Build Status
+[![Build Status](https://travis-ci.org/dmst-sweng/git-intro.svg?branch=htsili)](https://travis-ci.org/dmst-sweng/git-intro)
+
 # An introduction to Git's collaboration style.
 
 ## Assignment
