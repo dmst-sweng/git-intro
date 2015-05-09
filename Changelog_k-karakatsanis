@@ -1,0 +1,41 @@
+Clone repository:
+git clone https://github.com/dmst-sweng/git-intro.git
+
+Keep local repository up-to-date:
+git pull
+
+Select task:
+git commit -a -m "Added and selected a task"
+
+Push changes:
+git push
+
+Create and change to a new branch:
+git checkout -b k-karakatsanis
+
+Add changes in ExcitingStory.java:
+git add src/main/java/ExcitingStory.java
+
+Commit changes to local repository (k-karakatsanis):
+git commit -m "Add a short joke."
+
+Push changes to a new branch on the remote repository:
+git push origin k-karakatsanis
+
+Place Changelog_k-karakatsanis under version control:
+git add Changelog_k-karakatsanis
+
+Commit changes again:
+git commit -m "Add changelog"
+
+Push changes to k-karakatsanis branch on remote:
+git push origin k-karakatsanis
+
+Switch to master branch:
+git checkout master
+
+Merge branch to master:
+git merge k-karakatsanis
+
+Push changes to remote repository:
+git push
