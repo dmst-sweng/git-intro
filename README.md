@@ -45,7 +45,7 @@ you undertook (see below).
 * Set up task list -> mfragkoulis
 * Cleanup repository
  * Generated files (e.g. .class files) should not be under version
-   control; remove them. -> k-karakatsanis
+   control; remove them.
 * Place the story in folder test_branch with the rest of the stories
    and remove folder test_branch -> p3110145
 * Upgrade sentence() method
@@ -67,3 +67,5 @@ you undertook (see below).
 * Project setup
  * Build project with Maven -> htsili
  * Integrate project with Travis-ci.
+* Add story in ExcitingStory.java
+ * Add a short joke. -> k-karakatsanis
