@@ -28,7 +28,7 @@ public class ExcitingStory {
 				//Do nothing.
 			}
 		}
-		System.out.print( System.getProperty("line.separator") );
+		System.out.print(System.getProperty("line.separator"));
     }
 
 	/**
@@ -97,7 +97,7 @@ public class ExcitingStory {
 
 
 
-		reactionToDoorBell(answer , newLine);
+		reactionToDoorBell(answer, newLine);
 	}
 
 
@@ -267,21 +267,21 @@ static void shortStory(String newLine) {
 		              static void ReactionToFootsteps(String answer,String newline4){
 		   			   if (answer.equals("-a")){
 		   			   sentence("The window breaks with a loud noise\nand you find yourself lying on the wet ground of your garden"
-		   			   +newline4+"You try to stand up but you feel a sharp pain from your leg."
-		   			   +newline4+"After gathering all your remaining strength you stand up and start running!"
-		   			   +newline4+"You run as fast as you can,trying to ignore your pain."
-		   			   +newline4+"As you run away from your house through the heavy rain\nyou could swear that you heard an old woman screaming but you won't stop."
-		   			   +newline4+"After some time you reach the nearby village."
-		   			   +newline4+"You stop,take a deep breath and relax.There are other people there,you are safe..."
-		   			   +newline4+".\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\nOr are you?");
+							   + newline4 + "You try to stand up but you feel a sharp pain from your leg."
+							   + newline4 + "After gathering all your remaining strength you stand up and start running!"
+							   + newline4 + "You run as fast as you can,trying to ignore your pain."
+							   + newline4 + "As you run away from your house through the heavy rain\nyou could swear that you heard an old woman screaming but you won't stop."
+							   + newline4 + "After some time you reach the nearby village."
+							   + newline4 + "You stop,take a deep breath and relax.There are other people there,you are safe..."
+							   + newline4 + ".\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\nOr are you?");
 		   			   }
 		   			   else{
 		   			   sentence("Unfortunately it is real...\nthe door opens and you stand there staring at the terrifying"
-		   			   +newline4+"figure of an old woman in a black dress floating above the floor."
-		   			   +newline4+"As you are paralyzed with fear she gets close and touches your chest with her cold hand."
-		   			   +newline4+"You try to talk but the words refuse to come out."
-		   			   +newline4+"As you fall into the void you can hear her voice saying 'Your time has come...emprace the darkness'"
-		   			   );
+									   + newline4 + "figure of an old woman in a black dress floating above the floor."
+									   + newline4 + "As you are paralyzed with fear she gets close and touches your chest with her cold hand."
+									   + newline4 + "You try to talk but the words refuse to come out."
+									   + newline4 + "As you fall into the void you can hear her voice saying 'Your time has come...emprace the darkness'"
+					   );
 		   			      }
 		   		        }
 
@@ -341,10 +341,10 @@ static void shortStory(String newLine) {
 
 		   		 static void happyEnd(String newlineS){
 		   			 sentence("You run as fast as you can,practically breaking the entrance door."
-		   			 +newlineS+"As you run away from your house through the heavy rain\nyou could swear that you heard an old woman screaming but you won't stop."
-		   			 +newlineS+"After some time you reach the nearby village."
-		   			 +newlineS+"You stop,take a deep breath and relax.There are other people there,you are safe..."
-		   			 +newlineS+".\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\nOr are you?");
+							 + newlineS + "As you run away from your house through the heavy rain\nyou could swear that you heard an old woman screaming but you won't stop."
+							 + newlineS + "After some time you reach the nearby village."
+							 + newlineS + "You stop,take a deep breath and relax.There are other people there,you are safe..."
+							 + newlineS + ".\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\nOr are you?");
 		   			 }
 
 
@@ -588,6 +588,19 @@ static void shortStory(String newLine) {
 		sentence("'Oh, my boy! You misunderstood! I want five times on the floor!!! :):):) ");
 	}
 
+	/**
+	 * Function that is used to tell a not so funny story.
+	 *
+	 * @param newLine The line separator String.
+	 */
+	public static void tellShortFunnyStory(String newLine) {
+		sentence("A nervous old lady on a bus was made even more nervous by " +
+				"the fact that the driver periodically took his arm out of " +
+				"the window. When she couldn't stand it any longer, she " +
+				"tapped him on the shoulder and whispered on his ear: \"" +
+				"Young man...you keep both hands on the wheel...I'll tell " +
+				"you when it's raining!\" :P ");
+	}
 
        /**      main method*/
 
@@ -657,6 +670,8 @@ static void shortStory(String newLine) {
 			    tellTwistedStory(newLine) ;
 			else if (m.equals("-q"))
 			    tellFunnyStory(newLine) ;
+			else if (m.equals("-q"))
+				tellShortFunnyStory(newLine) ;
 
 			sentence(newLine + "Would you like to read another story? Answer -yes or -no");
 			b = scanner.nextLine();
