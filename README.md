@@ -1,8 +1,9 @@
 git-intro
 =========
 
-# Build Status
-[![Build Status](https://travis-ci.org/dmst-sweng/git-intro.svg?branch=htsili)](https://travis-ci.org/dmst-sweng/git-intro)
+## Build Status
+[![Build Status](https://travis-ci.org/dmst-sweng/git-intro.svg?branch=master)](https://travis-ci.org/dmst-sweng/git-intro)
+=========
 
 # An introduction to Git's collaboration style.
 
@@ -31,7 +32,7 @@ Don't worry if it happens, you will get extra credit for that :-)
 ### Work guide
 
 All tasks should be done in a new branch that
-should be merged to the master branch after 
+should be merged to the master branch after
 a task is successfully completed.
 Don't delete your branch afterwards.
 
@@ -66,4 +67,4 @@ you undertook (see below).
  * Option -z does not work properly->ppeponis
 * Project setup
  * Build project with Maven -> htsili
- * Integrate project with Travis-ci.
+ * Integrate project with Travis-ci. -> htsili
