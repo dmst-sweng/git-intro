@@ -76,7 +76,55 @@ git commit -m <msg>
 Push changes to remote repository:
 git push origin htsili
 
+Change to master branch:
+git checkout master
+
+Pull the latest changes from the remote repository:
+git pull origin master
+
+Merge htsili branch with the master branch:
+git merge htsili
+
+Push changes to remote repository:
+git push origin master
+
 Change to htsili branch:
+git checkout htsili
+
+Add travis configuration under version control:
+git add .travis.yml
+
+Commit changes again:
+git commit -m <msg>
+
+Add modified README.md to local repository (master):
+git add README.md
+
+Commit changes:
+git commit -m <msg>
+
+Add modified travis configuration to local repository (htsili):
+git add .travis.yml
+
+Commit changes again:
+git commit -m <msg>
+
+Add modified README.md to local repository (htsili):
+git add README.md
+
+Commit changes:
+git commit -m <msg>
+
+Add modified Changelog_htsili to local repository (htsili):
+git add Changelog_htsili
+
+Commit changes:
+git commit -m <msg>
+
+Push changes to remote repository:
+git push origin htsili
+
+Change to master branch:
 git checkout master
 
 Pull the latest changes from the remote repository:

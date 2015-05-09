@@ -1,6 +1,10 @@
 git-intro
 =========
 
+## Build Status
+[![Build Status](https://travis-ci.org/dmst-sweng/git-intro.svg?branch=master)](https://travis-ci.org/dmst-sweng/git-intro)
+=========
+
 # An introduction to Git's collaboration style.
 
 ## Assignment
@@ -28,7 +32,7 @@ Don't worry if it happens, you will get extra credit for that :-)
 ### Work guide
 
 All tasks should be done in a new branch that
-should be merged to the master branch after 
+should be merged to the master branch after
 a task is successfully completed.
 Don't delete your branch afterwards.
 
@@ -60,12 +64,12 @@ you undertook (see below).
 * Document code
  * Place comments on top of methods -> konpapa
  * Place comments inline to the code if/when needed (use sparingly).->cheeseplate
-* Generate javadoc for ExcitingStory.java and place it in a docs folder -> dimana 
+* Generate javadoc for ExcitingStory.java and place it in a docs folder -> dimana
 * Fix code errors
  * Option -y does not work properly -> kostastsili94
  * Option -z does not work properly->ppeponis
 * Project setup
  * Build project with Maven -> htsili
- * Integrate project with Travis-ci.
+ * Integrate project with Travis-ci. -> htsili
 * Add story in ExcitingStory.java
  * Add a short joke. -> k-karakatsanis
