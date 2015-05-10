@@ -73,3 +73,4 @@ you undertook (see below).
  * Integrate project with Travis-ci. -> htsili
 * Add story in ExcitingStory.java
  * Add a short joke. -> k-karakatsanis
+ * Add a sub-story. -> Melmel
