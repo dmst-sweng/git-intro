@@ -1,1 +1,26 @@
+Cloned the master repo
+$ git clone https://github.com/dmst-sweng/git-intro.git
 
+Created branch to work on
+$ git branch add-substory
+
+Switched to branch 'add-substory'
+$ git checkout add-substory
+
+After adding the changed ExcitingStory.java file to my directory I typed git status
+$ git status
+On branch add-substory
+Changes not staged for commit:
+        modified:   src/main/java/ExcitingStory.java
+no changes added to commit
+
+I staged the file
+$ git add src/main/java/ExcitingStory.java
+
+I moved the file to history
+$ git commit -m "Added a cooking adventure sub-story."
+[add-substory 3216e7d] Added a cooking adventure sub-story.
+ 1 file changed, 58 insertions(+), 4 deletions(-)
+
+I finally pushed the new branch to be glued to the master 
+$ git push -u origin add-substory
