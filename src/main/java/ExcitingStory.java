@@ -670,7 +670,7 @@ static void tellShortStory(String newLine) {
 					+ newLine +  "if you want to read a breathtaking story, choose -k" + newLine +"if you want to read a short story, choose -l"
 					+ newLine + "If you decided to go for a commonly walk by your bike, choose -m" + newLine + "If you want a lottery story, choose -n"
 					+ newLine + "If you want to read a western story , choose -o" + newLine + "If you want to read a twisted story , choose -p" + newLine + "If you want to read a funny story , choose -q"
-					+ newLine + "If you want to cook delicious treats then, choose -r");
+					+ newLine + "If you want to cook delicious treats then, choose -z");
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
@@ -680,8 +680,8 @@ static void tellShortStory(String newLine) {
 			while (! ( m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e")
 			        || m.equals("-f")|| m.equals("-g")|| m.equals("-h") || m.equals("-i") || m.equals("-j")
 					|| m.equals("-k") ||  m.equals("-l") || m.equals("-m") || m.equals("-n") || m.equals("-o")
-                    || m.equals("-p") || m.equals("-q") || m.equals("-r")) ) {
-	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -r" +newLine+ "Please Try Again");
+                    || m.equals("-p") || m.equals("-q") || m.equals("-z")) ) {
+	        	sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -z" +newLine+ "Please Try Again");
 
 				m = scanner.nextLine();
 
@@ -724,7 +724,7 @@ static void tellShortStory(String newLine) {
 			    tellFunnyStory(newLine) ;
 			else if (m.equals("-q"))
 				tellShortFunnyStory(newLine) ;
-			else if (m.equals("-r"))
+			else if (m.equals("-z"))
 				tellACookingStory(newLine);
 
 			sentence(newLine + "Would you like to read another story? Answer -yes or -no");
