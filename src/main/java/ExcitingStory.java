@@ -784,6 +784,7 @@ public class ExcitingStory {
                 "Young man...you keep both hands on the wheel...I'll tell " +
                 "you when it's raining!\" :P ");
     }
+	
     /**
 	 * Function that is used to create a cooking story.
 	 */
@@ -835,6 +836,7 @@ public class ExcitingStory {
 		else if (answer.equals("-NO"))
 			sentence("Have a nice day and enjoy your nutella cookies!");
 	}
+
 
     /**
      * main method
