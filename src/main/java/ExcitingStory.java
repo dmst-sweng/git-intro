@@ -47,7 +47,7 @@ public class ExcitingStory {
 	/**
 	 * Function that is used to create a real story.
 	 */
-	static void telldifferentStory(String newLine) {
+	static void tellDifferentStory(String newLine) {
 		sentence("the rain fell in torrents ,except at occasional intervals,");
 		sentence("when it was checked by a violent gust of wind which ");
 		sentence("swept up the streets (for it is in London that our scene lies),");
@@ -101,7 +101,7 @@ public class ExcitingStory {
 	}
 
 
-	static void lostInThoughts(String newLine) {
+	static void tellLostInThoughtsStory(String newLine) {
 		sentence("and you could only hear the rain and the wind.");
 		sentence("I couldn't stop thinking about what had just happened. Jolene will probably never speak to me again.");
 		sentence("Of course I deserve it. Yes, yes I certainly deserve it. I ruined everything.");
@@ -111,7 +111,7 @@ public class ExcitingStory {
 		sentence("Who cares about rhinos???");
 	}
 
-static void tellthelotterystory(String newLine) {
+static void tellTheLotteryStory(String newLine) {
 		sentence("Eric was alone at his home, watching tv.");
 		sentence("He was very nervous because in less than five minutes the results of lottery will be announced.");
 		sentence("Finally the first number was announced. Eric looks at his ticket.");
@@ -125,7 +125,7 @@ static void tellthelotterystory(String newLine) {
 
 
 
-static void eyesWideShut(String newLine) {
+static void tellEyesWideShutStory(String newLine) {
 		sentence("I was alone in my bedroom and I closed my eyes. Just for an instance..");
 		sentence("Suddenly my bedroom disappeared and I was now standing in the middle of a dance hall");
 		sentence("Daft Punk was playing in the background and two dozens of people were dancing.");
@@ -136,7 +136,7 @@ static void eyesWideShut(String newLine) {
 		sentence("And then it hit me! It litterarly hit me. A car went through my bedroom window and hit me.");
 		sentence("My girlfriend was sitting right beside me screaming and crying. I never oppened my eyes again, I died with a smile on my lips");
 	}
-static void shortStory(String newLine) {
+static void tellShortStory(String newLine) {
 		sentence("and that was pretty much it.");
 
 	}
@@ -236,7 +236,7 @@ static void shortStory(String newLine) {
 		   				 			sentence("You can only Type -a or -b"+newLineC+ "Please Try Again");
 		   				 			Reaction2 = scan.nextLine();
 		   	                   }
-		                       ReactionToCrackedMirror(Reaction2);
+		                       reactionToCrackedMirror(Reaction2);
 		   				 }
 		   			else{
 		   				sentence("You don't know how much time passed since the door closed.\nA minute?Two minutes?A year?"
@@ -252,7 +252,7 @@ static void shortStory(String newLine) {
 		   								 			sentence("You can only Type -a or -b"+newLineC+ "Please Try Again");
 		   								 			Reaction2 = scan.nextLine();
 		   					                   }
-		                       ReactionToFootsteps(Reaction2,newLineC);
+		                       reactionToFootsteps(Reaction2,newLineC);
 		   			}
 
 		   		 }
@@ -264,7 +264,7 @@ static void shortStory(String newLine) {
 		   					 *
 		   					 *	@param answer The answer of the reader.
 		   	                 */
-		              static void ReactionToFootsteps(String answer,String newline4){
+		              static void reactionToFootsteps(String answer,String newline4){
 		   			   if (answer.equals("-a")){
 		   			   sentence("The window breaks with a loud noise\nand you find yourself lying on the wet ground of your garden"
 							   + newline4 + "You try to stand up but you feel a sharp pain from your leg."
@@ -294,7 +294,7 @@ static void shortStory(String newLine) {
 		   		 		 	 *
 		   		 		 	 *	@param answer The answer of the reader.
 		   	                 */
-		   		 static void ReactionToCrackedMirror(String answer){
+		   		 static void reactionToCrackedMirror(String answer){
 		   		 String newLineD = System.getProperty("line.separator");//initializing a variable that can be used to get to a new line
 
 		   		 if (answer.equals("-a")){
@@ -479,7 +479,7 @@ static void shortStory(String newLine) {
 	 * @param newLine The line separator String.
 	 *
  	 */
-        public static void worthTellingStory(String newLine) {
+        public static void tellWorthTellingStory(String newLine) {
 
                 sentence("A blind boy sat on the steps of a building with a hat by his feet.");
                 sentence("He held up a sign which said: 'I am blind, please help'. There were only a few coins in the hat.");
@@ -512,7 +512,7 @@ static void shortStory(String newLine) {
    /**
 	 *	This function is used to ask the user about his or her reaction after a mysterious event .
 	 */
-    public static void tellScaryNignt() {
+    public static void tellScaryNigntStory() {
 
 		Scanner scanner = new Scanner(System.in);//iniiallizing scanner class
 
@@ -645,25 +645,25 @@ static void shortStory(String newLine) {
 			else if (m.equals("-d"))
 				tellScienceFictionStory(newLine);
 			else if (m.equals("-e"))
-		        telldifferentStory(newLine);
+		        tellDifferentStory(newLine);
 			else if (m.equals("-f"))
 				tellScaryStory(newLine);
 			else if (m.equals("-g"))
 				tellCreepyStory(newLine);
 			else if (m.equals("-h"))
-				lostInThoughts(newLine);
+				tellLostInThoughtsStory(newLine);
 			else if (m.equals("-i"))
-				worthTellingStory(newLine);
+				tellWorthTellingStory(newLine);
 			else if (m.equals("-j"))
 			    bored(newLine);
 			else if (m.equals("-k"))
-				eyesWideShut(newLine) ;
+				tellEyesWideShutStory(newLine) ;
 			else if (m.equals("-l"))
-			    shortStory(newLine) ;
+			    tellShortStory(newLine) ;
 			else if (m.equals("-m"))
-			    tellScaryNignt();
+			    tellScaryNigntStory();
                         else if (m.equals("-n"))
-			    tellthelotterystory(newLine) ;
+			    tellTheLotteryStory(newLine) ;
 			else if (m.equals("-o"))
 			    tellWesternStory(newLine) ;
 			else if (m.equals("-p"))
