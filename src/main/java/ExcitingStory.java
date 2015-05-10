@@ -784,6 +784,59 @@ public class ExcitingStory {
                 "Young man...you keep both hands on the wheel...I'll tell " +
                 "you when it's raining!\" :P ");
     }
+	
+    /**
+	 * Function that is used to create a cooking story.
+	 */
+    public static void tellACookingStory(String newLine) {
+		sentence("A new day has began, a new cooking adventure!");
+		sentence("Let's make Easy Nutella Cookies!");
+		sentence("A very easy recipe with very few ingredients!");
+		sentence("You will need half a cup nutella, a big egg, a cup of self-raising flour and just a pinch of salt.");
+		sentence("You preheat the oven at 190 Celsius.");
+		sentence("In a bowl we gradually mix all ingredients.");
+		sentence("We put non stick baking paper on a pan and with flour on our hands we make small cookies.");
+		sentence("We bake for exactly 12 minutes and they are ready!");
+		sentence("Bon appétit!");
+		sentence("Would you like another easy recipe?" + newLine + "Press -YES or -NO");
+		
+		Scanner typeIn = new Scanner(System.in); //initializing the scanner class
+		String answer = typeIn.nextLine(); //taking the keyboard input and assigning it to answer
+		
+		/*allowing the user to put as input only '-o' or '-i'*/
+	    while (!(answer.equals("-YES") || answer.equals("-NO")))  {
+			sentence("Please only type -YES or -NO" +newLine+ "Try Again!");
+			answer = typeIn.nextLine();
+		}
+		
+		cookOrNot(answer, newLine);
+	}
+	
+	/**
+	 * This function is used to inform the reader about the outcome of his reaction to cook again or not.
+	 *
+	 * @param answer The reader's answer.
+	 * @param newLine The line separator String.
+	 *
+	 */
+	static void cookOrNot(String answer , String newLine) {
+
+	    if (answer.equals("-YES")) {
+		    sentence("Let's make delicious pancakes!");
+		    sentence("You will need 3/4 cup of milk, 2 tablespoons of olive oil, 1 egg, 1 cup of flour," 
+			+ newLine + "2 tablespoons baking powder, 2 tablespoons of sugar and a pinch of salt.");
+		    sentence("We gradually mix the ingredients in a bowl.");
+		    sentence("We apply some butter on a frying pan and pour two tablespoons of our mix.");
+		    sentence("We let it bake for 1-2 minutes until the surface has little holes. We turn down the heat" 
+			+ newLine + "so that out next pancakes will not burn.");
+		    sentence("We turn the pancake on the other side, to bake for 1 minute, as well.");
+		    sentence("In the end we can serve our fresh, hot pancakes with maple syrup or ingredient of our choice!");
+		    sentence("Enjoy!");
+		}
+		else if (answer.equals("-NO"))
+			sentence("Have a nice day and enjoy your nutella cookies!");
+	}
+
 
     /**
      * main method
@@ -806,7 +859,8 @@ public class ExcitingStory {
                     + newLine + "If you don't care that is a dark night and just want to read the worthTellingStory, choose -i" + newLine + "if you are bored to read a story, choose -j"
                     + newLine + "if you want to read a breathtaking story, choose -k" + newLine + "if you want to read a short story, choose -l"
                     + newLine + "If you decided to go for a commonly walk by your bike, choose -m" + newLine + "If you want a lottery story, choose -n"
-                    + newLine + "If you want to read a western story , choose -o" + newLine + "If you want to read a twisted story , choose -p" + newLine + "If you want to read a funny story , choose -q");
+                    + newLine + "If you want to read a western story , choose -o" + newLine + "If you want to read a twisted story , choose -p" + newLine + "If you want to read a funny story , choose -q"
+					+ newLine + "If you want to cook delicious treats then, choose -s");
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
@@ -816,8 +870,8 @@ public class ExcitingStory {
             while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e")
                     || m.equals("-f") || m.equals("-g") || m.equals("-h") || m.equals("-i") || m.equals("-j")
                     || m.equals("-k") || m.equals("-l") || m.equals("-m") || m.equals("-n") || m.equals("-o")
-                    || m.equals("-p") || m.equals("-q"))) {
-                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q" + newLine + "Please Try Again");
+                    || m.equals("-p") || m.equals("-q") || m.equals("-s"))) {
+                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -s" + newLine + "Please Try Again");
 
                 m = scanner.nextLine();
 
@@ -860,6 +914,8 @@ public class ExcitingStory {
                 tellFunnyStory(newLine);
             else if (m.equals("-r"))
                 tellShortFunnyStory(newLine);
+			else if (m.equals("-s"))
+				tellACookingStory(newLine);
 
             sentence(newLine + "Would you like to read another story? Answer -yes or -no");
             b = scanner.nextLine();
