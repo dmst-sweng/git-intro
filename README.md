@@ -56,6 +56,7 @@ you undertook (see below).
  * Print chars one by one. -> efstrian
 * Refactor code
  * Fix code alignment -> theosotr
+ * Set number of characters per line to be up to 80 -> theosotr
  * Class names should follow unanimous style (e.g. AdventureStory, ScaryStory)->KonPap18
  * If they have (or should/could have) common characteristics create a superclass
    (e.g. Story) and have the existing ones inherit from that -> eletap

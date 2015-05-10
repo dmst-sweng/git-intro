@@ -24,3 +24,45 @@ git merge theosotr
 
 Push changes to the upstream repository
 git push origin master
+
+Go to 'theosotr' branch
+git checkout theosotr
+
+Create a new commit which fixes code alignment in ExcitingStory class
+git commit -a -m "Fix code alignment correctly"
+
+Create a new commit which adds a few notes on Changelog_theosotr file
+git commit -m "Additions on Changelog_theosotr file"
+
+Push branch 'theosotr' to the upstream repository
+git push origin theosotr
+
+Go to master branch
+git checkout master
+
+Merge branch 'theosotr' into master branch
+git merge theosotr
+
+Push changes to the upstream repository
+git push origin master
+
+Go to 'theosotr' branch
+git checkout theosotr
+
+Create a new commit which adds notes to README file
+git commit -a -m "Update README file"
+
+Create a new commit which adds a few notes on Changelog_theosotr file
+git commit -m "Additions on Changelog_theosotr file"
+
+Push branch 'theosotr' to the upstream repository
+git push origin theosotr
+
+Go to master branch
+git checkout master
+
+Merge branch 'theosotr' into master branch
+git merge theosotr
+
+Push changes to the upstream repository
+git push origin master
