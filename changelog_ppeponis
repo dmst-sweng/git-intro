@@ -1,0 +1,35 @@
+-clone the rewuested repository
+git clone  git clone https://github.com/dmst-sweng/git-intro.git
+
+-update my repository with the latest version
+git pull
+
+-update tasks file after adding my name next to a task
+git commit -a -m
+
+-push changes 
+git push
+
+-create new branch for ppeponis 
+git branch ppeponis
+
+-go to ppeponis branch
+git checkout ppeponis
+
+-add my changelog file to the repository
+git add changelog_ppeponis
+
+-apply commit to local repository 
+git commit -a -m "fix -z not working"
+
+-update remote repository
+git push -u origin ppeponis
+
+-update local repsotiry once again
+git pull
+
+-go to our branch
+git checkout master
+
+-merge our branch with master
+git merge ppeponis

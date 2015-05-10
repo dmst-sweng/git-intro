@@ -157,7 +157,7 @@ static void tellShortStory(String newLine) {
 			Scanner input_x = new Scanner(System.in);//initializing the scanner class
 			String your_answer = input_x.nextLine();//taking input from the keyboard and puttimg it in the variable your_answer
                         /*allowing the user to put as input only '-y' or '-z'*/
-			while (!(answer.equals("-y") || your_answer.equals("-z")))  {
+			while (!(answer.equals("-y") ||  your_answer.equals("-z")))  {
 				sentence("You can only Type -y or -z "+newLine+ "Please Try Again");
 				your_answer = input_x.nextLine();
 			}
