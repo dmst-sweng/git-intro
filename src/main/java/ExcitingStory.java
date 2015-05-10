@@ -670,8 +670,8 @@ static void tellShortStory(String newLine) {
 			    tellTwistedStory(newLine) ;
 			else if (m.equals("-q"))
 			    tellFunnyStory(newLine) ;
-			else if (m.equals("-q"))
-				tellShortFunnyStory(newLine) ;
+			else if (m.equals("-r"))
+				tellShortFunnyStory(newLine);
 
 			sentence(newLine + "Would you like to read another story? Answer -yes or -no");
 			b = scanner.nextLine();
