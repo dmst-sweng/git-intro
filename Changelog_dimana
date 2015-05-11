@@ -1,0 +1,62 @@
+Clone the repository:
+git clone https://github.com/dmst-sweng/git-intro.git
+
+Check status before changes added:
+git status
+
+Add modified README.md to local repository ('master' branch):
+git add README.md
+
+Check status after changes added:
+git status
+
+Commit changes:
+git commit -m "Added a new task and assigned it to myself"
+
+Push changes:
+git push
+
+Fetch changes from the remote repository and merge them:
+git pull
+
+Create a new branch and switch to it:
+git checkout -b dimana
+
+Check status before changes added:
+git status
+
+Place docs folder under version control:
+git add docs
+
+Check status after changes added:
+git status
+
+Commit changes to local repository ('dimana' branch):
+git commit -m "Added docs folder containing javadoc"
+
+Push 'dimana' branch on the remote repository:
+git push origin dimana
+
+Check status before changes added:
+git status
+
+Place Changelog_dimana under version control:
+git add Changelog_dimana
+
+Check status after changes added:
+git status
+
+Commit changes:
+git commit -m "Added Changelog_dimana"
+
+Push changes to 'dimana' branch on the remote repository:
+git push origin dimana
+
+Switch to master branch:
+git checkout master
+
+Merge 'dimana' branch to master:
+git merge dimana
+
+Push to the remote repository:
+git push
