@@ -816,21 +816,49 @@ public class ExcitingStory {
 	 * Function that is used to create a myth story about The Gift of Fire Zeus and Prometheus.
 	 */
 	static void tellPrometheusMyth(String newLine) {
-		sentence("A young student has financial problems and decides to " +
-				"prostitute himself in order to address his problem.");
-		sentence("He puts a poster at his entrance, writing:'Young man at " +
-				"your service. In bed 50$, on the couch 30$, on the floor " +
-				"10$'");
-		sentence("He waits too nervous and then the bell rings");
-		sentence("He opens the door and with 'great joy' sees a very old lady");
-		sentence("'Good morning madam! How could i help you?' he asked, " +
-				"hoping that she is not a customer...");
-		sentence("'I saw your poster' she said and gives him directly 50$");
-		sentence("'Oh, i see you are very determined! So, do you want to go " +
-				"straight to the bedroom?' he asked, not having many options." +
-				".. ");
-		sentence("'Oh, my boy! You misunderstood! I want five times on the " +
-				"floor!!! :):):) ");
+		sentence("A child was terrified by the storm and because of " +
+				"that it could not sleep.");
+		sentence("To make the kid to sleep grandmother start telling" +
+				" a story about Prometheus.");
+		sentence("The story begins ...");
+		sentence("From the very first, humans had trouble with the gods." +
+				"Most gods thought of humans as toys.");
+		sentence("But some gods found themselves interested in the human race." +
+				"Some gods even made friends with the humans.");
+		sentence("One of those gods was named Prometheus.");
+		sentence("");
+		sentence("The first people created by the gods lived happily together." +
+				"They thought the gods were wonderful.");
+		sentence("But their children were not as grateful or as content." +
+				"The children argued among themselves,\n and sometimes even argued with the gods.");
+		sentence("Zeus was very disappointed at mankind." +
+				"He decided he was not going to give mankind a most important tool - fire!");
+		sentence("Without fire, humans were not going to last very long.");
+		sentence("");
+		sentence("Prometheus felt sorry for his human friends." +
+				"Fire was important for many things - like heat and cooking, and hundreds of others.");
+		sentence("Prometheus stole a lightning bolt from Zeus and gave" +
+				"it to mankind. That's when man discovered fire.");
+		sentence("");
+		sentence("Zeus was furious!!!!");
+		sentence("He ordered Prometheus chained to a rock as punishment" +
+				"for stealing his lightning bolt, and for going behind" +
+				"his back to help the humans.");
+		sentence("To make Prometheus even more miserable, Zeus sent storms" +
+				"to beat angry waves against Prometheus, helplessly chained to his rock.");
+		sentence("Zeus made the sun shine really brightly now and then to burn his skin." +
+				"Zeus even sent an eagle to nibble at poor Prometheus' body.");
+		sentence("It was quite a punishment for a god who had only tried to help mankind." +
+				"But he had defied Zeus, and that was what made Zeus so angry.");
+		sentence("");
+		sentence("It was Hercules who finally released the helpless god from his chains.");
+		sentence("By the time Hercules saved him, nearly a thousand years had passed." +
+				"That's probably not a lot of time if you happen to be immortal.");
+		sentence("But humans had changed a great deal over 1000 years." +
+				"By then, Zeus found humans quite entertaining.");
+		sentence("Zeus no longer cared if anyone rescued Prometheus or not.");
+		sentence("");
+		sentence("After the end of the story the kid was closed its eyes and slept");
     }
 
 	/**
@@ -938,7 +966,7 @@ public class ExcitingStory {
 			else if (m.equals("-s"))
 				tellACookingStory(newLine);
 			else if (m.equals("-t"))
-				System.out.println("mpika");
+				tellPrometheusMyth(newLine);
 
             sentence(newLine + "Would you like to read another story? Answer -yes or -no");
             b = scanner.nextLine();
