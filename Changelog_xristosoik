@@ -1,0 +1,36 @@
+Clone repo
+git clone https://github.com/dmst-sweng/git-intro.git
+
+I add atask for me
+git commit -a -m "Add a task for xristosoik"
+
+I push it to master
+git push origin master
+
+I create a new branch and start working in
+git checkout -b xristosoik-branch
+
+I work to create all the necessary infrastructure for my story
+git commit -a -m "Addition of the infrastructure for my story"
+
+I set the full story
+git commit -a -m "Full Prometheus story"
+
+I add Changelog_xistosoik
+git add Changelog_xristosoik
+
+I commit the addition
+git commit -a -m "Add Changelog_xristosoik"
+
+I push my branch
+git push origin xristosoik-branch
+
+I change to the master branch
+git checkout master
+
+I merge xristosoik-branch to master
+git merge xristosoik-branch
+
+I push ot to master
+git push origin master
+

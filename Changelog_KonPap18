@@ -1,0 +1,29 @@
+Δημιουργία νεου branch
+git branch KonPap18
+
+μεταβαση στο καινουριο
+git checkout KonPap18
+
+ενημερωση του απομακρυσμενου αποθετηριου για το καινουριο
+git push origin KonPap18
+/=====
+αλλαγες στον κωδικα
+=====/
+προσθήκη του αρχειου με τις αλλαγές
+git add Changelog_KonPap18
+
+commit στο τοπικό αποθετήριο
+git commit -a -m "classes follow unanimous style" 
+
+ενημέρωση του απομακρυσμένου
+git push -u origin KonPap18
+
+συγχρονισμός με τα δεδομένα του απομακρυσμένου
+git pull
+
+αλλαγή branch στο οποίο δουλεύουμε
+git checkout master
+
+ενωση του KonPap18 με το master
+git merge KonPap18
+

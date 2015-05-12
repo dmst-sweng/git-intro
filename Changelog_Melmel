@@ -1,0 +1,89 @@
+Cloned the master repo
+$ git clone https://github.com/dmst-sweng/git-intro.git
+
+Created branch to work on
+$ git branch add-substory
+
+Switched to branch 'add-substory'
+$ git checkout add-substory
+
+After adding the changed ExcitingStory.java file to my directory I typed git status
+$ git status
+On branch add-substory
+Changes not staged for commit:
+        modified:   src/main/java/ExcitingStory.java
+no changes added to commit
+
+I staged the file
+$ git add src/main/java/ExcitingStory.java
+
+I moved the file to history
+$ git commit -m "Added a cooking adventure sub-story."
+[add-substory 3216e7d] Added a cooking adventure sub-story.
+ 1 file changed, 58 insertions(+), 4 deletions(-)
+
+I finally pushed the new branch to be glued to the master 
+$ git push -u origin add-substory
+
+
+When I tried to 
+git chekout master
+git pull
+git merge add-substory
+
+the origin/master and my add-substory branch had so many conflicts that resulted in many failed attempts to 
+merge master and add-substory branch locally
+
+In the end what I did was:
+
+$ git checkout master
+Switched to branch 'master'
+
+(master)
+$ git pull
+Already up-to-date.
+
+(master)
+$ git checkout add-substory
+Switched to branch 'add-substory'
+Your branch is up-to-date with 'origin/add-substory'.
+
+I then added my part to the java file and typed git status, to see the modified file:
+
+(add-substory)
+$ git status
+On branch add-substory
+Your branch is up-to-date with 'origin/add-substory'.
+Changes not staged for commit:
+        modified:   src/main/java/ExcitingStory.java
+
+
+(add-substory)
+$ git add src/main/java/ExcitingStory.java
+
+(add-substory)
+$ git commit -m "Update cooking story"
+[add-substory c377f74] Update cooking story
+ 1 file changed, 59 insertions(+), 3 deletions(-)
+
+(add-substory)
+$ git status
+On branch add-substory
+Your branch is ahead of 'origin/add-substory' by 1 commit.
+
+
+(add-substory)
+$ git push -u origin add-substory
+
+(add-substory)
+$ git checkout master
+
+(master)
+$ git merge add-substory
+Updating 6996921..c377f74
+Fast-forward
+ src/main/java/ExcitingStory.java | 62 ++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 59 insertions(+), 3 deletions(-)
+
+(master)
+$ git push -u origin master

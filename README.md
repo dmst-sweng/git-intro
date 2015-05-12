@@ -1,6 +1,10 @@
 git-intro
 =========
 
+## Build Status
+[![Build Status](https://travis-ci.org/dmst-sweng/git-intro.svg?branch=master)](https://travis-ci.org/dmst-sweng/git-intro)
+=========
+
 # An introduction to Git's collaboration style.
 
 ## Assignment
@@ -28,7 +32,7 @@ Don't worry if it happens, you will get extra credit for that :-)
 ### Work guide
 
 All tasks should be done in a new branch that
-should be merged to the master branch after 
+should be merged to the master branch after
 a task is successfully completed.
 Don't delete your branch afterwards.
 
@@ -43,20 +47,33 @@ you undertook (see below).
 ### Tasks to do:
 
 * Set up task list -> mfragkoulis
-* Cleanup repository -> k-karakatsanis
+* Cleanup repository
  * Generated files (e.g. .class files) should not be under version
    control; remove them.
 * Place the story in folder test_branch with the rest of the stories
    and remove folder test_branch -> p3110145
+* Upgrade sentence() method
+ * Print chars one by one. -> efstrian
 * Refactor code
  * Fix code alignment -> theosotr
+ * Set number of characters per line to be up to 80 -> theosotr
  * Class names should follow unanimous style (e.g. AdventureStory, ScaryStory)->KonPap18
- * If they have (or should/could have) common characteristics create a superclass
-   (e.g. Story) and have the existing ones inherit from that
  * Enhance code readability (e.g use the sentence() method everywhere)-> KaterinaADAM
-* Document code->cheeseplate
- * Place comments on top of methods
- * Place comments inline to the code if/when needed (use sparingly).
+ * Format the printers so that the story is printed out in a tidier way->lakitas(inserted the task)
+* Document code
+ * Place comments on top of methods -> konpapa
+ * Place comments inline to the code if/when needed (use sparingly).->cheeseplate
+* Generate javadoc for ExcitingStory.java and place it in a docs folder -> dimana
 * Fix code errors
  * Option -y does not work properly -> kostastsili94
  * Option -z does not work properly->ppeponis
+* Project setup
+ * Build project with Maven -> htsili
+ * Integrate project with Travis-ci. -> htsili
+* Add story in ExcitingStory.java
+ * Add a short joke. -> k-karakatsanis
+ * Add a sub-story. -> Melmel
+ * Add a a myth about Zeus and Prometheus. -> xristosoik
+ * Add a song about Java. -> eletap
+ * Add an interesting story. -> katerinakaplani
+ * Add a weird story. -> SPYROS-GER
