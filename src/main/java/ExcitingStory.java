@@ -462,7 +462,7 @@ public class ExcitingStory {
     }
 
 	/**
-	 * Function that is used to create a story.
+	 * This function continues the creepy story
 	 */
     static void happyEnd(String newlineS) {
         sentence("You run as fast as you can,practically breaking the " +
