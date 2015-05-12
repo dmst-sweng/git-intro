@@ -75,3 +75,4 @@ you undertook (see below).
 * Add story in ExcitingStory.java
  * Add a short joke. -> k-karakatsanis
  * Add a sub-story. -> Melmel
+ * Add a a myth about Zeus and Prometheus. -> xristosoik
