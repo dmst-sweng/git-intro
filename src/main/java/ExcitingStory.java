@@ -784,7 +784,7 @@ public class ExcitingStory {
                 "Young man...you keep both hands on the wheel...I'll tell " +
                 "you when it's raining!\" :P ");
     }
-	
+
     /**
 	 * Function that is used to create a cooking story.
 	 */
@@ -799,19 +799,40 @@ public class ExcitingStory {
 		sentence("We bake for exactly 12 minutes and they are ready!");
 		sentence("Bon appétit!");
 		sentence("Would you like another easy recipe?" + newLine + "Press -YES or -NO");
-		
+
 		Scanner typeIn = new Scanner(System.in); //initializing the scanner class
 		String answer = typeIn.nextLine(); //taking the keyboard input and assigning it to answer
-		
+
 		/*allowing the user to put as input only '-o' or '-i'*/
 	    while (!(answer.equals("-YES") || answer.equals("-NO")))  {
 			sentence("Please only type -YES or -NO" +newLine+ "Try Again!");
 			answer = typeIn.nextLine();
 		}
-		
+
 		cookOrNot(answer, newLine);
 	}
-	
+
+	/**
+	 * Function that is used to create a myth story about The Gift of Fire Zeus and Prometheus.
+	 */
+	static void tellPrometheusMyth(String newLine) {
+		sentence("A young student has financial problems and decides to " +
+				"prostitute himself in order to address his problem.");
+		sentence("He puts a poster at his entrance, writing:'Young man at " +
+				"your service. In bed 50$, on the couch 30$, on the floor " +
+				"10$'");
+		sentence("He waits too nervous and then the bell rings");
+		sentence("He opens the door and with 'great joy' sees a very old lady");
+		sentence("'Good morning madam! How could i help you?' he asked, " +
+				"hoping that she is not a customer...");
+		sentence("'I saw your poster' she said and gives him directly 50$");
+		sentence("'Oh, i see you are very determined! So, do you want to go " +
+				"straight to the bedroom?' he asked, not having many options." +
+				".. ");
+		sentence("'Oh, my boy! You misunderstood! I want five times on the " +
+				"floor!!! :):):) ");
+    }
+
 	/**
 	 * This function is used to inform the reader about the outcome of his reaction to cook again or not.
 	 *
@@ -823,11 +844,11 @@ public class ExcitingStory {
 
 	    if (answer.equals("-YES")) {
 		    sentence("Let's make delicious pancakes!");
-		    sentence("You will need 3/4 cup of milk, 2 tablespoons of olive oil, 1 egg, 1 cup of flour," 
+		    sentence("You will need 3/4 cup of milk, 2 tablespoons of olive oil, 1 egg, 1 cup of flour,"
 			+ newLine + "2 tablespoons baking powder, 2 tablespoons of sugar and a pinch of salt.");
 		    sentence("We gradually mix the ingredients in a bowl.");
 		    sentence("We apply some butter on a frying pan and pour two tablespoons of our mix.");
-		    sentence("We let it bake for 1-2 minutes until the surface has little holes. We turn down the heat" 
+		    sentence("We let it bake for 1-2 minutes until the surface has little holes. We turn down the heat"
 			+ newLine + "so that out next pancakes will not burn.");
 		    sentence("We turn the pancake on the other side, to bake for 1 minute, as well.");
 		    sentence("In the end we can serve our fresh, hot pancakes with maple syrup or ingredient of our choice!");
@@ -860,7 +881,7 @@ public class ExcitingStory {
                     + newLine + "if you want to read a breathtaking story, choose -k" + newLine + "if you want to read a short story, choose -l"
                     + newLine + "If you decided to go for a commonly walk by your bike, choose -m" + newLine + "If you want a lottery story, choose -n"
                     + newLine + "If you want to read a western story , choose -o" + newLine + "If you want to read a twisted story , choose -p" + newLine + "If you want to read a funny story , choose -q"
-					+ newLine + "If you want to cook delicious treats then, choose -s");
+					+ newLine + "If you want to cook delicious treats then, choose -s" + newLine + "If you want to read a myth about Prometheus , choose -t");
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
@@ -870,8 +891,8 @@ public class ExcitingStory {
             while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e")
                     || m.equals("-f") || m.equals("-g") || m.equals("-h") || m.equals("-i") || m.equals("-j")
                     || m.equals("-k") || m.equals("-l") || m.equals("-m") || m.equals("-n") || m.equals("-o")
-                    || m.equals("-p") || m.equals("-q") || m.equals("-s"))) {
-                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -s" + newLine + "Please Try Again");
+                    || m.equals("-p") || m.equals("-q") || m.equals("-s") || m.equals("-t"))) {
+                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -s or -t" + newLine + "Please Try Again");
 
                 m = scanner.nextLine();
 
@@ -916,6 +937,8 @@ public class ExcitingStory {
                 tellShortFunnyStory(newLine);
 			else if (m.equals("-s"))
 				tellACookingStory(newLine);
+			else if (m.equals("-t"))
+				System.out.println("mpika");
 
             sentence(newLine + "Would you like to read another story? Answer -yes or -no");
             b = scanner.nextLine();
