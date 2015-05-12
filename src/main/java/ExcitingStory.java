@@ -947,7 +947,6 @@ public class ExcitingStory {
 			+ newLine + "CODE HARD");
 }
 
-
     /**
      * main method
      */
