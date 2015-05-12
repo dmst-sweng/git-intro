@@ -112,7 +112,9 @@ public class ExcitingStory {
         reactionToDoorBell(answer, newLine);
     }
 
-
+	/**
+	 * Function that is used to create the "Lost in thoughts" story.
+	 */
     static void tellLostInThoughtsStory(String newLine) {
         sentence("and you could only hear the rain and the wind.");
         sentence("I couldn't stop thinking about what had just happened. " +
@@ -129,6 +131,9 @@ public class ExcitingStory {
         sentence("Who cares about rhinos???");
     }
 
+	/**
+	 * Function that is used to create the Lottery story.
+	 */
     static void tellTheLotteryStory(String newLine) {
         sentence("Eric was alone at his home, watching tv.");
         sentence("He was very nervous because in less than five minutes the " +
@@ -144,7 +149,9 @@ public class ExcitingStory {
 
     }
 
-
+	/**
+	 * Function that is used to create the "Eyes wide shut" story.
+	 */
     static void tellEyesWideShutStory(String newLine) {
         sentence("I was alone in my bedroom and I closed my eyes. Just for an" +
                 " instance..");
@@ -166,7 +173,9 @@ public class ExcitingStory {
                 "crying. I never oppened my eyes again, I died with a smile " +
                 "on my lips");
     }
-
+	/**
+	 * Function that is used to create a short story.
+	 */
     static void tellShortStory(String newLine) {
         sentence("and that was pretty much it.");
 
@@ -452,6 +461,9 @@ public class ExcitingStory {
         }
     }
 
+	/**
+	 * Function that is used to create a story.
+	 */
     static void happyEnd(String newlineS) {
         sentence("You run as fast as you can,practically breaking the " +
                 "entrance door."
