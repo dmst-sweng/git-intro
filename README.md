@@ -75,3 +75,4 @@ you undertook (see below).
  * Add a sub-story. -> Melmel
  * Add a a myth about Zeus and Prometheus. -> xristosoik
  * Add a song about Java. -> eletap
+ * Add an interesting story. -> katerinakaplani
