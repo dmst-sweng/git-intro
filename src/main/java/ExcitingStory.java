@@ -47,6 +47,43 @@ public class ExcitingStory {
                 "unrecognisable species, started talking to me!");
     }
 
+
+    /**
+	     * Function that is used to create an interesting story.
+	     */
+	    static void tellInterestingStory(String newLine) {
+	        sentence("Suddenly the door opened and John entered his house " +
+	        	     "only to find out that the detective was searching his stuff");
+	        sentence("-John I was..How are you..hmm..the detective managed to say");
+	        sentence("-So detective i guess i am one of the suspects now..John laughed");
+	        sentence("-You know John i have to examine all possibilities, the detective replied");
+	        sentence("As i told you, he continued, i want to confirm my final conclusion");
+	        sentence("-So you found out who the murderer is, John asked nervously");
+	        sentence("-I am sure you knew long before i did, John! You won't be surprised..");
+	        sentence("-Why don't you stay for a glass of wine,detective? Since your job here" +
+	                 " is done, it's our last chance to have a talk");
+			sentence("The detective was really akward. He just implied that John was the murder"+
+			         "and he offered him some wine? \"John has to be the murder,i know it.Don't let him"
+			         + "change your mind\" ,he kept telling to himself");
+			sentence("You seem to think too much for a simple drink detective,said John as he was"
+			         + "serving his glass");
+	        sentence("Well,i guess i can have a stay a bit." + newLine + "The detective sat comfortably in the sofa,"
+	                 +"felt a hit on his head and several minutes later woke up tied into a chair");
+	        sentence("I knew it was you ,John, I knew it!!Let me go,he screamed");
+	        sentence("It was your choice to stay. You where next to my open door, free to leave");
+	        sentence("But..but..you offered..Jesus...i knew it was a trap");
+	        sentence("Let me ask you something detective? Why don't people trust their instincts?" +
+	                 "They sense something is wrong, someone is walking too close behind them..." +
+	                 "You knew something was wrong but you came back into the house.");
+	        sentence("Did I force you, did I drag you in? No. All I had to do was offer you a drink.");
+	        sentence("You knew how dangerous I am, but you risk your life so you don't offend me" );
+	        sentence("It's hard to believe that the fear of offending can be stronger than the fear of pain.");
+		    sentence("But you know what? It is. And they always come willingly.");
+		    sentence("And then they sit there. They know it's all over just like you do");
+
+        }
+
+
     /**
      * Function that is used to create a real story.
      */
@@ -909,7 +946,8 @@ public class ExcitingStory {
                     + newLine + "if you want to read a breathtaking story, choose -k" + newLine + "if you want to read a short story, choose -l"
                     + newLine + "If you decided to go for a commonly walk by your bike, choose -m" + newLine + "If you want a lottery story, choose -n"
                     + newLine + "If you want to read a western story , choose -o" + newLine + "If you want to read a twisted story , choose -p" + newLine + "If you want to read a funny story , choose -q"
-					+ newLine + "If you want to cook delicious treats then, choose -s" + newLine + "If you want to read a myth about Prometheus , choose -t");
+					+ newLine + "If you want to cook delicious treats then, choose -s" + newLine + "If you want to read a myth about Prometheus , choose -t"+ newLine
+					+ "If you want to read an interesting story , choose -u");
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
@@ -919,8 +957,8 @@ public class ExcitingStory {
             while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e")
                     || m.equals("-f") || m.equals("-g") || m.equals("-h") || m.equals("-i") || m.equals("-j")
                     || m.equals("-k") || m.equals("-l") || m.equals("-m") || m.equals("-n") || m.equals("-o")
-                    || m.equals("-p") || m.equals("-q") || m.equals("-s") || m.equals("-t"))) {
-                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -s or -t" + newLine + "Please Try Again");
+                    || m.equals("-p") || m.equals("-q") || m.equals("-s") || m.equals("-t") || m.equals("-u"))) {
+                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -s or -t or -u" + newLine + "Please Try Again");
 
                 m = scanner.nextLine();
 
@@ -967,6 +1005,8 @@ public class ExcitingStory {
 				tellACookingStory(newLine);
 			else if (m.equals("-t"))
 				tellPrometheusMyth(newLine);
+			else if (m.equals("-u"))
+				tellInterestingStory(newLine);
 
             sentence(newLine + "Would you like to read another story? Answer -yes or -no");
             b = scanner.nextLine();
