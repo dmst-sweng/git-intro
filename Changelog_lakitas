@@ -1,0 +1,17 @@
+Pulling the changes:
+	git pull
+
+Creating a new branch(lakitas):
+	git branch lakitas
+
+Switching to lakitas branch:
+	git checkout lakitas
+
+Creating Changelog:
+	touch Changelog_lakitas
+
+Adding the changes and changelog to local lakitas:
+	git add -A
+
+Commiting the added changes to local lakitas:
+	git commit -m 'Tidying up the strings sent to sentence()'
