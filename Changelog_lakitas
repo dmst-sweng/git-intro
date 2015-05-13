@@ -15,3 +15,24 @@ Adding the changes and changelog to local lakitas:
 
 Commiting the added changes to local lakitas:
 	git commit -m 'Tidying up the strings sent to sentence()'
+
+Pushing the local repository:
+	git push origin lakitas
+
+Merge changes to master:
+	git checkout master
+	git merge lakitas
+
+Pushing the changes:
+	git push
+
+Correcting the undeleted merged junk
+
+Finishing the Changelog file
+
+Repeating last 5 steps:
+	git checkout lakitas
+	git push origin lakitas
+	git checkout master
+	git merge lakitas
+	git push
