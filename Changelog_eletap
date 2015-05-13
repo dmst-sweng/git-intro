@@ -35,5 +35,11 @@ git commit -m "Added the Changelog_eletap"
 Push the changes to eletap branch 
 git push origin eletap
 
+Switched to master branch
+git checkout master
 
+Merge branch to master
+git merge eletap
 
+Push changes to remote repository
+git push
