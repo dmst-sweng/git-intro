@@ -58,7 +58,18 @@ public class ExcitingStory {
 		sentence("safe and sound reading this book again! \n'Paul Clifford'");
 		sentence("Yet, you feel it is time, you should close your book and start playing some Minecraft.");
 	}
-
+	
+	/**
+	 * Function that is used to create a imaginary-ancient  story.
+	 */
+	static void tellImaginaryStory(String newLine) {
+		sentence("The continent of Atlantis was an island, which lay before the great flood");
+		sentence("In the area we now call the Atlantic Ocean  ");
+		sentence("So great an area of land that from her western shores ");
+		sentence("Those beautiful sailors journeyed to the sout");
+		sentence("And the North Americas with ease in their ships with painted sails ");
+	}
+	
 	/**
 	 * Function that is used to create a horryfying story.
 	 */

@@ -1,0 +1,31 @@
+To clone this repository :
+git clone [https://github.com/dmst-sweng/git-intro.git]
+
+To create a new branch : 
+git branch [AggelosGks]
+
+To swap to new branch created above : 
+git checkout [AggelosGks]
+
+/** Apply changes to ExcitingStory.java file **/
+
+To view the additive story on file : 
+git status
+
+To add the modifications on existing file : 
+git add [ExcitingStory.java]
+
+To commit my modifications : 
+git commit -m ["Imaginary Story"]
+
+To push modifications on created branch : 
+git push origin [AggelosGks]
+
+To move to master branch :
+git checkout master
+
+To merge created branch with master one :
+git merge [AggelosGks]
+
+To push modification to master branch :
+git push 
