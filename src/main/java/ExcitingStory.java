@@ -45,6 +45,44 @@ public class ExcitingStory {
         		"bashing my ears, while an unrecognisable species, started talking to me!");
     }
 
+
+    /**
+	     * Function that is used to create an interesting story.
+	     */
+	    static void tellInterestingStory(String newLine) {
+	        sentence("Suddenly the door opened and John entered his house " +
+	        	     "only to find out that the detective was searching his stuff" + newLine +
+	        	     "-John I was..How are you..hmm..the detective managed to say" + newLine +
+	        	     "-So detective i guess i am one of the suspects now..John laughed" + newLine +
+	        	     "-You know John i have to examine all possibilities, the detective replied" + newLine +
+	        	     "As i told you, he continued, i want to confirm my final conclusion" + newLine +
+	        	     "-So you found out who the murderer is, John asked nervously" + newLine +
+	        	     "-I am sure you knew long before i did, John! You won't be surprised.." + newLine +
+	        	     "-Why don't you stay for a glass of wine,detective? Since your job here" +
+	                 " is done, it's our last chance to have a talk" + newLine +
+	                 "The detective was really akward. He just implied that John was the murder" +
+			         "and he offered him some wine? \"John has to be the murder,i know it.Don't let him" +
+			         "change your mind\" ,he kept telling to himself" + newLine +
+			         "You seem to think too much for a simple drink detective,said John as he was" +
+			         "serving his glass" + newLine +
+			         "Well,i guess i can have a stay a bit." + newLine + "The detective sat comfortably in the sofa," +
+	                 "felt a hit on his head and several minutes later woke up tied into a chair" + newLine +
+	                 "I knew it was you ,John, I knew it!!Let me go,he screamed" + newLine +
+	                 "It was your choice to stay. You where next to my open door, free to leave" + newLine +
+	                 "But..but..you offered..Jesus...i knew it was a trap" + newLine +
+	                 "Let me ask you something detective? Why don't people trust their instincts?" +
+	                 "They sense something is wrong, someone is walking too close behind them..." +
+	                 "You knew something was wrong but you came back into the house." + newLine +
+	                 "Did I force you, did I drag you in? No. All I had to do was offer you a drink." + newLine +
+	                 "You knew how dangerous I am, but you risk your life so you don't offend me" + newLine +
+	                 "It's hard to believe that the fear of offending can be stronger than" +
+	                 "the fear of pain." + newLine +
+	                 "But you know what? It is. And they always come willingly." + newLine +
+	                 "And then they sit there. They know it's all over just like you do");
+
+        }
+
+
     /**
      * Function that is used to create a real story.
      */
@@ -362,17 +400,17 @@ public class ExcitingStory {
                     "you?");
         } else {
             sentence("Unfortunately it is real...\nthe door opens and you " +
-                            "stand there staring at the terrifying"
-                            + newline4 + "figure of an old woman in a black " +
-                            "dress floating above the floor."
-                            + newline4 + "As you are paralyzed with fear she " +
-                            "gets close and touches your chest with her cold " +
-                            "hand."
-                            + newline4 + "You try to talk but the words " +
-                            "refuse to come out."
-                            + newline4 + "As you fall into the void you can " +
-                            "hear her voice saying 'Your time has come.." +
-                            ".emprace the darkness'"
+                    "stand there staring at the terrifying"
+                    + newline4 + "figure of an old woman in a black " +
+                    "dress floating above the floor."
+                    + newline4 + "As you are paralyzed with fear she " +
+                    "gets close and touches your chest with her cold " +
+                    "hand."
+                    + newline4 + "You try to talk but the words " +
+                    "refuse to come out."
+                    + newline4 + "As you fall into the void you can " +
+                    "hear her voice saying 'Your time has come.." +
+                    ".emprace the darkness'"
             );
         }
     }
@@ -770,11 +808,12 @@ public class ExcitingStory {
                 "Young man...you keep both hands on the wheel...I'll tell " +
                 "you when it's raining!\" :P ");
     }
-	
+
     /**
 	 * Function that is used to create a cooking story.
 	 */
     public static void tellACookingStory(String newLine) {
+<<<<<<< HEAD
 		sentence("A new day has began, a new cooking adventure!" + newLine +
 				"Let's make Easy Nutella Cookies!" + newLine +
 				"A very easy recipe with very few ingredients!" + newLine +
@@ -788,18 +827,145 @@ public class ExcitingStory {
 				"Bon appÃ©tit!" + newLine +
 				"Would you like another easy recipe?" + newLine + "Press -YES or -NO");
 		
+=======
+		sentence("A new day has began, a new cooking adventure!" + newLine +
+				"Let's make Easy Nutella Cookies!" + newLine +
+				"A very easy recipe with very few ingredients!" + newLine +
+				"You will need half a cup nutella, a big egg, a cup of " +
+				"self-raising flour and just a pinch of salt." + newLine +
+				"You preheat the oven at 190 Celsius." + newLine +
+				"In a bowl we gradually mix all ingredients." + newLine +
+				"We put non stick baking paper on a pan and with flour " +
+				"on our hands we make small cookies." + newLine +
+				"We bake for exactly 12 minutes and they are ready!" + newLine +
+				"Bon appetit!" + newLine +
+				"Would you like another easy recipe?" + newLine +
+				"Press -YES or -NO");
+
+>>>>>>> b5a8ecdc8a13923b0f23358cb3fdd607daaa6f52
 		Scanner typeIn = new Scanner(System.in); //initializing the scanner class
 		String answer = typeIn.nextLine(); //taking the keyboard input and assigning it to answer
-		
+
 		/*allowing the user to put as input only '-o' or '-i'*/
 	    while (!(answer.equals("-YES") || answer.equals("-NO")))  {
-			sentence("Please only type -YES or -NO" +newLine+ "Try Again!");
+			sentence("Please only type -YES or -NO" +newLine+
+					"Try Again!");
 			answer = typeIn.nextLine();
 		}
-		
+
 		cookOrNot(answer, newLine);
 	}
-	
+
+	/**
+	 * Function that is used to create a myth story about The Gift of Fire Zeus and Prometheus.
+	 */
+	static void tellPrometheusMyth(String newLine) {
+		sentence("A child was terrified by the storm and because of " +
+				"that it could not sleep." + newLine +
+				"To make the kid to sleep grandmother start telling" +
+				" a story about Prometheus." + newLine +
+				"The story begins ..." + newLine +
+				"From the very first, humans had trouble with the gods." +
+				"Most gods thought of humans as toys." + newLine +
+				"But some gods found themselves interested in the human race." +
+				"Some gods even made friends with the humans." + newLine +
+				"One of those gods was named Prometheus." + newLine +
+				"The first people created by the gods lived happily together." +
+				"They thought the gods were wonderful." + newLine +
+				"But their children were not as grateful or as content." +
+				"The children argued among themselves," + newLine +
+				"and sometimes even argued with the gods." + newLine +
+				"Zeus was very disappointed at mankind." +
+				"He decided he was not going to give mankind a most " +
+				"important tool - fire!" + newLine +
+				"Without fire, humans were not going to last very long." + newLine +
+				"Prometheus felt sorry for his human friends." +
+				"Fire was important for many things - like heat and cooking, " +
+				"and hundreds of others." + newLine +
+				"Prometheus stole a lightning bolt from Zeus and gave" +
+				"it to mankind. That's when man discovered fire." + newLine +
+				"Zeus was furious!!!!" + newLine +
+				"He ordered Prometheus chained to a rock as punishment" +
+				"for stealing his lightning bolt, and for going behind" +
+				"his back to help the humans." + newLine +
+				"To make Prometheus even more miserable, Zeus sent storms" +
+				"to beat angry waves against Prometheus, helplessly chained to his rock." + newLine +
+				"Zeus made the sun shine really brightly now and then to burn his skin." +
+				"Zeus even sent an eagle to nibble at poor Prometheus' body." + newLine +
+				"It was quite a punishment for a god who had only tried to help mankind." +
+				"But he had defied Zeus, and that was what made Zeus so angry." + newLine +
+				"It was Hercules who finally released the helpless god from his chains." + newLine +
+				"By the time Hercules saved him, nearly a thousand years had passed." +
+				"That's probably not a lot of time if you happen to be immortal." + newLine +
+				"But humans had changed a great deal over 1000 years." +
+				"By then, Zeus found humans quite entertaining." + newLine +
+				"Zeus no longer cared if anyone rescued Prometheus or not." + newLine +
+				"After the end of the story the kid was closed its eyes and slept");
+    }
+
+		static void tellJavaSong(String newLine){
+				sentence( "This is a song called 'The Java Life'"
+				+ newLine + "In the cubicles representin’ for my JAVA homies…"
+				+ newLine + "In by nine, out when the deadlines are met, check it."
+				+ newLine + "We code hard in these cubicles"
+				+ newLine + "My style’s nerd-chic, I’m a programmin’ freak"
+				+ newLine + "We code hard in these cubicles"
+				+ newLine + "Only two hours to your deadline? Don’t sweat my technique."
+				+ newLine + "Sippin’ morning coffee with that JAVA swirl."
+				+ newLine + "Born to code; my first words were “Hello World"
+				+ newLine + "Since 95, been JAVA codin’ stayin’ proud"
+				+ newLine + "Started on floppy disks, now we take it to the cloud."
+				+ newLine + "On my desktop, JAVA’s what’s bobbin’ and weavin’"
+				+ newLine + "We got another winning app before I get to OddEven."
+				+ newLine + "Blazin’ code like a forest fire, climbin’ a tree"
+				+ newLine + "Setting standards like I Triple E…."
+				+ newLine + "Boot it on up, I use the force like Luke,"
+				+ newLine + "Got so much love for my homeboy Duke."
+				+ newLine + "GNU Public Licensed, it’s open source,"
+				+ newLine + "Stop by my desk when you need a crash course"
+				+ newLine + "Written once and my script runs anywhere,"
+				+ newLine + "Straight thuggin’, mean muggin’ in my Aeron chair."
+				+ newLine + "All the best lines of code, you know I wrote ‘em"
+				+ newLine + "I’ll run you out of town on your dial-up modem."
+				+ newLine + "‘Cause…"
+				+ newLine + "We code hard in these cubicles"
+				+ newLine + "Me and my crew code hyphy hardcore"
+				+ newLine + "We code hard in these cubicles"
+				+ newLine + "It’s been more than 10 years since I’ve seen the 404."
+				+ newLine +	"Inheriting a project can make me go beeee-serk"
+				+ newLine + "Ain’t got four hours to transfer their Framework."
+				+ newLine + "The cleaners killed the lights, Man, that ain’t nice,"
+				+ newLine + "Gonna knock this program out, just like Kimbo Slice"
+				+ newLine + "I program all night, just like a champ,"
+				+ newLine + "Look alive under this IKEA lamp."
+				+ newLine + "I code HARDER in the midnight hour,"
+				+ newLine + "E7 on the vending machine fuels my power."
+				+ newLine + "Ps3 to Smartphones, our code use never ends,"
+				+ newLine + "JAVA’s there when I beat you in “Words with Friends”."
+				+ newLine + "My developing skills are so fresh please discuss,"
+				+ newLine + "You better step your game up on that C++.   "
+				+ newLine +	"We know better than to use Dot N-E-T,"
+				+ newLine + "Even Dan Brown can’t code as hard as me."
+				+ newLine + "You know JAVA’s gettin’ bigger, that’s a promise not a threat,"
+				+ newLine + "Let me code it on your brain"
+				+ newLine + "so you’ll never forget."
+				+ newLine + "We code hard in these cubicles,"
+				+ newLine + "it’s the core component…of what we implement."
+				+ newLine + "We code hard in these cubicles,"
+				+ newLine + "Straight to your JAVA Runtime Environment."
+				+ newLine + "We code hard in these cubicles,"
+				+ newLine + "Keep the syntax light and the algorithm tight."
+				+ newLine + "We code hard in these cubicles,"
+				+ newLine + "Gotta use JAVA if it’s gonna run right."
+				+ newLine + "We code hard in these cubicles"
+				+ newLine + "JAVA keeps adapting, you know it’s built to last."
+				+ newLine + "We code hard in these cubicles,"
+				+ newLine + "Robust and secure, so our swag’s on blast"
+				+ newLine + "CODE HARD");
+	}
+
+
+
 	/**
 	 * This function is used to inform the reader about the outcome of his reaction to cook again or not.
 	 *
@@ -810,6 +976,7 @@ public class ExcitingStory {
 	static void cookOrNot(String answer , String newLine) {
 
 	    if (answer.equals("-YES")) {
+<<<<<<< HEAD
 		    sentence("Let's make delicious pancakes!" + newLine +
 		    		"You will need 3/4 cup of milk, 2 tablespoons of " +
 		    		"olive oil, 1 egg, 1 cup of flour," + newLine +  
@@ -826,6 +993,18 @@ public class ExcitingStory {
 					"In the end we can serve our fresh, hot pancakes with " +
 					"maple syrup or ingredient of our choice!" + newLine +
 					"Enjoy!");
+=======
+		    sentence("Let's make delicious pancakes!");
+		    sentence("You will need 3/4 cup of milk, 2 tablespoons of olive oil, 1 egg, 1 cup of flour,"
+			+ newLine + "2 tablespoons baking powder, 2 tablespoons of sugar and a pinch of salt.");
+		    sentence("We gradually mix the ingredients in a bowl.");
+		    sentence("We apply some butter on a frying pan and pour two tablespoons of our mix.");
+		    sentence("We let it bake for 1-2 minutes until the surface has little holes. We turn down the heat"
+			+ newLine + "so that out next pancakes will not burn.");
+		    sentence("We turn the pancake on the other side, to bake for 1 minute, as well.");
+		    sentence("In the end we can serve our fresh, hot pancakes with maple syrup or ingredient of our choice!");
+		    sentence("Enjoy!");
+>>>>>>> b5a8ecdc8a13923b0f23358cb3fdd607daaa6f52
 		}
 		else if (answer.equals("-NO"))
 			sentence("Have a nice day and enjoy your nutella cookies!");
@@ -849,6 +1028,7 @@ public class ExcitingStory {
                     + newLine + "If you want science fiction, choose -d" +
                     newLine + "If you want a different story, choose -e" +
                     newLine + "If you want a scary story, choose -f"
+<<<<<<< HEAD
                     + newLine + "If you want a creepy story, choose -g" + newLine + 
                     "If you want to know what I think about this night, choose -h"
                     + newLine + "If you don't care that is a dark night and just want " +
@@ -861,6 +1041,15 @@ public class ExcitingStory {
                     "If you want to read a twisted story , choose -p" + newLine + 
                     "If you want to read a funny story , choose -q"
 					+ newLine + "If you want to cook delicious treats then, choose -s");
+=======
+                    + newLine + "If you want a creepy story, choose -g" + newLine + "If you want to know what I think about this night, choose -h"
+                    + newLine + "If you don't care that is a dark night and just want to read the worthTellingStory, choose -i" + newLine + "if you are bored to read a story, choose -j"
+                    + newLine + "if you want to read a breathtaking story, choose -k" + newLine + "if you want to read a short story, choose -l"
+                    + newLine + "If you decided to go for a commonly walk by your bike, choose -m" + newLine + "If you want a lottery story, choose -n"
+                    + newLine + "If you want to read a western story , choose -o" + newLine + "If you want to read a twisted story , choose -p" + newLine + "If you want to read a funny story , choose -q"
+					+ newLine + "If you want to cook delicious treats then, choose -s" + newLine + "If you want to read a myth about Prometheus , choose -t"+ newLine
+					+ "If you want to read an interesting story , choose -u" + newLine + "If you want a song about Java, choose -v");
+>>>>>>> b5a8ecdc8a13923b0f23358cb3fdd607daaa6f52
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
@@ -870,8 +1059,9 @@ public class ExcitingStory {
             while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e")
                     || m.equals("-f") || m.equals("-g") || m.equals("-h") || m.equals("-i") || m.equals("-j")
                     || m.equals("-k") || m.equals("-l") || m.equals("-m") || m.equals("-n") || m.equals("-o")
-                    || m.equals("-p") || m.equals("-q") || m.equals("-s"))) {
-                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -s" + newLine + "Please Try Again");
+                    || m.equals("-p") || m.equals("-q") || m.equals("-s") || m.equals("-t") || m.equals("-u") || m.equals("-v"))) {
+                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -s or -t or -u or -v" + newLine + "Please Try Again");
+
 
                 m = scanner.nextLine();
 
@@ -916,6 +1106,12 @@ public class ExcitingStory {
                 tellShortFunnyStory(newLine);
 			else if (m.equals("-s"))
 				tellACookingStory(newLine);
+			else if (m.equals("-t"))
+				tellPrometheusMyth(newLine);
+			else if (m.equals("-u"))
+				tellInterestingStory(newLine);
+			else if (m.equals("-v"))
+				tellJavaSong(newLine);
 
             sentence(newLine + "Would you like to read another story? Answer -yes or -no");
             b = scanner.nextLine();
