@@ -1,0 +1,63 @@
+﻿-Task selection ( 5 steps):
+1.git clone https://github.com/dmst-sweng/git-intro.git
+,to clone the repository
+
+
+2.To select a task from README.md file:
+Edited README.md file locally, 
+git add README.md
+,to add the file to staging
+
+3.git status
+,to see the status of staging
+
+4.Snapshot-commit the changes:
+git commit -m "update README.md"
+
+
+5.Pushed the changes:
+git push
+
+-Work Guide ,task to do , "add a weird story"(14 steps):
+
+1.git branch
+,to check the branches of the repository
+
+2.git branch SPYROS-GER 
+,to create the branch I will work on
+
+3.git branch
+,to see which branch is selected 
+
+4.git checkout SPYROS-GER
+,switch to branch SPYROS-GER
+
+5.git branch 
+,to see if my switch has been succesfully made
+
+6.git add src/main/java/ExcitingStory.java
+,to add the the changes of ExcitingStory.java to staging phase
+
+7.git commit -m "Add a weird story"
+,to commit the changes locally
+
+8.git add Changelog_SPYROS-GER
+,to add the Changelog_SPYROS-GER to staging phase
+
+9.git commit -m "Add Changelog_SPYROS-GER
+,to commit changes locally
+
+10.git push origin SPYROS-GER
+,to push my branch
+
+11.git checkout master
+,to switch to master branch
+
+12.git branch 
+,to see if my switch has been succesfully made
+
+13.git merge SPYROS-GER
+,to merge SPYROS-GER branch to master branch
+
+14.git push origin master
+

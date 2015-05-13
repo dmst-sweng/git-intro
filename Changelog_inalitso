@@ -1,0 +1,9 @@
+1) git clone https://github.com/dmst-sweng/git-intro.git
+2) git checkout -b inalitso
+3) git branch
+4) git add README.md
+5) git commit -m ['Add a task for me']
+6) git checkout master
+7) git merge inalitso
+8) git push 
+

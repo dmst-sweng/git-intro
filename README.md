@@ -49,7 +49,7 @@ you undertook (see below).
 * Set up task list -> mfragkoulis
 * Cleanup repository
  * Generated files (e.g. .class files) should not be under version
-   control; remove them.
+   control; remove them. -> XaLDe
 * Place the story in folder test_branch with the rest of the stories
    and remove folder test_branch -> p3110145
 * Upgrade sentence() method
@@ -77,3 +77,5 @@ you undertook (see below).
  * Add a song about Java. -> eletap
  * Add an interesting story. -> katerinakaplani
  * Add a weird story. -> SPYROS-GER
+ * Add a love story. -> XaLDe
+ * Add a song -> inaLitso
