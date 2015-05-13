@@ -47,6 +47,43 @@ public class ExcitingStory {
                 "unrecognisable species, started talking to me!");
     }
 
+
+    /**
+	     * Function that is used to create an interesting story.
+	     */
+	    static void tellInterestingStory(String newLine) {
+	        sentence("Suddenly the door opened and John entered his house " +
+	        	     "only to find out that the detective was searching his stuff");
+	        sentence("-John I was..How are you..hmm..the detective managed to say");
+	        sentence("-So detective i guess i am one of the suspects now..John laughed");
+	        sentence("-You know John i have to examine all possibilities, the detective replied");
+	        sentence("As i told you, he continued, i want to confirm my final conclusion");
+	        sentence("-So you found out who the murderer is, John asked nervously");
+	        sentence("-I am sure you knew long before i did, John! You won't be surprised..");
+	        sentence("-Why don't you stay for a glass of wine,detective? Since your job here" +
+	                 " is done, it's our last chance to have a talk");
+			sentence("The detective was really akward. He just implied that John was the murder"+
+			         "and he offered him some wine? \"John has to be the murder,i know it.Don't let him"
+			         + "change your mind\" ,he kept telling to himself");
+			sentence("You seem to think too much for a simple drink detective,said John as he was"
+			         + "serving his glass");
+	        sentence("Well,i guess i can have a stay a bit." + newLine + "The detective sat comfortably in the sofa,"
+	                 +"felt a hit on his head and several minutes later woke up tied into a chair");
+	        sentence("I knew it was you ,John, I knew it!!Let me go,he screamed");
+	        sentence("It was your choice to stay. You where next to my open door, free to leave");
+	        sentence("But..but..you offered..Jesus...i knew it was a trap");
+	        sentence("Let me ask you something detective? Why don't people trust their instincts?" +
+	                 "They sense something is wrong, someone is walking too close behind them..." +
+	                 "You knew something was wrong but you came back into the house.");
+	        sentence("Did I force you, did I drag you in? No. All I had to do was offer you a drink.");
+	        sentence("You knew how dangerous I am, but you risk your life so you don't offend me" );
+	        sentence("It's hard to believe that the fear of offending can be stronger than the fear of pain.");
+		    sentence("But you know what? It is. And they always come willingly.");
+		    sentence("And then they sit there. They know it's all over just like you do");
+
+        }
+
+
     /**
      * Function that is used to create a real story.
      */
@@ -809,7 +846,7 @@ public class ExcitingStory {
 		sentence("In a bowl we gradually mix all ingredients.");
 		sentence("We put non stick baking paper on a pan and with flour on our hands we make small cookies.");
 		sentence("We bake for exactly 12 minutes and they are ready!");
-		sentence("Bon appÃ©tit!");
+		sentence("Bon appetit!");
 		sentence("Would you like another easy recipe?" + newLine + "Press -YES or -NO");
 
 		Scanner typeIn = new Scanner(System.in); //initializing the scanner class
@@ -873,6 +910,69 @@ public class ExcitingStory {
 		sentence("After the end of the story the kid was closed its eyes and slept");
     }
 
+		static void tellJavaSong(String newLine){
+				sentence( "This is a song called 'The Java Life'"
+				+ newLine + "In the cubicles representin’ for my JAVA homies…"
+				+ newLine + "In by nine, out when the deadlines are met, check it."
+				+ newLine + "We code hard in these cubicles"
+				+ newLine + "My style’s nerd-chic, I’m a programmin’ freak"
+				+ newLine + "We code hard in these cubicles"
+				+ newLine + "Only two hours to your deadline? Don’t sweat my technique."
+				+ newLine + "Sippin’ morning coffee with that JAVA swirl."
+				+ newLine + "Born to code; my first words were “Hello World"
+				+ newLine + "Since 95, been JAVA codin’ stayin’ proud"
+				+ newLine + "Started on floppy disks, now we take it to the cloud."
+				+ newLine + "On my desktop, JAVA’s what’s bobbin’ and weavin’"
+				+ newLine + "We got another winning app before I get to OddEven."
+				+ newLine + "Blazin’ code like a forest fire, climbin’ a tree"
+				+ newLine + "Setting standards like I Triple E…."
+				+ newLine + "Boot it on up, I use the force like Luke,"
+				+ newLine + "Got so much love for my homeboy Duke."
+				+ newLine + "GNU Public Licensed, it’s open source,"
+				+ newLine + "Stop by my desk when you need a crash course"
+				+ newLine + "Written once and my script runs anywhere,"
+				+ newLine + "Straight thuggin’, mean muggin’ in my Aeron chair."
+				+ newLine + "All the best lines of code, you know I wrote ‘em"
+				+ newLine + "I’ll run you out of town on your dial-up modem."
+				+ newLine + "‘Cause…"
+				+ newLine + "We code hard in these cubicles"
+				+ newLine + "Me and my crew code hyphy hardcore"
+				+ newLine + "We code hard in these cubicles"
+				+ newLine + "It’s been more than 10 years since I’ve seen the 404."
+				+ newLine +	"Inheriting a project can make me go beeee-serk"
+				+ newLine + "Ain’t got four hours to transfer their Framework."
+				+ newLine + "The cleaners killed the lights, Man, that ain’t nice,"
+				+ newLine + "Gonna knock this program out, just like Kimbo Slice"
+				+ newLine + "I program all night, just like a champ,"
+				+ newLine + "Look alive under this IKEA lamp."
+				+ newLine + "I code HARDER in the midnight hour,"
+				+ newLine + "E7 on the vending machine fuels my power."
+				+ newLine + "Ps3 to Smartphones, our code use never ends,"
+				+ newLine + "JAVA’s there when I beat you in “Words with Friends”."
+				+ newLine + "My developing skills are so fresh please discuss,"
+				+ newLine + "You better step your game up on that C++.   "
+				+ newLine +	"We know better than to use Dot N-E-T,"
+				+ newLine + "Even Dan Brown can’t code as hard as me."
+				+ newLine + "You know JAVA’s gettin’ bigger, that’s a promise not a threat,"
+				+ newLine + "Let me code it on your brain"
+				+ newLine + "so you’ll never forget."
+				+ newLine + "We code hard in these cubicles,"
+				+ newLine + "it’s the core component…of what we implement."
+				+ newLine + "We code hard in these cubicles,"
+				+ newLine + "Straight to your JAVA Runtime Environment."
+				+ newLine + "We code hard in these cubicles,"
+				+ newLine + "Keep the syntax light and the algorithm tight."
+				+ newLine + "We code hard in these cubicles,"
+				+ newLine + "Gotta use JAVA if it’s gonna run right."
+				+ newLine + "We code hard in these cubicles"
+				+ newLine + "JAVA keeps adapting, you know it’s built to last."
+				+ newLine + "We code hard in these cubicles,"
+				+ newLine + "Robust and secure, so our swag’s on blast"
+				+ newLine + "CODE HARD");
+	}
+
+
+
 	/**
 	 * This function is used to inform the reader about the outcome of his reaction to cook again or not.
 	 *
@@ -921,7 +1021,8 @@ public class ExcitingStory {
                     + newLine + "if you want to read a breathtaking story, choose -k" + newLine + "if you want to read a short story, choose -l"
                     + newLine + "If you decided to go for a commonly walk by your bike, choose -m" + newLine + "If you want a lottery story, choose -n"
                     + newLine + "If you want to read a western story , choose -o" + newLine + "If you want to read a twisted story , choose -p" + newLine + "If you want to read a funny story , choose -q"
-					+ newLine + "If you want to cook delicious treats then, choose -s" + newLine + "If you want to read a myth about Prometheus , choose -t");
+					+ newLine + "If you want to cook delicious treats then, choose -s" + newLine + "If you want to read a myth about Prometheus , choose -t"+ newLine
+					+ "If you want to read an interesting story , choose -u" + newLine + "If you want a song about Java, choose -v");
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
@@ -931,8 +1032,9 @@ public class ExcitingStory {
             while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e")
                     || m.equals("-f") || m.equals("-g") || m.equals("-h") || m.equals("-i") || m.equals("-j")
                     || m.equals("-k") || m.equals("-l") || m.equals("-m") || m.equals("-n") || m.equals("-o")
-                    || m.equals("-p") || m.equals("-q") || m.equals("-s") || m.equals("-t"))) {
-                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -s or -t" + newLine + "Please Try Again");
+                    || m.equals("-p") || m.equals("-q") || m.equals("-s") || m.equals("-t") || m.equals("-u") || m.equals("-v"))) {
+                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -s or -t or -u or -v" + newLine + "Please Try Again");
+
 
                 m = scanner.nextLine();
 
@@ -979,6 +1081,10 @@ public class ExcitingStory {
 				tellACookingStory(newLine);
 			else if (m.equals("-t"))
 				tellPrometheusMyth(newLine);
+			else if (m.equals("-u"))
+				tellInterestingStory(newLine);
+			else if (m.equals("-v"))
+				tellJavaSong(newLine);
 
             sentence(newLine + "Would you like to read another story? Answer -yes or -no");
             b = scanner.nextLine();
