@@ -1076,6 +1076,14 @@ public class ExcitingStory {
 					" then had her wear his helmet so she would live even though it meant he would die.");
 	    }
 
+		/** wishes for your birthday */
+			static void happyBirthdaySong(String newLine) {
+		sentence("Happy birthday to you");
+		sentence("Happy birthday to you");
+		sentence("Happy birthday dear you ");
+		sentence("Happy birthday to you");
+		
+	}
     /**
      * main method
      */
@@ -1105,7 +1113,7 @@ public class ExcitingStory {
                     + newLine + "If you want to read a western story , choose -o" + newLine +
                     "If you want to read a twisted story , choose -p" + newLine +
                     "If you want to read a funny story , choose -q"
-					+ newLine + "If you want to cook delicious treats then, choose -s");
+					+ newLine + "If you want to cook delicious treats then, choose -s"+newline+"if you want to song to song to a birthday party, choose -z") ;
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
@@ -1115,8 +1123,8 @@ public class ExcitingStory {
             while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e")
                     || m.equals("-f") || m.equals("-g") || m.equals("-h") || m.equals("-i") || m.equals("-j")
                     || m.equals("-k") || m.equals("-l") || m.equals("-m") || m.equals("-n") || m.equals("-o")
-                    || m.equals("-p") || m.equals("-q") || m.equals("-s") || m.equals("-t") || m.equals("-u") || m.equals("-v"))) {
-                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -s or -t or -u or -v" + newLine + "Please Try Again");
+                    || m.equals("-p") || m.equals("-q") || m.equals("-s") || m.equals("-t") || m.equals("-u") || m.equals("-z") || m.equals("-v"))) {
+                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -s or -t or -u or -v or -z" + newLine + "Please Try Again");
 
 
                 m = scanner.nextLine();
@@ -1170,6 +1178,9 @@ public class ExcitingStory {
 				tellJavaSong(newLine);
 			else if (m.equals("-w"))
 				tellLoveStory(newLine);
+			else if (m.equals("-z"))
+
+				happyBirthdaySong(newLine);
 
             sentence(newLine + "Would you like to read another story? Answer -yes or -no");
             b = scanner.nextLine();
