@@ -23,12 +23,17 @@ git add src/main/java/ExcitingStory.java
 Commit the changes to ExcitingStory.java 
 git commit -a -m "Added a new story"
 
+Push the changes to eletap branch 
+git push origin eletap
+
 Added the file Changelog_eletap
 git add Changelog_eletap
 
 Commit the changelog file
-git commit -m "Added the changelog"
+git commit -m "Added the Changelog_eletap"
 
+Push the changes to eletap branch 
+git push origin eletap
 
 
 
