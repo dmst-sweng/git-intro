@@ -1,0 +1,45 @@
+Firstly, to clone the repository:
+git clone https://github.com/dmst-sweng/git-intro.git
+
+
+To select a task from README.md file:
+Edited README.md file locally, then added it to master:
+git add README.md
+
+Commited the changes:
+git commit -m "task selection"
+
+Pushed the changes:
+git push
+
+
+To complete my task (fix -y option not working):
+Created and changed to a new branch:
+git checkout -b kostastsili94-branch
+
+...[worked on fixing -y, changed ExcitingStory.java file locally]...
+...[created changelog file]...
+
+Added the modified ExcitingStory.java file after changes:
+git add src/ExcitingStory.java
+
+Commited changes to locally in branch:
+git commit -m "fixed -y not working"
+
+Added changelog file:
+git add Changelog_kostastsili94
+
+Commit changes again:
+git commit -m "Added changelog for kostastsili94"
+
+Pushed the changes my branch:
+git push origin kostastsili94-branch
+
+Went back to the master branch:
+git checkout master
+
+Merged my branch to master branch:
+git merge kostastsili94-branch
+
+Push to master branch of origin
+git push
