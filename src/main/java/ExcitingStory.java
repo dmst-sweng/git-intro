@@ -889,9 +889,9 @@ public class ExcitingStory {
 	static void tellJavaSong(String newLine){
 			sentence( "This is a song called 'The Java Life'"
 			+ newLine + "In the cubicles representin’ for my JAVA homies…"
-			+ newLine +"In by nine, out when the deadlines are met, check it."
+			+ newLine + "In by nine, out when the deadlines are met, check it."
 			+ newLine + "We code hard in these cubicles"
-			+ newLine +"My style’s nerd-chic, I’m a programmin’ freak"
+			+ newLine + "My style’s nerd-chic, I’m a programmin’ freak"
 			+ newLine + "We code hard in these cubicles"
 			+ newLine + "Only two hours to your deadline? Don’t sweat my technique."
 			+ newLine + "Sippin’ morning coffee with that JAVA swirl."
@@ -969,7 +969,8 @@ public class ExcitingStory {
                     + newLine + "if you want to read a breathtaking story, choose -k" + newLine + "if you want to read a short story, choose -l"
                     + newLine + "If you decided to go for a commonly walk by your bike, choose -m" + newLine + "If you want a lottery story, choose -n"
                     + newLine + "If you want to read a western story , choose -o" + newLine + "If you want to read a twisted story , choose -p" + newLine + "If you want to read a funny story , choose -q"
-					+ newLine + "If you want to cook delicious treats then, choose -s" + newLine + "If you want to read a myth about Prometheus , choose -t");
+					+ newLine + "If you want to cook delicious treats then, choose -s" + newLine + "If you want to read a myth about Prometheus , choose -t"
+					+ newLine + "If you want a song about Java, choose -u");
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
@@ -979,8 +980,8 @@ public class ExcitingStory {
             while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e")
                     || m.equals("-f") || m.equals("-g") || m.equals("-h") || m.equals("-i") || m.equals("-j")
                     || m.equals("-k") || m.equals("-l") || m.equals("-m") || m.equals("-n") || m.equals("-o")
-                    || m.equals("-p") || m.equals("-q") || m.equals("-s") || m.equals("-t"))) {
-                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -s or -t" + newLine + "Please Try Again");
+                    || m.equals("-p") || m.equals("-q") || m.equals("-s") || m.equals("-t") || m.equals("-u"))) {
+                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -s or -t or -u" + newLine + "Please Try Again");
 
                 m = scanner.nextLine();
 
@@ -1027,7 +1028,8 @@ public class ExcitingStory {
 				tellACookingStory(newLine);
 			else if (m.equals("-t"))
 				tellPrometheusMyth(newLine);
-
+			else if (m.equals("-u"))
+				tellJavaSong(newLine);
             sentence(newLine + "Would you like to read another story? Answer -yes or -no");
             b = scanner.nextLine();
 			/* a loop that takes as input from the user only '-yes' or '-no'*/
