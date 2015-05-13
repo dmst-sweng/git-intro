@@ -1,4 +1,4 @@
-import java.util.Scanner;
+﻿import java.util.Scanner;
 
 /**
  * A class to print a story that will be developed collaboratively.
@@ -229,12 +229,12 @@ public class ExcitingStory {
             String your_answer = input_x.nextLine();//taking input from the
             // keyboard and puttimg it in the variable your_answer
             /*allowing the user to put as input only '-y' or '-z'*/
-            while (!(answer.equals("-y") || your_answer.equals("-z"))) {
+            while (!(your_answer.equals("-y") || your_answer.equals("-z"))) {
                 sentence("You can only Type -y or -z " + newLine + "Please " +
                         "Try Again");
                 your_answer = input_x.nextLine();
             }
-            reactionToCourier(answer, newLine);
+            reactionToCourier(your_answer, newLine);
         } else if (answer.equals("-i"))
             sentence("Great choice! It was your annoying neighboor. He would " +
                     "probably wanted some sugar... for the 25th time this " +
