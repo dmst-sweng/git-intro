@@ -837,7 +837,8 @@ public class ExcitingStory {
 				"on our hands we make small cookies." + newLine +
 				"We bake for exactly 12 minutes and they are ready!" + newLine +
 				"Bon appétit!" + newLine +
-				"Would you like another easy recipe?" + newLine + "Press -YES or -NO");
+				"Would you like another easy recipe?" + newLine +
+				"Press -YES or -NO");
 		
 =======
 		sentence("A new day has began, a new cooking adventure!" + newLine +
@@ -1009,16 +1010,22 @@ public class ExcitingStory {
 					"maple syrup or ingredient of our choice!" + newLine +
 					"Enjoy!");
 =======
-		    sentence("Let's make delicious pancakes!");
-		    sentence("You will need 3/4 cup of milk, 2 tablespoons of olive oil, 1 egg, 1 cup of flour,"
-			+ newLine + "2 tablespoons baking powder, 2 tablespoons of sugar and a pinch of salt.");
-		    sentence("We gradually mix the ingredients in a bowl.");
-		    sentence("We apply some butter on a frying pan and pour two tablespoons of our mix.");
-		    sentence("We let it bake for 1-2 minutes until the surface has little holes. We turn down the heat"
-			+ newLine + "so that out next pancakes will not burn.");
-		    sentence("We turn the pancake on the other side, to bake for 1 minute, as well.");
-		    sentence("In the end we can serve our fresh, hot pancakes with maple syrup or ingredient of our choice!");
-		    sentence("Enjoy!");
+			sentence("Let's make delicious pancakes!" + newLine +
+					"You will need 3/4 cup of milk, 2 tablespoons of " +
+					"olive oil, 1 egg, 1 cup of flour," + newLine +  
+					"2 tablespoons baking powder, 2 tablespoons of " +
+					"sugar and a pinch of salt." + newLine +
+					"We gradually mix the ingredients in a bowl." + newLine +
+					"We apply some butter on a frying pan and pour two " +
+					"tablespoons of our mix." + newLine +
+					"We let it bake for 1-2 minutes until the surface has " +
+					"little holes. We turn down the heat" + newLine +
+					"so that out next pancakes will not burn." + newLine +
+					"We turn the pancake on the other side, to bake for " +
+					"1 minute, as well." + newLine +
+					"In the end we can serve our fresh, hot pancakes with " +
+					"maple syrup or ingredient of our choice!" + newLine +
+					"Enjoy!");
 >>>>>>> b5a8ecdc8a13923b0f23358cb3fdd607daaa6f52
 		}
 		else if (answer.equals("-NO"))
