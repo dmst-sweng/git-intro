@@ -1,30 +1,9 @@
-In order to get this repository locally I used:
-git clone [URL]
-
-In order to keep my local repository up-to-date with the one on github i used:
-git pull
-
-In order to create a new branch and switch to it I used the command :
-git checkout -b [branch_name]
-
-In order to see the branches:
-git branch
-
-In order to see which had changes i used:
-git status
-
-In order add changes I used:
-git add [name_of_file_to_add]
-
-In order to commit my changes:
-git commit -m ['commit_mesage']
-
-In order to go back to master:
-git checkout master
-
-In order to merge my branch with the local repository:
-git merge [branchname]
-
-In order to push changes to remote repository:
-git push 
+1) git clone https://github.com/dmst-sweng/git-intro.git
+2) git checkout -b inalitso
+3) git branch
+4) git add README.md
+5) git commit -m ['Add a task for me']
+6) git checkout master
+7) git merge inalitso
+8) git push 
 
