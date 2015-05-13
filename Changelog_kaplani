@@ -1,0 +1,38 @@
+Clone repository
+$ git clone https://github.com/dmst-sweng/git-intro.git
+
+Create a new task/story
+$ git commit -a -m "Create a task/story"
+
+Push changes of README
+$ git push 
+
+Keep local repository updated:
+$ git pull
+
+Create a new branch 
+$ git checkout -b kaplani-story
+
+Add the interesting story to local repo
+$ git commit -a -m "Add an interesting story"
+
+Push changes to a new branch to the remote repo:
+$ git push origin kaplani-story
+
+Add Changelog_kaplani 
+$ git add Changelog_kaplani
+
+Commit changes 
+$ git commit -m "Add changelog_kaplani"
+
+Push changes to kaplani-story branch 
+$ git push origin kaplani-story
+
+Switch to master branch:
+$ git checkout master
+
+Merge branch to master:
+$ git merge kaplani-story
+
+Push changes to remote repository:
+$ git push

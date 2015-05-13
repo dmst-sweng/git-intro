@@ -49,16 +49,15 @@ you undertook (see below).
 * Set up task list -> mfragkoulis
 * Cleanup repository
  * Generated files (e.g. .class files) should not be under version
-   control; remove them.
+   control; remove them. -> XaLDe
 * Place the story in folder test_branch with the rest of the stories
    and remove folder test_branch -> p3110145
 * Upgrade sentence() method
  * Print chars one by one. -> efstrian
 * Refactor code
  * Fix code alignment -> theosotr
+ * Set number of characters per line to be up to 80 -> theosotr
  * Class names should follow unanimous style (e.g. AdventureStory, ScaryStory)->KonPap18
- * If they have (or should/could have) common characteristics create a superclass
-   (e.g. Story) and have the existing ones inherit from that -> eletap
  * Enhance code readability (e.g use the sentence() method everywhere)-> KaterinaADAM
  * Format the printers so that the story is printed out in a tidier way->lakitas(inserted the task)
 * Document code
@@ -74,3 +73,9 @@ you undertook (see below).
 * Add story in ExcitingStory.java
  * Add a short joke. -> k-karakatsanis
  * Add a sub-story. -> Melmel
+ * Add a a myth about Zeus and Prometheus. -> xristosoik
+ * Add a song about Java. -> eletap
+ * Add an interesting story. -> katerinakaplani
+ * Add a weird story. -> SPYROS-GER
+ * Add a love story. -> XaLDe
+
