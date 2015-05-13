@@ -834,7 +834,7 @@ public class ExcitingStory {
 		sentence("In a bowl we gradually mix all ingredients.");
 		sentence("We put non stick baking paper on a pan and with flour on our hands we make small cookies.");
 		sentence("We bake for exactly 12 minutes and they are ready!");
-		sentence("Bon appÃ©tit!");
+		sentence("Bon appetit!");
 		sentence("Would you like another easy recipe?" + newLine + "Press -YES or -NO");
 
 		Scanner typeIn = new Scanner(System.in); //initializing the scanner class
@@ -898,6 +898,69 @@ public class ExcitingStory {
 		sentence("After the end of the story the kid was closed its eyes and slept");
     }
 
+		static void tellJavaSong(String newLine){
+				sentence( "This is a song called 'The Java Life'"
+				+ newLine + "In the cubicles representin’ for my JAVA homies…"
+				+ newLine + "In by nine, out when the deadlines are met, check it."
+				+ newLine + "We code hard in these cubicles"
+				+ newLine + "My style’s nerd-chic, I’m a programmin’ freak"
+				+ newLine + "We code hard in these cubicles"
+				+ newLine + "Only two hours to your deadline? Don’t sweat my technique."
+				+ newLine + "Sippin’ morning coffee with that JAVA swirl."
+				+ newLine + "Born to code; my first words were “Hello World"
+				+ newLine + "Since 95, been JAVA codin’ stayin’ proud"
+				+ newLine + "Started on floppy disks, now we take it to the cloud."
+				+ newLine + "On my desktop, JAVA’s what’s bobbin’ and weavin’"
+				+ newLine + "We got another winning app before I get to OddEven."
+				+ newLine + "Blazin’ code like a forest fire, climbin’ a tree"
+				+ newLine + "Setting standards like I Triple E…."
+				+ newLine + "Boot it on up, I use the force like Luke,"
+				+ newLine + "Got so much love for my homeboy Duke."
+				+ newLine + "GNU Public Licensed, it’s open source,"
+				+ newLine + "Stop by my desk when you need a crash course"
+				+ newLine + "Written once and my script runs anywhere,"
+				+ newLine + "Straight thuggin’, mean muggin’ in my Aeron chair."
+				+ newLine + "All the best lines of code, you know I wrote ‘em"
+				+ newLine + "I’ll run you out of town on your dial-up modem."
+				+ newLine + "‘Cause…"
+				+ newLine + "We code hard in these cubicles"
+				+ newLine + "Me and my crew code hyphy hardcore"
+				+ newLine + "We code hard in these cubicles"
+				+ newLine + "It’s been more than 10 years since I’ve seen the 404."
+				+ newLine +	"Inheriting a project can make me go beeee-serk"
+				+ newLine + "Ain’t got four hours to transfer their Framework."
+				+ newLine + "The cleaners killed the lights, Man, that ain’t nice,"
+				+ newLine + "Gonna knock this program out, just like Kimbo Slice"
+				+ newLine + "I program all night, just like a champ,"
+				+ newLine + "Look alive under this IKEA lamp."
+				+ newLine + "I code HARDER in the midnight hour,"
+				+ newLine + "E7 on the vending machine fuels my power."
+				+ newLine + "Ps3 to Smartphones, our code use never ends,"
+				+ newLine + "JAVA’s there when I beat you in “Words with Friends”."
+				+ newLine + "My developing skills are so fresh please discuss,"
+				+ newLine + "You better step your game up on that C++.   "
+				+ newLine +	"We know better than to use Dot N-E-T,"
+				+ newLine + "Even Dan Brown can’t code as hard as me."
+				+ newLine + "You know JAVA’s gettin’ bigger, that’s a promise not a threat,"
+				+ newLine + "Let me code it on your brain"
+				+ newLine + "so you’ll never forget."
+				+ newLine + "We code hard in these cubicles,"
+				+ newLine + "it’s the core component…of what we implement."
+				+ newLine + "We code hard in these cubicles,"
+				+ newLine + "Straight to your JAVA Runtime Environment."
+				+ newLine + "We code hard in these cubicles,"
+				+ newLine + "Keep the syntax light and the algorithm tight."
+				+ newLine + "We code hard in these cubicles,"
+				+ newLine + "Gotta use JAVA if it’s gonna run right."
+				+ newLine + "We code hard in these cubicles"
+				+ newLine + "JAVA keeps adapting, you know it’s built to last."
+				+ newLine + "We code hard in these cubicles,"
+				+ newLine + "Robust and secure, so our swag’s on blast"
+				+ newLine + "CODE HARD");
+	}
+
+
+
 	/**
 	 * This function is used to inform the reader about the outcome of his reaction to cook again or not.
 	 *
@@ -947,7 +1010,7 @@ public class ExcitingStory {
                     + newLine + "If you decided to go for a commonly walk by your bike, choose -m" + newLine + "If you want a lottery story, choose -n"
                     + newLine + "If you want to read a western story , choose -o" + newLine + "If you want to read a twisted story , choose -p" + newLine + "If you want to read a funny story , choose -q"
 					+ newLine + "If you want to cook delicious treats then, choose -s" + newLine + "If you want to read a myth about Prometheus , choose -t"+ newLine
-					+ "If you want to read an interesting story , choose -u");
+					+ "If you want to read an interesting story , choose -u" + newLine + "If you want a song about Java, choose -v");
 
 			/* Initial choice of the reader among Happy, Horryfying, Adventure and Science Fiction Story */
 
@@ -957,8 +1020,9 @@ public class ExcitingStory {
             while (!(m.equals("-a") || m.equals("-b") || m.equals("-c") || m.equals("-d") || m.equals("-e")
                     || m.equals("-f") || m.equals("-g") || m.equals("-h") || m.equals("-i") || m.equals("-j")
                     || m.equals("-k") || m.equals("-l") || m.equals("-m") || m.equals("-n") || m.equals("-o")
-                    || m.equals("-p") || m.equals("-q") || m.equals("-s") || m.equals("-t") || m.equals("-u"))) {
-                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -s or -t or -u" + newLine + "Please Try Again");
+                    || m.equals("-p") || m.equals("-q") || m.equals("-s") || m.equals("-t") || m.equals("-u") || m.equals("-v"))) {
+                sentence("You can only Type -a or -b or -c or -d or -e or -f or -g or -h or -i or -j or -k or -l or -m or -n or -o or -p or -q or -s or -t or -u or -v" + newLine + "Please Try Again");
+
 
                 m = scanner.nextLine();
 
@@ -1007,6 +1071,8 @@ public class ExcitingStory {
 				tellPrometheusMyth(newLine);
 			else if (m.equals("-u"))
 				tellInterestingStory(newLine);
+			else if (m.equals("-v"))
+				tellJavaSong(newLine);
 
             sentence(newLine + "Would you like to read another story? Answer -yes or -no");
             b = scanner.nextLine();
