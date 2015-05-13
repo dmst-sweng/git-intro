@@ -1,0 +1,38 @@
+﻿Clone repository
+$ git clone https://github.com/dmst-sweng/git-intro.git
+
+Create a new task/story
+$ git commit -a -m "Create a love story"
+
+Push changes of README
+$ git push 
+
+Keep local repository updated:
+$ git pull
+
+Create a new branch 
+$ git checkout -b XaLDe-addition
+
+Add the love story to local repo
+$ git commit -a -m "Add a love story"
+
+Push changes to a new branch to the remote repo:
+$ git push origin XaLDe-addition
+
+Add Changelog_XaLDe
+$ git add Changelog_XaLDe
+
+Commit changes 
+$ git commit -m "Add changelog_XaLDe"
+
+Push changes to XaLDe-addition branch 
+$ git push origin XaLDe-addition
+
+Switch to master branch:
+$ git checkout master
+
+Merge branch to master:
+$ git merge XaLDe-addition
+
+Push changes to remote repository:
+$ git push

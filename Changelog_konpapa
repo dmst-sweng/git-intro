@@ -1,0 +1,38 @@
+Clone repository:
+git clone https://github.com/dmst-sweng/git-intro
+
+Commit changes after editing README.md:
+git commit -a -m
+
+Push changes:
+git push
+
+Create a new branch name "konpapa" and switch to it:
+git checkout -b konpapa
+
+Add ExcitingStory.java to local repository:
+git add src/main/java/ExcitingStory.java 
+
+Commit changes:
+git commit -m "Place comments on top of methods"
+
+Push branch to the remote repository:
+git push origin konpapa
+
+Add Changelog_konpapa file:
+git add Changelog_konpapa
+
+Commit changes:
+git commit -m "Add Changelog_konpapa"
+
+Push changes to konpapa branch:
+git push origin konpapa
+
+Switch to master branch:
+git checkout master
+
+Merge konpapa branch to master branch:
+git merge konpapa
+
+Push changes to remote repository:
+git push
