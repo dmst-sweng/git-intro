@@ -41,5 +41,12 @@ git checkout master
 Merge branch to master
 git merge eletap
 
+The result was: "CONFLICT (content):Merge conflict in src/main/java/ExcitingStory.java
+So I fixed the conflicts manually to the file and then added ExcitingStory.java to master branch
+git add src/main/java/ExcitingStory.java
+
+Commit the changes
+git commit -m "Merged master fixed conflict"
+
 Push changes to remote repository
 git push
