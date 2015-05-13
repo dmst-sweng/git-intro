@@ -1,4 +1,4 @@
-﻿import java.util.Scanner;
+import java.util.Scanner;
 
 /**
  * A class to print a story that will be developed collaboratively.
@@ -710,7 +710,7 @@ public class ExcitingStory {
      * This function is used to ask the user about his or her reaction after
      * a mysterious event .
      */
-    public static void tellScaryNigntStory() {
+    public static void tellScaryNigntStory(String newLine) {
 
         Scanner scanner = new Scanner(System.in);//iniiallizing scanner class
 
@@ -1073,7 +1073,7 @@ public class ExcitingStory {
             else if (m.equals("-l"))
                 tellShortStory(newLine);
             else if (m.equals("-m"))
-                tellScaryNigntStory();
+                tellScaryNigntStory(newLine);
             else if (m.equals("-n"))
                 tellTheLotteryStory(newLine);
             else if (m.equals("-o"))
