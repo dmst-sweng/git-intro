@@ -135,8 +135,7 @@ public class ExcitingStory {
 
 
         Scanner input = new Scanner(System.in); //initializing the scanner class
-        String answer = input.nextLine(); //taking input from the keyboard
-        // and puttimg it in the variable answer
+        String answer = input.nextLine(); //taking input from the keyboard and puttimg it in the variable answer
 
 		/*allowing the user to put as input only '-o' or '-i'*/
         while (!(answer.equals("-o") || answer.equals("-i"))) {
@@ -144,12 +143,14 @@ public class ExcitingStory {
                     "Again");
             answer = input.nextLine();
         }
-
-
         reactionToDoorBell(answer, newLine);
     }
 
-
+    /**
+	 * Function that is used to create a lost in thoughts story.
+	 *
+	 * @param newLine The line separator String.
+    */
     static void tellLostInThoughtsStory(String newLine) {
         sentence("and you could only hear the rain and the wind.");
         sentence("I couldn't stop thinking about what had just happened. " +
@@ -166,6 +167,11 @@ public class ExcitingStory {
         sentence("Who cares about rhinos???");
     }
 
+    /**
+	 * Function that is used to create a lottery story.
+	 *
+	 * @param newLine The line separator String.
+    */
     static void tellTheLotteryStory(String newLine) {
         sentence("Eric was alone at his home, watching tv.");
         sentence("He was very nervous because in less than five minutes the " +
@@ -181,7 +187,11 @@ public class ExcitingStory {
 
     }
 
-
+    /**
+	 * Function that is used to create a eyes wide shutstory.
+	 *
+	 * @param newLine The line separator String.
+    */
     static void tellEyesWideShutStory(String newLine) {
         sentence("I was alone in my bedroom and I closed my eyes. Just for an" +
                 " instance..");
@@ -204,7 +214,13 @@ public class ExcitingStory {
                 "on my lips");
     }
 
+    /**
+	 * Function that is used to create a short story.
+	 *
+	 * @param newLine The line separator String.
+    */
     static void tellShortStory(String newLine) {
+
         sentence("and that was pretty much it.");
 
     }
@@ -227,10 +243,9 @@ public class ExcitingStory {
                     "going to do?" + newLine + "-y.\t Become friends." +
                     newLine + "-z.\t Say thanks and send him away.");
 
-            Scanner input_x = new Scanner(System.in);//initializing the
-            // scanner class
-            String your_answer = input_x.nextLine();//taking input from the
-            // keyboard and puttimg it in the variable your_answer
+            Scanner input_x = new Scanner(System.in);//initializing the scanner class
+            String your_answer = input_x.nextLine();//taking input from the keyboard and putting it in the variable your_answer
+
             /*allowing the user to put as input only '-y' or '-z'*/
             while (!(answer.equals("-y") || your_answer.equals("-z"))) {
                 sentence("You can only Type -y or -z " + newLine + "Please " +
@@ -245,8 +260,10 @@ public class ExcitingStory {
     }
 
     /**
-     * A function that is used to print the outcome of the reaction to the
-     * courier
+     * A function that is used to print the outcome of the reaction to the courier
+     *
+     * @param answer  The reader's answer.
+     * @param newLine The line separator String.
      */
     static void reactionToCourier(String answer, String newLine) {
         if (answer.equals("-y"))
@@ -260,8 +277,11 @@ public class ExcitingStory {
 
     /**
      * Function that is used to create a Creepy story.
+     *
+     * @param newLine The line separator String.
      */
     static void tellCreepyStory(String newLine) {
+
         sentence("You are sleeping after a hard day when suddenly you wake up."
                 + newLine + "The storm is raging out of your window and the " +
                 "room is dark and silent.\nEverything seems normal but you " +
@@ -280,13 +300,12 @@ public class ExcitingStory {
                 + newLine + "-c \tYou stay still,frozen with fear hoping that" +
                 " it was nothing.");
 
-        Scanner scanner = new Scanner(System.in);//initializing the scanner
-        // class
-        String Reaction1 = scanner.nextLine();//taking input from the
-        // keyboard and puttimg it in the variable Reaction1
+        Scanner scanner = new Scanner(System.in);//initializing the scanner class
+
+        String Reaction1 = scanner.nextLine();//taking input from the keyboard and puttimg it in the variable Reaction1
+
         /*allowing the user to put as input only '-a' or '-b' or '-c' */
-        while (!(Reaction1.equals("-a") || Reaction1.equals("-b") ||
-                Reaction1.equals("-c"))) {
+        while (!(Reaction1.equals("-a") || Reaction1.equals("-b") || Reaction1.equals("-c"))) {
             sentence("You can only Type -a or -b or -c" + newLine + "Please " +
                     "Try Again");
             Reaction1 = scanner.nextLine();
@@ -302,11 +321,10 @@ public class ExcitingStory {
      * @param answer The answer of the reader.
      */
     static void reactionToDoorClosing(String answer) {
-        String newLineC = System.getProperty("line.separator");//initializing
-        // a variable that can be used to get to a new line
+        String newLineC = System.getProperty("line.separator");//initializing a variable that can be used to get to a new line
 
-        if (answer.equals("-a")) {//checking which answer the user has typed
-        // and promting the proper message
+        if (answer.equals("-a")) { //checking which answer the user has typed and promting the proper message
+
             sentence("You close your eyes and open them again after a second" +
                     ".'What's happening?...'"
                     + newLineC + "but before you manage to complete your " +
@@ -324,8 +342,8 @@ public class ExcitingStory {
                     "your house\nbut he didn't find you there."
                     + newLineC + "No one ever found out what happened to that" +
                     " young,kind person\nliving in the house on the cliff...");
-        } else if (answer.equals("-b")) {//checking which answer the user has
-        // typed and promting the proper message
+        } else if (answer.equals("-b")) {//checking which answer the user has typed and promting the proper message
+
             sentence("The door opens after a little push.You light a candle " +
                     "and you head downstairs."
                     + newLineC + "You walk down the stairs and into the " +
@@ -344,15 +362,11 @@ public class ExcitingStory {
                     + newLineC + "-b \tOk thats it,you are getting out of " +
                     "this place!");
 
-            Scanner scan = new Scanner(System.in);//initializing the scanner
-            // class
-            String Reaction2 = scan.nextLine();//taking input from the
-            // keyboard and puttimg it in the variable Reaction2
-                                                                 /*allowing
-                                                                 the user to
-                                                                 put as input
-                                                                  only '-a'
-                                                                  or '-b' */
+            Scanner scan = new Scanner(System.in);//initializing the scanner class
+
+            String Reaction2 = scan.nextLine();//taking input from the keyboard and puttimg it in the variable Reaction2
+
+            /*allowing the user to put as input only '-a' or '-b' */
             while (!(Reaction2.equals("-a") || Reaction2.equals("-b"))) {
                 sentence("You can only Type -a or -b" + newLineC + "Please " +
                         "Try Again");
@@ -360,7 +374,8 @@ public class ExcitingStory {
             }
             reactionToCrackedMirror(Reaction2);
         } else {
-            sentence("You don't know how much time passed since the door " +
+
+           sentence("You don't know how much time passed since the door " +
                     "closed.\nA minute?Two minutes?A year?"
                     + newLineC + "The only thing you know for sure is you " +
                     "have to do something.\nThe moment you decide to move you" +
@@ -371,10 +386,10 @@ public class ExcitingStory {
                     "window."
                     + newLineC + "-b \tYou remain still,you close your eyes " +
                     "and think 'It's not real...its not real...'");
-            Scanner scan = new Scanner(System.in);//initializing the scanner
-            // class
-            String Reaction2 = scan.nextLine();//taking input from the
-            // keyboard and puttimg it in the variable Reaction2
+            Scanner scan = new Scanner(System.in);//initializing the scanner class
+
+            String Reaction2 = scan.nextLine();//taking input from the keyboard and puttimg it in the variable Reaction2
+
 			/*allowing the user to put as input only '-a' or '-b' */
             while (!(Reaction2.equals("-a") || Reaction2.equals("-b"))) {
                 sentence("You can only Type -a or -b" + newLineC + "Please " +
@@ -411,19 +426,18 @@ public class ExcitingStory {
                     + newline4 + ".\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\nOr are " +
                     "you?");
         } else {
-            sentence("Unfortunately it is real...\nthe door opens and you " +
-                            "stand there staring at the terrifying"
-                            + newline4 + "figure of an old woman in a black " +
-                            "dress floating above the floor."
-                            + newline4 + "As you are paralyzed with fear she " +
-                            "gets close and touches your chest with her cold " +
-                            "hand."
-                            + newline4 + "You try to talk but the words " +
-                            "refuse to come out."
-                            + newline4 + "As you fall into the void you can " +
-                            "hear her voice saying 'Your time has come.." +
-                            ".emprace the darkness'"
-            );
+        	sentence("Unfortunately it is real...\nthe door opens and you " +
+                     "stand there staring at the terrifying"
+                     + newline4 + "figure of an old woman in a black " +
+                     "dress floating above the floor."
+                     + newline4 + "As you are paralyzed with fear she " +
+                     "gets close and touches your chest with her cold " +
+                     "hand."
+                     + newline4 + "You try to talk but the words " +
+                     "refuse to come out."
+                     + newline4 + "As you fall into the void you can " +
+                     "hear her voice saying 'Your time has come.." +
+                     ".emprace the darkness'");
         }
     }
 
@@ -451,10 +465,10 @@ public class ExcitingStory {
                     "out."
                     + newLineD + "-b I close my eyes and try to convince " +
                     "myself that everything is in my head");
-            Scanner scan1 = new Scanner(System.in);//initializing the scanner
-            // class
-            String Reaction3 = scan1.nextLine();//taking input from the
-            // keyboard and puttimg it in the variable Reaction3
+            Scanner scan1 = new Scanner(System.in);//initializing the scanner class
+
+            String Reaction3 = scan1.nextLine();//taking input from the keyboard and puttimg it in the variable Reaction3
+
 
 			/*allowing the user to put as input only '-a' or '-b' */
             while (!(Reaction3.equals("-a") || Reaction3.equals("-b"))) {
@@ -489,6 +503,11 @@ public class ExcitingStory {
         }
     }
 
+    /**
+	 * This function creates a happy end.
+	 *
+	 * @param answer The answer of the reader.
+     */
     static void happyEnd(String newlineS) {
         sentence("You run as fast as you can,practically breaking the " +
                 "entrance door."
@@ -964,8 +983,9 @@ public class ExcitingStory {
 
             }
 
-	 		/* A statement that shows to the user the story depending the choice he made */
-            if (m.equals("-a"))
+	 	  /* A statement that shows to the user the story depending the choice he made */
+
+          if (m.equals("-a"))
                 tellHappyStory(newLine);
             else if (m.equals("-b"))
                 tellHorrifyingStory(newLine);
@@ -1007,6 +1027,7 @@ public class ExcitingStory {
 				tellPrometheusMyth(newLine);
 			else if (m.equals("-u"))
 				tellInterestingStory(newLine);
+
 
             sentence(newLine + "Would you like to read another story? Answer -yes or -no");
             b = scanner.nextLine();
