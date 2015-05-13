@@ -1,0 +1,34 @@
+Create a local clone of the repository 
+git clone https://github.com/dmst-sweng/git-intro.git
+
+Deleted the task about superclass (as advised) and created a new task "Add a song about Java"
+Added the changed README.md file to my local repository
+git add README.md
+
+Commited the changes
+git commit -m "Add a task for eletap"
+
+Pushed the changes
+git push origin master
+
+Created a new branch name 'eletap'
+git branch eletap
+
+Switched to branch 'eletap'
+git checkout eletap
+
+Added the modified file ExcitingStory.java to the local repository.
+git add src/main/java/ExcitingStory.java
+
+Commit the changes to ExcitingStory.java 
+git commit -a -m "Added a new story"
+
+Added the file Changelog_eletap
+git add Changelog_eletap
+
+Commit the changelog file
+git commit -m "Added the changelog"
+
+
+
+
