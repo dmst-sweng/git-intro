@@ -142,7 +142,9 @@ public class ExcitingStory {
         reactionToDoorBell(answer, newLine);
     }
 
-
+	/**
+	 * Function that is used to create the "Lost in thoughts" story.
+	 */
     static void tellLostInThoughtsStory(String newLine) {
         sentence("and you could only hear the rain and the wind." + newLine + 
         		"I couldn't stop thinking about what had just happened. " +
@@ -158,6 +160,9 @@ public class ExcitingStory {
                 "rhinoceros I would be happier." + newLine + "Who cares about rhinos???");
     }
 
+	/**
+	 * Function that is used to create the Lottery story.
+	 */
     static void tellTheLotteryStory(String newLine) {
         sentence("Eric was alone at his home, watching tv." + newLine +
         		"He was very nervous because in less than five minutes the " +
@@ -172,7 +177,9 @@ public class ExcitingStory {
 
     }
 
-
+	/**
+	 * Function that is used to create the "Eyes wide shut" story.
+	 */
     static void tellEyesWideShutStory(String newLine) {
         sentence("I was alone in my bedroom and I closed my eyes. Just for an" +
                 " instance.." + newLine + "Suddenly my bedroom disappeared and " +
@@ -191,7 +198,9 @@ public class ExcitingStory {
                 "crying. I never oppened my eyes again, I died with a smile " +
                 "on my lips");
     }
-
+	/**
+	 * Function that is used to create a short story.
+	 */
     static void tellShortStory(String newLine) {
         sentence("and that was pretty much it.");
 
@@ -477,6 +486,9 @@ public class ExcitingStory {
         }
     }
 
+	/**
+	 * This function continues the creepy story
+	 */
     static void happyEnd(String newlineS) {
         sentence("You run as fast as you can,practically breaking the " +
                 "entrance door."
@@ -903,6 +915,9 @@ public class ExcitingStory {
 				"After the end of the story the kid was closed its eyes and slept");
     }
 
+    /**
+     * Function that is used to create Java song.
+     */
 		static void tellJavaSong(String newLine){
 				sentence( "This is a song called 'The Java Life'"
 				+ newLine + "In the cubicles representin’ for my JAVA homies…"
