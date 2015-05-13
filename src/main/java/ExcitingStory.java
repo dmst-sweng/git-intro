@@ -36,10 +36,10 @@ public class ExcitingStory {
      */
     static void tellScienceFictionStory(String newLine) {
         sentence("And suddenly, a biiiiiig light appears in the sky." +
-        		newLine + "It was very bright" + newLine + "Throught this light," + 
-        		"two very big eyes were seeing everything!" + newLine + "They" + 
+        		newLine + "It was very bright" + newLine + "Throught this light," +
+        		"two very big eyes were seeing everything!" + newLine + "They" +
         		"were coming closer and closer and then...Oh my god.." +
-        		newLine + ".I'm in the universe!" + newLine + "I can see lots" + 
+        		newLine + ".I'm in the universe!" + newLine + "I can see lots" +
         		"of stars and i am a little overwelmed." + newLine + "I was" +
         		"shocked, in fact" + newLine + "The sounds of creation, were" +
         		"bashing my ears, while an unrecognisable species, started talking to me!");
@@ -121,7 +121,7 @@ public class ExcitingStory {
                 "ok!!!" + newLine + "It doesn't matter if there is a storm outside " +
         		", you can still sit next to the fireplace and enjoy your hot " +
                 "chocolate." + newLine + "Suddenly you hear the door bell. Who " +
-        		"can it be outside in such a stormy night?" + newLine + 
+        		"can it be outside in such a stormy night?" + newLine +
         		"What do you do?" + newLine + "-o.\tYou are curious and you " +
                 "open the door" + newLine + "-i.\tIgnore the bell. Relax and " +
                 "enjoy your chocolate.");
@@ -146,9 +146,9 @@ public class ExcitingStory {
 	 * Function that is used to create the "Lost in thoughts" story.
 	 */
     static void tellLostInThoughtsStory(String newLine) {
-        sentence("and you could only hear the rain and the wind." + newLine + 
+        sentence("and you could only hear the rain and the wind." + newLine +
         		"I couldn't stop thinking about what had just happened. " +
-                "Jolene will probably never speak to me again." + newLine + 
+                "Jolene will probably never speak to me again." + newLine +
                 "Of course I deserve it. Yes, yes I certainly deserve it. I " +
                 "ruined everything." + newLine + "And then, all these " +
                 "rhinoceros around me. Maybe they were " +
@@ -825,7 +825,7 @@ public class ExcitingStory {
 	 * Function that is used to create a cooking story.
 	 */
     public static void tellACookingStory(String newLine) {
-    	
+
 		sentence("A new day has began, a new cooking adventure!" + newLine +
 				"Let's make Easy Nutella Cookies!" + newLine +
 				"A very easy recipe with very few ingredients!" + newLine +
@@ -976,10 +976,10 @@ public class ExcitingStory {
 	static void cookOrNot(String answer , String newLine) {
 
 	    if (answer.equals("-YES")) {
-	    	
+
 		    sentence("Let's make delicious pancakes!" + newLine +
 		    		"You will need 3/4 cup of milk, 2 tablespoons of " +
-		    		"olive oil, 1 egg, 1 cup of flour," + newLine +  
+		    		"olive oil, 1 egg, 1 cup of flour," + newLine +
 					"2 tablespoons baking powder, 2 tablespoons of " +
 		    		"sugar and a pinch of salt." + newLine +
 		    		"We gradually mix the ingredients in a bowl." + newLine +
@@ -993,12 +993,33 @@ public class ExcitingStory {
 					"In the end we can serve our fresh, hot pancakes with " +
 					"maple syrup or ingredient of our choice!" + newLine +
 					"Enjoy!");
-		    
+
 		}
 		else if (answer.equals("-NO"))
 			sentence("Have a nice day and enjoy your nutella cookies!");
 	}
 
+	/**
+		 * Function that is used to create a love story.
+	 */
+	static void tellLoveStory(String newLine) {
+			sentence("A girl and guy were speeding over 100 mph on a motorcycle." + newLine +
+					"Girl: Slow down. I'm scared." + newLine +
+					"Guy: No this is fun." + newLine +
+					"Girl: No its not. Please, it's too scary!" + newLine +
+					"Guy: Then tell me you love me." +
+					"Girl: Fine, I love you. Slow down!" + newLine +
+					"Guy: Now give me a big hug." +
+					"(Girl hugs him)" + newLine +
+					"Guy: Can you take my helmet off and put it on? It's bugging me." + newLine +
+					"In the paper the next day: " + newLine +
+					"A motorcycle had crashed into a building because of brake failure. " + newLine +
+					"Two people were on the motorcycle, but only one survived." + newLine +
+					"The truth was that halfway down the road, the guy realized" +
+					"that his brakes broke, but he didn't want to let the girl know." + newLine +
+					"Instead, he had her say she loved him, felt her hug one last time," +
+					" then had her wear his helmet so she would live even though it meant he would die.");
+	    }
 
     /**
      * main method
@@ -1017,17 +1038,17 @@ public class ExcitingStory {
                     + newLine + "If you want science fiction, choose -d" +
                     newLine + "If you want a different story, choose -e" +
                     newLine + "If you want a scary story, choose -f"
-                    
-                    + newLine + "If you want a creepy story, choose -g" + newLine + 
+
+                    + newLine + "If you want a creepy story, choose -g" + newLine +
                     "If you want to know what I think about this night, choose -h"
                     + newLine + "If you don't care that is a dark night and just want " +
                     "to read the worthTellingStory, choose -i" + newLine + "if you are bored to read a story, choose -j"
-                    + newLine + "if you want to read a breathtaking story, choose -k" + newLine + 
+                    + newLine + "if you want to read a breathtaking story, choose -k" + newLine +
                     "if you want to read a short story, choose -l"
-                    + newLine + "If you decided to go for a commonly walk by your bike, choose -m" + newLine + 
+                    + newLine + "If you decided to go for a commonly walk by your bike, choose -m" + newLine +
                     "If you want a lottery story, choose -n"
-                    + newLine + "If you want to read a western story , choose -o" + newLine + 
-                    "If you want to read a twisted story , choose -p" + newLine + 
+                    + newLine + "If you want to read a western story , choose -o" + newLine +
+                    "If you want to read a twisted story , choose -p" + newLine +
                     "If you want to read a funny story , choose -q"
 					+ newLine + "If you want to cook delicious treats then, choose -s");
 
@@ -1092,6 +1113,8 @@ public class ExcitingStory {
 				tellInterestingStory(newLine);
 			else if (m.equals("-v"))
 				tellJavaSong(newLine);
+			else if (m.equals("-w"))
+				tellLoveStory(newLine);
 
             sentence(newLine + "Would you like to read another story? Answer -yes or -no");
             b = scanner.nextLine();

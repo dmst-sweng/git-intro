@@ -77,3 +77,5 @@ you undertook (see below).
  * Add a song about Java. -> eletap
  * Add an interesting story. -> katerinakaplani
  * Add a weird story. -> SPYROS-GER
+ * Add a love story. -> XaLDe
+
