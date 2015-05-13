@@ -726,6 +726,27 @@ public class ExcitingStory {
     }
 
     /**
+	     * This function is used to inform the reader about a weird story
+	     *
+	     * @param newLine The line separator String.
+	     */
+    public static void tellWeirdStory(String newLine) {
+		sentence("Nightmare On Elm Street (it is said) is based on a" + newLine +
+		"real story.");
+		sentence("The story goes that Wes Craven was in a coffee shop " + newLine+
+		"reading the newspaper when he stumbled upon a story.");
+		sentence("A boy was afraid to go to sleep because of nightmares.");
+		sentence("He tried to stay up.");
+		sentence("He failed.");
+		sentence("He failed. His dad found him the next morning, dead," + newLine +
+		"with four razor type slahes on his chest.");
+        sentence("Police officials said that the wounds were not self inflicted,"+ newLine +
+        "nor was there any sign of a break in.");
+		sentence("Weird huh?");
+		sentence("Think about this story while you go to sleep tonight.");
+		}
+
+    /**
      * Function that is used to tell a western story.
      *
      * @param newLine The line separator String.
