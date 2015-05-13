@@ -1,0 +1,38 @@
+In order to get this repository locally I used:
+git clone [URL]
+
+In order to create a new branch and switch to it I used the command :
+git checkout -b [branch_name]
+
+In order to see the master branch:
+git checkout master
+
+In order to change branch:
+git checkout [branch_name]
+
+In order to keep my local repository up-to-date with the one on github i used:
+git pull
+
+In order to add changes I used:
+git add [name_of_file_to_add]
+
+In order to remove a file because of a mistake:
+git rm [name_of_file]
+
+In order to add changes I used:
+git add [name_of_file_to_add]
+
+In order to pull changes:
+git pull origin master
+
+In order to push my changes:
+git push
+
+In order to go back to master:
+git checkout master
+
+In order to merge my branch with the local repository:
+git merge [branchname]
+
+
+
