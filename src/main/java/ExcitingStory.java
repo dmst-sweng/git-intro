@@ -910,6 +910,9 @@ public class ExcitingStory {
 		sentence("After the end of the story the kid was closed its eyes and slept");
     }
 
+    /**
+     * Function that is used to create Java song.
+     */
 		static void tellJavaSong(String newLine){
 				sentence( "This is a song called 'The Java Life'"
 				+ newLine + "In the cubicles representin’ for my JAVA homies…"
